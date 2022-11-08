@@ -35,6 +35,8 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
         alignItems: "center",
         padding: 20,
         backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
+        minHeight: "100vh",
+        width: "100%",
       }}
     >
       {missingTracks.map((courseGap: MissingTrack) => {
@@ -140,7 +142,8 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
               flexDirection: isMobile ? "column" : "row",
               justifyContent: "center",
               alignItems: "center",
-              backgroundImage: "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
+              backgroundImage:
+                "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
             }}
           >
             {isMobile && (

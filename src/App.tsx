@@ -24,7 +24,7 @@ const drawerWidth = 240;
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
-  const [page, setPage] = useState("Tour Datamine");
+  const [page, setPage] = useState(localStorage.getItem("stored-page") ?? "Tour Datamine");
   const [missingTracks, setMissingTracks] = useState<MissingTrack[]>([]);
   const isMobile = useMemo(() => width <= 768, [width]);
 
@@ -107,7 +107,12 @@ function App() {
               disablePadding
               style={{ backgroundColor: page === text ? "#ccc" : "#fff" }}
             >
-              <ListItemButton onClick={() => setPage(text)}>
+              <ListItemButton
+                onClick={() => {
+                  setPage(text);
+                  localStorage.setItem("stored-page", text);
+                }}
+              >
                 <ListItemText
                   primary={
                     <p

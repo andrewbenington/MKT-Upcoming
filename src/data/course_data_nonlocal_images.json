@@ -200,7 +200,7 @@
         "displayPlatform": "N64",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/8/8a/Kalimari_Desert_MK64.png/300px-Kalimari_Desert_MK64.png"
+        "image": "https://mario.wiki.gallery/images/2/29/MK64_Kalimari_Desert_Icon.png"
       },
       "MarioCircuit": {
         "tourName": "MarioCircuit",
@@ -208,7 +208,7 @@
         "displayName": "Mario Raceway",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/9/91/Mario_Raceway_MK64.png/300px-Mario_Raceway_MK64.png",
+        "image": "https://mario.wiki.gallery/images/2/2b/MK64_Mario_Raceway_Icon.png",
         "in8DX": false
       },
       "WarioStadium": {
@@ -217,7 +217,7 @@
         "displayName": "Wario Stadium",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/0/04/Wario_Stadium_MK64.png/300px-Wario_Stadium_MK64.png",
+        "image": "https://mario.wiki.gallery/images/3/3d/MK64_Wario_Stadium_Icon.png",
         "in8DX": false
       },
       "BansheeBoardwalk": {
@@ -226,7 +226,7 @@
         "displayName": "Banshee Boardwalk",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/1/19/Banshee_Boardwalk_MK64.png/300px-Banshee_Boardwalk_MK64.png",
+        "image": "https://mario.wiki.gallery/images/2/24/MK64_Banshee_Boardwalk_Icon.png",
         "in8DX": false
       },
       "RainbowRoad": {
@@ -236,7 +236,7 @@
         "displayPlatform": "N64",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/2/28/Rainbow_Road_MK64.png/300px-Rainbow_Road_MK64.png"
+        "image": "https://mario.wiki.gallery/images/e/e7/MK64_Rainbow_Road_Icon.png"
       },
       "ChocoMountain": {
         "tourName": "ChocoMountain",
@@ -245,7 +245,7 @@
         "displayPlatform": "N64",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/4/4d/Choco_Mountain_MK64.png/300px-Choco_Mountain_MK64.png"
+        "image": "https://mario.wiki.gallery/images/b/b7/MK64_Choco_Mountain_Icon.png"
       },
       "SherbetLand": {
         "tourName": "SherbetLand",
@@ -253,7 +253,7 @@
         "displayName": "Sherbet Land",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/4/43/Sherbet_Land_MK64.png/300px-Sherbet_Land_MK64.png",
+        "image": "https://mario.wiki.gallery/images/d/d1/MK64_Sherbert_Land_Icon.png",
         "in8DX": false
       },
       "DKJungleParkway": {
@@ -262,7 +262,7 @@
         "displayName": "DK's Jungle Parkway",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/f/fb/D.K.%27s_Jungle_Parkway_MK64.png/300px-D.K.%27s_Jungle_Parkway_MK64.png",
+        "image": "https://mario.wiki.gallery/images/8/8e/MK64_DK_Jungle_Parkway_Icon.png",
         "in8DX": false
       },
       "MooMooFarm": {
@@ -271,7 +271,7 @@
         "displayName": "Moo Moo Farm",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/e/e3/Moo_Moo_Farm_MK64.png/300px-Moo_Moo_Farm_MK64.png",
+        "image": "https://mario.wiki.gallery/images/5/59/MK64_Moo_Moo_Farm_Icon.png",
         "in8DX": false
       },
       "KoopaTroopaBeach": {
@@ -280,7 +280,7 @@
         "displayName": "Koopa Troopa Beach",
         "displayPlatform": "N64",
         "inTour": true,
-        "image": "https://mario.wiki.gallery/images/thumb/1/13/Koopa_Troopa_Beach_MK64.png/300px-Koopa_Troopa_Beach_MK64.png",
+        "image": "https://mario.wiki.gallery/images/6/68/MK64_Koopa_Troopa_Beach_Icon.png",
         "in8DX": false
       },
       "ToadTurnpike": {
@@ -290,7 +290,7 @@
         "displayPlatform": "N64",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/6/6f/Toad%27s_Turnpike_MK64.png/300px-Toad%27s_Turnpike_MK64.png"
+        "image": "https://mario.wiki.gallery/images/9/99/MK64_Toad%27s_Turnpike_Icon.png"
       },
       "PeachCircuit": {
         "tourName": "PeachCircuit",
@@ -299,7 +299,7 @@
         "displayPlatform": "N64",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/5/50/Royal_Raceway_MK64.png/300px-Royal_Raceway_MK64.png"
+        "image": "https://mario.wiki.gallery/images/3/3f/MK64_Royal_Raceway_Icon.png"
       },
       "BowserCastle": {
         "tourName": "BowserCastle",
@@ -307,7 +307,7 @@
         "displayName": "Bowser's Castle",
         "displayPlatform": "N64",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/0/0d/Bowser%27s_Castle_MK64.png/300px-Bowser%27s_Castle_MK64.png",
+        "image": "https://mario.wiki.gallery/images/4/4c/MK64_Bowser_Castle_Icon.png",
         "in8DX": false
       },
       "YoshiValley": {
@@ -317,7 +317,7 @@
         "displayPlatform": "N64",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/b/b7/Yoshi_Valley_MK64.png/300px-Yoshi_Valley_MK64.png"
+        "image": "https://mario.wiki.gallery/images/3/3b/MK64_Yoshi_Valley_Icon.png"
       },
       "FrappeSnowland": {
         "tourName": "FrappeSnowland",
@@ -325,7 +325,7 @@
         "displayName": "Frappe Snowland",
         "displayPlatform": "N64",
         "inTour": true,
-        "image": "https://mario.wiki.gallery/images/thumb/6/6a/Frappe_Snowland_MK64.png/300px-Frappe_Snowland_MK64.png",
+        "image": "https://mario.wiki.gallery/images/6/67/MK64_Frappe_Snowland_Icon.png",
         "in8DX": false
       },
       "LuigiCircuit": {
@@ -334,7 +334,7 @@
         "displayName": "Luigi Raceway",
         "displayPlatform": "N64",
         "inTour": true,
-        "image": "https://mario.wiki.gallery/images/thumb/4/42/Luigi_Raceway_MK64.png/300px-Luigi_Raceway_MK64.png",
+        "image": "https://mario.wiki.gallery/images/c/c9/MK64_Luigi_Raceway_Icon.png",
         "in8DX": false
       }
     }
@@ -540,7 +540,7 @@
         "displayPlatform": "GCN",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/3/30/BabyParkIcon-MKDD.png/150px-BabyParkIcon-MKDD.png"
+        "image": "https://mario.wiki.gallery/images/thumb/3/30/BabyParkIcon-MKDD.png/250px-BabyParkIcon-MKDD.png"
       },
       "MarioCircuit": {
         "tourName": "MarioCircuit",
@@ -557,7 +557,7 @@
         "displayName": "Daisy Cruiser",
         "displayPlatform": "GCN",
         "inTour": true,
-        "image": "https://mario.wiki.gallery/images/thumb/7/75/DaisyCruiserIcon-MKDD.png/150px-DaisyCruiserIcon-MKDD.png",
+        "image": "https://mario.wiki.gallery/images/thumb/7/75/DaisyCruiserIcon-MKDD.png/250px-DaisyCruiserIcon-MKDD.png",
         "in8DX": false
       },
       "WaluigiStadium": {
@@ -567,7 +567,7 @@
         "displayPlatform": "GCN",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/a/af/WaluigiStadiumIcon-MKDD.png/150px-WaluigiStadiumIcon-MKDD.png"
+        "image": "https://mario.wiki.gallery/images/thumb/a/af/WaluigiStadiumIcon-MKDD.png/250px-WaluigiStadiumIcon-MKDD.png"
       },
       "WarioColosseum": {
         "tourName": "WarioColosseum",
@@ -575,7 +575,7 @@
         "displayName": "Wario Colosseum",
         "displayPlatform": "GCN",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/4/47/WarioColosseumIcon-MKDD.png/150px-WarioColosseumIcon-MKDD.png",
+        "image": "https://mario.wiki.gallery/images/thumb/4/47/WarioColosseumIcon-MKDD.png/250px-WarioColosseumIcon-MKDD.png",
         "in8DX": false
       },
       "RainbowRoad": {
@@ -593,7 +593,7 @@
         "displayName": "Peach Beach",
         "displayPlatform": "GCN",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/b/b3/PeachBeachIcon-MKDD.png/235px-PeachBeachIcon-MKDD.png",
+        "image": "https://mario.wiki.gallery/images/thumb/b/b3/PeachBeachIcon-MKDD.png/250px-PeachBeachIcon-MKDD.png",
         "in8DX": false
       },
       "SherbetLand": {
@@ -603,7 +603,7 @@
         "displayPlatform": "GCN",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/c/cd/SherbetLandIcon-MKDD.png/150px-SherbetLandIcon-MKDD.png"
+        "image": "https://mario.wiki.gallery/images/thumb/c/cd/SherbetLandIcon-MKDD.png/250px-SherbetLandIcon-MKDD.png"
       },
       "DinoDinoJungle": {
         "tourName": "DinoDinoJungle",
@@ -620,7 +620,7 @@
         "displayName": "DK Mountain",
         "displayPlatform": "GCN",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/e/e0/DKMountainIcon-MKDD.png/150px-DKMountainIcon-MKDD.png",
+        "image": "https://mario.wiki.gallery/images/thumb/e/e0/DKMountainIcon-MKDD.png/250px-DKMountainIcon-MKDD.png",
         "in8DX": false
       },
       "YoshiCircuit": {
@@ -630,7 +630,7 @@
         "displayPlatform": "GCN",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/9/94/YoshiCircuitIcon-MKDD.png/150px-YoshiCircuitIcon-MKDD.png"
+        "image": "https://mario.wiki.gallery/images/thumb/9/94/YoshiCircuitIcon-MKDD.png/250px-YoshiCircuitIcon-MKDD.png"
       },
       "BowserCastle": {
         "tourName": "BowserCastle",
@@ -638,7 +638,7 @@
         "displayName": "Bowser's Castle",
         "displayPlatform": "GCN",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/c/c8/BowserIcon_SM3DW.png",
+        "image": "https://mario.wiki.gallery/images/c/c3/BowserCastleIcon-MKDD.png",
         "in8DX": false
       },
       "DryDryDesert": {
@@ -656,7 +656,7 @@
         "displayName": "Luigi Circuit",
         "displayPlatform": "GCN",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/6/6c/LuigiCircuitIcon-MKDD.png/200px-LuigiCircuitIcon-MKDD.png",
+        "image": "https://mario.wiki.gallery/images/thumb/6/6c/LuigiCircuitIcon-MKDD.png/250px-LuigiCircuitIcon-MKDD.png",
         "in8DX": false
       },
       "MushroomBridge": {
@@ -666,7 +666,7 @@
         "displayPlatform": "GCN",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/7/73/MushroomBridgeIcon-MKDD.png/150px-MushroomBridgeIcon-MKDD.png"
+        "image": "https://mario.wiki.gallery/images/thumb/7/73/MushroomBridgeIcon-MKDD.png/250px-MushroomBridgeIcon-MKDD.png"
       },
       "MushroomCity": {
         "tourName": "MushroomCity",
@@ -675,7 +675,7 @@
         "displayPlatform": "GCN",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/c/cb/MushroomCityIcon-MKDD.png/150px-MushroomCityIcon-MKDD.png"
+        "image": "https://mario.wiki.gallery/images/thumb/c/cb/MushroomCityIcon-MKDD.png/250px-MushroomCityIcon-MKDD.png"
       }
     }
   },
@@ -843,7 +843,7 @@
         "displayName": "Mario Circuit",
         "displayPlatform": "Wii",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/b/be/MarioCircuit_MKWii.png/200px-MarioCircuit_MKWii.png",
+        "image": "https://mario.wiki.gallery/images/thumb/b/be/MarioCircuit_MKWii.png/300px-MarioCircuit_MKWii.png",
         "in8DX": false
       },
       "WarioGoldMine": {
@@ -879,7 +879,7 @@
         "displayName": "Rainbow Road",
         "displayPlatform": "Wii",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/thumb/8/83/MKW_Rainbow_Road_Overview.png/200px-MKW_Rainbow_Road_Overview.png",
+        "image": "https://mario.wiki.gallery/images/thumb/8/83/MKW_Rainbow_Road_Overview.png/300px-MKW_Rainbow_Road_Overview.png",
         "in8DX": false
       },
       "DKSummit": {
@@ -969,7 +969,7 @@
         "displayName": "Luigi Circuit",
         "displayPlatform": "Wii",
         "inTour": false,
-        "image": "https://mario.wiki.gallery/images/b/b6/MKT_Icon_Luigi_Raceway.png",
+        "image": "https://mario.wiki.gallery/images/thumb/8/8b/Luigi_Circuit_MKWii.png/600px-Luigi_Circuit_MKWii.png",
         "in8DX": false
       },
       "MushroomGorge": {
@@ -1157,7 +1157,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/1/13/MK8_Water_Park_Starting_Line.png/250px-MK8_Water_Park_Starting_Line.png"
+        "image": "https://mario.wiki.gallery/images/thumb/4/41/MK8-Course-WaterPark.jpg/300px-MK8-Course-WaterPark.jpg"
       },
       "MarioCircuit": {
         "tourName": "MarioCircuit",
@@ -1184,7 +1184,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/c/c4/MK8_Ice_Ice_Outpost_Course_Icon.png/120px-MK8_Ice_Ice_Outpost_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/b/bc/MK8-DLC-Course-IceIceOutpost.jpg/300px-MK8-DLC-Course-IceIceOutpost.jpg"
       },
       "ThwompRuins": {
         "tourName": "ThwompRuins",
@@ -1202,7 +1202,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/2/2a/MK8_Shy_Guy_Falls_Course_Icon.png/150px-MK8_Shy_Guy_Falls_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/8/85/MK8-Course-ShyGuyFalls.jpg/300px-MK8-Course-ShyGuyFalls.jpg"
       },
       "WildWoods": {
         "tourName": "WildWoods",
@@ -1211,7 +1211,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/e/e4/MK8_Wild_Woods_Course_Icon.png/170px-MK8_Wild_Woods_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/e/e8/MK8-DLC-Course-WildWoods.jpg/300px-MK8-DLC-Course-WildWoods.jpg"
       },
       "BigBlue": {
         "tourName": "BigBlue",
@@ -1220,7 +1220,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/0/06/MK8_Big_Blue_Course_Icon.png/160px-MK8_Big_Blue_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/e/e0/MK8-DLC-Course-BigBlue-overview.jpg/300px-MK8-DLC-Course-BigBlue-overview.jpg"
       },
       "Electrodrome": {
         "tourName": "Electrodrome",
@@ -1229,7 +1229,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/a/ab/MK8_Electrodome_Starting_Line.png/250px-MK8_Electrodome_Starting_Line.png"
+        "image": "https://mario.wiki.gallery/images/thumb/f/fc/MK8-Course-Electrodrome.jpg/300px-MK8-Course-Electrodrome.jpg"
       },
       "CloudtopCruise": {
         "tourName": "CloudtopCruise",
@@ -1265,7 +1265,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/5/5c/MK8_Dolphin_Shoals_Starting_Line.png/250px-MK8_Dolphin_Shoals_Starting_Line.png"
+        "image": "https://mario.wiki.gallery/images/thumb/a/a2/MK8-Course-DolphinShoals.jpg/300px-MK8-Course-DolphinShoals.jpg"
       },
       "MountWario": {
         "tourName": "MountWario",
@@ -1274,7 +1274,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/d/de/MK8_Mount_Wario_Starting_Line.png/250px-MK8_Mount_Wario_Starting_Line.png"
+        "image": "https://mario.wiki.gallery/images/thumb/6/67/MK8-Course-MountWario.jpg/300px-MK8-Course-MountWario.jpg"
       },
       "BoneDryDunes": {
         "tourName": "BoneDryDunes",
@@ -1292,7 +1292,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/7/76/MK8-Course-Bowser%27sCastle.png/300px-MK8-Course-Bowser%27sCastle.png"
+        "image": "https://mario.wiki.gallery/images/thumb/7/76/MK8-Course-Bowser%27sCastle.png/600px-MK8-Course-Bowser%27sCastle.png"
       },
       "DragonDriftway": {
         "tourName": "DragonDriftway",
@@ -1310,7 +1310,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/e/eb/MK8_Sunshine_Airport_Starting_Line.png/250px-MK8_Sunshine_Airport_Starting_Line.png"
+        "image": "https://mario.wiki.gallery/images/thumb/9/91/MK8-Course-SunshineAirport.jpg/300px-MK8-Course-SunshineAirport.jpg"
       },
       "MuteCity": {
         "tourName": "MuteCity",
@@ -1319,7 +1319,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/f/fa/MK8_Mute_City_Course_Icon.png/170px-MK8_Mute_City_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/1/14/MK8-DLC-Course-MuteCity-section.jpg/300px-MK8-DLC-Course-MuteCity-section.jpg"
       },
       "SuperBellSubway": {
         "tourName": "SuperBellSubway",
@@ -1328,7 +1328,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/7/7e/MK8_Super_Bell_Subway_Course_Icon.png/150px-MK8_Super_Bell_Subway_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/7/7b/MK8-DLC-Course-SuperBellSubway.jpg/300px-MK8-DLC-Course-SuperBellSubway.jpg"
       },
       "SweetSweetCanyon": {
         "tourName": "SweetSweetCanyon",
@@ -1355,7 +1355,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/d/de/Excitebike_Arena_MK8_DLC_photo_1.png/250px-Excitebike_Arena_MK8_DLC_photo_1.png"
+        "image": "https://mario.wiki.gallery/images/thumb/1/10/MK8-DLC-Course-ExcitebikeArena.jpg/300px-MK8-DLC-Course-ExcitebikeArena.jpg"
       },
       "HyruleCircuit": {
         "tourName": "HyruleCircuit",
@@ -1364,7 +1364,7 @@
         "displayPlatform": "Wii U",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/e/e2/MK8_DLC_Hyrule_Castle_interior.png/230px-MK8_DLC_Hyrule_Castle_interior.png"
+        "image": "https://mario.wiki.gallery/images/thumb/f/f8/MK8-DLC-Course-HyruleCircuit.jpg/300px-MK8-DLC-Course-HyruleCircuit.jpg"
       }
     }
   },
