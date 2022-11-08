@@ -1,0 +1,1606 @@
+{
+  "SNES": {
+    "gameName": "Super Mario Kart",
+    "gameNumber": 1,
+    "tourPrefix": "sfc",
+    "displayPrefix": "SNES",
+    "courses": {
+      "MarioCircuit1": {
+        "tourName": "MarioCircuit1",
+        "tourPlatform": "sfc",
+        "displayName": "Mario Circuit 1",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Mario_Circuit_1.png"
+      },
+      "MarioCircuit2": {
+        "tourName": "MarioCircuit2",
+        "tourPlatform": "sfc",
+        "displayName": "Mario Circuit 2",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Mario_Circuit_2.png"
+      },
+      "MarioCircuit3": {
+        "tourName": "MarioCircuit3",
+        "tourPlatform": "sfc",
+        "displayName": "Mario Circuit 3",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/SNES/Mario_Circuit_3.png"
+      },
+      "VanillaLake1": {
+        "tourName": "VanillaLake1",
+        "tourPlatform": "sfc",
+        "displayName": "Vanilla Lake 1",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Vanilla_Lake_1.png"
+      },
+      "MarioCircuit4": {
+        "tourName": "MarioCircuit4",
+        "tourPlatform": "sfc",
+        "displayName": "Mario Circuit 4",
+        "displayPlatform": "SNES",
+        "inTour": false,
+        "image": "/images/SNES/Mario_Circuit_4.png"
+      },
+      "VanillaLake2": {
+        "tourName": "VanillaLake2",
+        "tourPlatform": "sfc",
+        "displayName": "Vanilla Lake 2",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Vanilla_Lake_2.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "sfc",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/SNES/Rainbow_Road.png"
+      },
+      "GhostValley1": {
+        "tourName": "GhostValley1",
+        "tourPlatform": "sfc",
+        "displayName": "Ghost Valley 1",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Ghost_Valley_1.png"
+      },
+      "ChocoIsland1": {
+        "tourName": "ChocoIsland1",
+        "tourPlatform": "sfc",
+        "displayName": "Choco Island 1",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Choco_Island_1.png"
+      },
+      "GhostValley2": {
+        "tourName": "GhostValley2",
+        "tourPlatform": "sfc",
+        "displayName": "Ghost Valley 2",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Ghost_Valley_2.png"
+      },
+      "ChocoIsland2": {
+        "tourName": "ChocoIsland2",
+        "tourPlatform": "sfc",
+        "displayName": "Choco Island 2",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Choco_Island_2.png"
+      },
+      "GhostValley3": {
+        "tourName": "GhostValley3",
+        "tourPlatform": "sfc",
+        "displayName": "Ghost Valley 3",
+        "displayPlatform": "SNES",
+        "inTour": false,
+        "image": "/images/SNES/Ghost_Valley_3.png"
+      },
+      "DonutsPlain1": {
+        "tourName": "DonutsPlain1",
+        "tourPlatform": "sfc",
+        "displayName": "Donut Plains 1",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Donut_Plains_1.png"
+      },
+      "BowserCastle1": {
+        "tourName": "BowserCastle1",
+        "tourPlatform": "sfc",
+        "displayName": "Bowser Castle 1",
+        "displayPlatform": "SNES",
+        "inTour": false,
+        "image": "/images/SNES/Bowser_Castle_1.png"
+      },
+      "DonutsPlain2": {
+        "tourName": "DonutsPlain2",
+        "tourPlatform": "sfc",
+        "displayName": "Donut Plains 2",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Donut_Plains_2.png"
+      },
+      "BowserCastle2": {
+        "tourName": "BowserCastle2",
+        "tourPlatform": "sfc",
+        "displayName": "Bowser Castle 2",
+        "displayPlatform": "SNES",
+        "inTour": false,
+        "image": "/images/SNES/Bowser_Castle_2.png"
+      },
+      "KoopaTroopaBeach1": {
+        "tourName": "KoopaTroopaBeach1",
+        "tourPlatform": "sfc",
+        "displayName": "Koopa Troopa Beach 1",
+        "displayPlatform": "SNES",
+        "inTour": false,
+        "image": "/images/SNES/Koopa_Troopa_Beach_1.png"
+      },
+      "BowserCastle3": {
+        "tourName": "BowserCastle3",
+        "tourPlatform": "sfc",
+        "displayName": "Bowser Castle 3",
+        "displayPlatform": "SNES",
+        "inTour": false,
+        "image": "/images/SNES/Bowser_Castle_3.png"
+      },
+      "DonutsPlain3": {
+        "tourName": "DonutsPlain3",
+        "tourPlatform": "sfc",
+        "displayName": "Donut Plains 3",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Donut_Plains_3.png"
+      },
+      "KoopaTroopaBeach2": {
+        "tourName": "KoopaTroopaBeach2",
+        "tourPlatform": "sfc",
+        "displayName": "Koopa Troopa Beach 2",
+        "displayPlatform": "SNES",
+        "inTour": true,
+        "image": "/images/SNES/Koopa_Troopa_Beach_2.png"
+      }
+    }
+  },
+  "N64": {
+    "gameName": "Mario Kart 64",
+    "gameNumber": 2,
+    "tourPrefix": "n64",
+    "displayPrefix": "N64",
+    "courses": {
+      "KalimariDesert": {
+        "tourName": "KalimariDesert",
+        "tourPlatform": "n64",
+        "displayName": "Kalimari Desert",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/N64/Kalimari_Desert.png"
+      },
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "n64",
+        "displayName": "Mario Raceway",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/Mario_Raceway.png"
+      },
+      "WarioStadium": {
+        "tourName": "WarioStadium",
+        "tourPlatform": "n64",
+        "displayName": "Wario Stadium",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/Wario_Stadium.png"
+      },
+      "BansheeBoardwalk": {
+        "tourName": "BansheeBoardwalk",
+        "tourPlatform": "n64",
+        "displayName": "Banshee Boardwalk",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/Banshee_Boardwalk.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "n64",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/N64/Rainbow_Road.png"
+      },
+      "ChocoMountain": {
+        "tourName": "ChocoMountain",
+        "tourPlatform": "n64",
+        "displayName": "Choco Mountain",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/N64/Choco_Mountain.png"
+      },
+      "SherbetLand": {
+        "tourName": "SherbetLand",
+        "tourPlatform": "n64",
+        "displayName": "Sherbet Land",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/Sherbet_Land.png"
+      },
+      "DKJungleParkway": {
+        "tourName": "DKJungleParkway",
+        "tourPlatform": "n64",
+        "displayName": "DK's Jungle Parkway",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/DKs_Jungle_Parkway.png"
+      },
+      "MooMooFarm": {
+        "tourName": "MooMooFarm",
+        "tourPlatform": "n64",
+        "displayName": "Moo Moo Farm",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/Moo_Moo_Farm.png"
+      },
+      "KoopaTroopaBeach": {
+        "tourName": "KoopaTroopaBeach",
+        "tourPlatform": "n64",
+        "displayName": "Koopa Troopa Beach",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "image": "/images/N64/Koopa_Troopa_Beach.png"
+      },
+      "ToadTurnpike": {
+        "tourName": "ToadTurnpike",
+        "tourPlatform": "n64",
+        "displayName": "Toad's Turnpike",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/N64/Toads_Turnpike.png"
+      },
+      "PeachCircuit": {
+        "tourName": "PeachCircuit",
+        "tourPlatform": "n64",
+        "displayName": "Royal Raceway",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/N64/Royal_Raceway.png"
+      },
+      "BowserCastle": {
+        "tourName": "BowserCastle",
+        "tourPlatform": "n64",
+        "displayName": "Bowser's Castle",
+        "displayPlatform": "N64",
+        "inTour": false,
+        "image": "/images/N64/Bowsers_Castle.png"
+      },
+      "YoshiValley": {
+        "tourName": "YoshiValley",
+        "tourPlatform": "n64",
+        "displayName": "Yoshi Valley",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/N64/Yoshi_Valley.png"
+      },
+      "FrappeSnowland": {
+        "tourName": "FrappeSnowland",
+        "tourPlatform": "n64",
+        "displayName": "Frappe Snowland",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "image": "/images/N64/Frappe_Snowland.png"
+      },
+      "LuigiCircuit": {
+        "tourName": "LuigiCircuit",
+        "tourPlatform": "n64",
+        "displayName": "Luigi Raceway",
+        "displayPlatform": "N64",
+        "inTour": true,
+        "image": "/images/N64/Luigi_Raceway.png"
+      }
+    }
+  },
+  "GBA": {
+    "gameName": "Mario Kart Super Circuit",
+    "gameNumber": 3,
+    "tourPrefix": "agb",
+    "displayPrefix": "GBA",
+    "courses": {
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "agb",
+        "displayName": "Mario Circuit",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GBA/Mario_Circuit.png"
+      },
+      "LakesidePark": {
+        "tourName": "LakesidePark",
+        "tourPlatform": "agb",
+        "displayName": "Lakeside Park",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Lakeside_Park.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "agb",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Rainbow_Road.png"
+      },
+      "PeachCircuit": {
+        "tourName": "PeachCircuit",
+        "tourPlatform": "agb",
+        "displayName": "Peach Circuit",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Peach_Circuit.png"
+      },
+      "ShyGuyBeach": {
+        "tourName": "ShyGuyBeach",
+        "tourPlatform": "agb",
+        "displayName": "Shy Guy Beach",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Shy_Guy_Beach.png"
+      },
+      "CheeseLand": {
+        "tourName": "CheeseLand",
+        "tourPlatform": "agb",
+        "displayName": "Cheese Land",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GBA/Cheese_Land.png"
+      },
+      "CheepCheepIsland": {
+        "tourName": "CheepCheepIsland",
+        "tourPlatform": "agb",
+        "displayName": "Cheep-Cheep Island",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "image": "/images/GBA/Cheep-Cheep_Island.png"
+      },
+      "RiversidePark": {
+        "tourName": "RiversidePark",
+        "tourPlatform": "agb",
+        "displayName": "Riverside Park",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Riverside_Park.png"
+      },
+      "RibbonRoad": {
+        "tourName": "RibbonRoad",
+        "tourPlatform": "agb",
+        "displayName": "Ribbon Road",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GBA/Ribbon_Road.png"
+      },
+      "SkyGarden": {
+        "tourName": "SkyGarden",
+        "tourPlatform": "agb",
+        "displayName": "Sky Garden",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/GBA/Sky_Garden.png"
+      },
+      "SnowLand": {
+        "tourName": "SnowLand",
+        "tourPlatform": "agb",
+        "displayName": "Snow Land",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GBA/Snow_Land.png"
+      },
+      "BowserCastle1": {
+        "tourName": "BowserCastle1",
+        "tourPlatform": "agb",
+        "displayName": "Bowser Castle 1",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "image": "/images/GBA/Bowser_Castle_1.png"
+      },
+      "BooLake": {
+        "tourName": "BooLake",
+        "tourPlatform": "agb",
+        "displayName": "Boo Lake",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/GBA/Boo_Lake.png"
+      },
+      "BowserCastle2": {
+        "tourName": "BowserCastle2",
+        "tourPlatform": "agb",
+        "displayName": "Bowser Castle 2",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "image": "/images/GBA/Bowser_Castle_2.png"
+      },
+      "YoshiDesert": {
+        "tourName": "YoshiDesert",
+        "tourPlatform": "agb",
+        "displayName": "Yoshi Desert",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Yoshi_Desert.png"
+      },
+      "BowserCastle3": {
+        "tourName": "BowserCastle3",
+        "tourPlatform": "agb",
+        "displayName": "Bowser Castle 3",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "image": "/images/GBA/Bowser_Castle_3.png"
+      },
+      "BowserCastle4": {
+        "tourName": "BowserCastle4",
+        "tourPlatform": "agb",
+        "displayName": "Bowser Castle 4",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Bowser_Castle_4.png"
+      },
+      "BrokenPier": {
+        "tourName": "BrokenPier",
+        "tourPlatform": "agb",
+        "displayName": "Broken Pier",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Broken_Pier.png"
+      },
+      "LuigiCircuit": {
+        "tourName": "LuigiCircuit",
+        "tourPlatform": "agb",
+        "displayName": "Luigi Circuit",
+        "displayPlatform": "GBA",
+        "inTour": false,
+        "image": "/images/GBA/Luigi_Circuit.png"
+      },
+      "SunsetWilds": {
+        "tourName": "SunsetWilds",
+        "tourPlatform": "agb",
+        "displayName": "Sunset Wilds",
+        "displayPlatform": "GBA",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/GBA/Sunset_Wilds.png"
+      }
+    }
+  },
+  "GCN": {
+    "gameName": "Mario Kart: Double Dash!!",
+    "gameNumber": 4,
+    "tourPrefix": "gc",
+    "displayPrefix": "GCN",
+    "courses": {
+      "BabyPark": {
+        "tourName": "BabyPark",
+        "tourPlatform": "gc",
+        "displayName": "Baby Park",
+        "displayPlatform": "GCN",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/GCN/Baby_Park.png"
+      },
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "gc",
+        "displayName": "Mario Circuit",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/Mario_Circuit.png"
+      },
+      "DaisyCruiser": {
+        "tourName": "DaisyCruiser",
+        "tourPlatform": "gc",
+        "displayName": "Daisy Cruiser",
+        "displayPlatform": "GCN",
+        "inTour": true,
+        "image": "/images/GCN/Daisy_Cruiser.png"
+      },
+      "WaluigiStadium": {
+        "tourName": "WaluigiStadium",
+        "tourPlatform": "gc",
+        "displayName": "Waluigi Stadium",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GCN/Waluigi_Stadium.png"
+      },
+      "WarioColosseum": {
+        "tourName": "WarioColosseum",
+        "tourPlatform": "gc",
+        "displayName": "Wario Colosseum",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/Wario_Colosseum.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "gc",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/Rainbow_Road.png"
+      },
+      "PeachBeach": {
+        "tourName": "PeachBeach",
+        "tourPlatform": "gc",
+        "displayName": "Peach Beach",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/Peach_Beach.png"
+      },
+      "SherbetLand": {
+        "tourName": "SherbetLand",
+        "tourPlatform": "gc",
+        "displayName": "Sherbet Land",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GCN/Sherbet_Land.png"
+      },
+      "DinoDinoJungle": {
+        "tourName": "DinoDinoJungle",
+        "tourPlatform": "gc",
+        "displayName": "Dino Dino Jungle",
+        "displayPlatform": "GCN",
+        "inTour": true,
+        "image": "/images/GCN/Dino_Dino_Jungle.png"
+      },
+      "DKMountain": {
+        "tourName": "DKMountain",
+        "tourPlatform": "gc",
+        "displayName": "DK Mountain",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/DK_Mountain.png"
+      },
+      "YoshiCircuit": {
+        "tourName": "YoshiCircuit",
+        "tourPlatform": "gc",
+        "displayName": "Yoshi Circuit",
+        "displayPlatform": "GCN",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/GCN/Yoshi_Circuit.png"
+      },
+      "BowserCastle": {
+        "tourName": "BowserCastle",
+        "tourPlatform": "gc",
+        "displayName": "Bowser's Castle",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/Bowsers_Castle.png"
+      },
+      "DryDryDesert": {
+        "tourName": "DryDryDesert",
+        "tourPlatform": "gc",
+        "displayName": "Dry Dry Desert",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GCN/Dry_Dry_Desert.png"
+      },
+      "LuigiCircuit": {
+        "tourName": "LuigiCircuit",
+        "tourPlatform": "gc",
+        "displayName": "Luigi Circuit",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "image": "/images/GCN/Luigi_Circuit.png"
+      },
+      "MushroomBridge": {
+        "tourName": "MushroomBridge",
+        "tourPlatform": "gc",
+        "displayName": "Mushroom Bridge",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GCN/Mushroom_Bridge.png"
+      },
+      "MushroomCity": {
+        "tourName": "MushroomCity",
+        "tourPlatform": "gc",
+        "displayName": "Mushroom City",
+        "displayPlatform": "GCN",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/GCN/Mushroom_City.png"
+      }
+    }
+  },
+  "DS": {
+    "gameName": "Mario Kart DS",
+    "gameNumber": 5,
+    "tourPrefix": "ds",
+    "displayPrefix": "DS",
+    "courses": {
+      "WaluigiPinball": {
+        "tourName": "WaluigiPinball",
+        "tourPlatform": "ds",
+        "displayName": "Waluigi Pinball",
+        "displayPlatform": "DS",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/DS/Waluigi_Pinball.png"
+      },
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "ds",
+        "displayName": "Mario Circuit",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Mario_Circuit.png"
+      },
+      "WarioStadium": {
+        "tourName": "WarioStadium",
+        "tourPlatform": "ds",
+        "displayName": "Wario Stadium",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/DS/Wario_Stadium.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "ds",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Rainbow_Road.png"
+      },
+      "DesertHills": {
+        "tourName": "DesertHills",
+        "tourPlatform": "ds",
+        "displayName": "Desert Hills",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Desert_Hills.png"
+      },
+      "DelfinoSquare": {
+        "tourName": "DelfinoSquare",
+        "tourPlatform": "ds",
+        "displayName": "Delfino Square",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Delfino_Square.png"
+      },
+      "PeachGardens": {
+        "tourName": "PeachGardens",
+        "tourPlatform": "ds",
+        "displayName": "Peach Gardens",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/DS/Peach_Gardens.png"
+      },
+      "CheepCheepBeach": {
+        "tourName": "CheepCheepBeach",
+        "tourPlatform": "ds",
+        "displayName": "Cheep Cheep Beach",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/DS/Cheep_Cheep_Beach.png"
+      },
+      "ShroomRidge": {
+        "tourName": "ShroomRidge",
+        "tourPlatform": "ds",
+        "displayName": "Shroom Ridge",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/DS/Shroom_Ridge.png"
+      },
+      "Figure-8Circuit": {
+        "tourName": "Figure-8Circuit",
+        "tourPlatform": "ds",
+        "displayName": "Figure-8 Circuit",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Figure-8_Circuit.png"
+      },
+      "Tick-TockClock": {
+        "tourName": "Tick-TockClock",
+        "tourPlatform": "ds",
+        "displayName": "Tick-Tock Clock",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/DS/Tick-Tock_Clock.png"
+      },
+      "KillerShip": {
+        "tourName": "KillerShip",
+        "tourPlatform": "ds",
+        "displayName": "Airship Fortress",
+        "displayPlatform": "DS",
+        "inTour": true,
+        "image": "/images/DS/Airship_Fortress.png"
+      },
+      "DKPass": {
+        "tourName": "DKPass",
+        "tourPlatform": "ds",
+        "displayName": "DK Pass",
+        "displayPlatform": "DS",
+        "inTour": true,
+        "image": "/images/DS/DK_Pass.png"
+      },
+      "YoshiFalls": {
+        "tourName": "YoshiFalls",
+        "tourPlatform": "ds",
+        "displayName": "Yoshi Falls",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Yoshi_Falls.png"
+      },
+      "BowserCastle": {
+        "tourName": "BowserCastle",
+        "tourPlatform": "ds",
+        "displayName": "Bowser Castle",
+        "displayPlatform": "DS",
+        "inTour": false,
+        "image": "/images/DS/Bowser_Castle.png"
+      },
+      "LuigiMansion": {
+        "tourName": "LuigiMansion",
+        "tourPlatform": "ds",
+        "displayName": "Luigi Mansion",
+        "displayPlatform": "DS",
+        "inTour": true,
+        "image": "/images/DS/Luigi_Mansion.png"
+      }
+    }
+  },
+  "Wii": {
+    "gameName": "Mario Kart Wii",
+    "gameNumber": 6,
+    "tourPrefix": "wii",
+    "displayPrefix": "Wii",
+    "courses": {
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "wii",
+        "displayName": "Mario Circuit",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Mario_Circuit.png"
+      },
+      "WarioGoldMine": {
+        "tourName": "WarioGoldMine",
+        "tourPlatform": "wii",
+        "displayName": "Wario's Gold Mine",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/Wii/Warios_Gold_Mine.png"
+      },
+      "DaisyCircuit": {
+        "tourName": "DaisyCircuit",
+        "tourPlatform": "wii",
+        "displayName": "Daisy Circuit",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Daisy_Circuit.png"
+      },
+      "MapleTreeway": {
+        "tourName": "MapleTreeway",
+        "tourPlatform": "wii",
+        "displayName": "Maple Treeway",
+        "displayPlatform": "Wii",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Wii/Maple_Treeway.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "wii",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Rainbow_Road.png"
+      },
+      "DKSummit": {
+        "tourName": "DKSummit",
+        "tourPlatform": "wii",
+        "displayName": "DK Summit",
+        "displayPlatform": "Wii",
+        "inTour": true,
+        "image": "/images/Wii/DK_Summit.png"
+      },
+      "MooMooMeadows": {
+        "tourName": "MooMooMeadows",
+        "tourPlatform": "wii",
+        "displayName": "Moo Moo Meadows",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/Wii/Moo_Moo_Meadows.png"
+      },
+      "ToadFactory": {
+        "tourName": "ToadFactory",
+        "tourPlatform": "wii",
+        "displayName": "Toad's Factory",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Toads_Factory.png"
+      },
+      "CoconutMall": {
+        "tourName": "CoconutMall",
+        "tourPlatform": "wii",
+        "displayName": "Coconut Mall",
+        "displayPlatform": "Wii",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Wii/Coconut_Mall.png"
+      },
+      "KoopaCape": {
+        "tourName": "KoopaCape",
+        "tourPlatform": "wii",
+        "displayName": "Koopa Cape",
+        "displayPlatform": "Wii",
+        "inTour": true,
+        "image": "/images/Wii/Koopa_Cape.png"
+      },
+      "MoonviewHighway": {
+        "tourName": "MoonviewHighway",
+        "tourPlatform": "wii",
+        "displayName": "Moonview Highway",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Moonview_Highway.png"
+      },
+      "BowserCastle": {
+        "tourName": "BowserCastle",
+        "tourPlatform": "wii",
+        "displayName": "Bowser's Castle",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Bowsers_Castle.jpg"
+      },
+      "GrumbleVolcano": {
+        "tourName": "GrumbleVolcano",
+        "tourPlatform": "wii",
+        "displayName": "Grumble Volcano",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/Wii/Grumble_Volcano.png"
+      },
+      "DryDryRuins": {
+        "tourName": "DryDryRuins",
+        "tourPlatform": "wii",
+        "displayName": "Dry Dry Ruins",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Dry_Dry_Ruins.png"
+      },
+      "LuigiCircuit": {
+        "tourName": "LuigiCircuit",
+        "tourPlatform": "wii",
+        "displayName": "Luigi Circuit",
+        "displayPlatform": "Wii",
+        "inTour": false,
+        "image": "/images/Wii/Luigi_Circuit.png"
+      },
+      "MushroomGorge": {
+        "tourName": "MushroomGorge",
+        "tourPlatform": "wii",
+        "displayName": "Mushroom Gorge",
+        "displayPlatform": "Wii",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Wii/Mushroom_Gorge.png"
+      }
+    }
+  },
+  "3DS": {
+    "gameName": "Mario Kart 7",
+    "gameNumber": 7,
+    "tourPrefix": "3ds",
+    "displayPrefix": "3DS",
+    "courses": {
+      "DaisyHills": {
+        "tourName": "DaisyHills",
+        "tourPlatform": "3ds",
+        "displayName": "Daisy Hills",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Daisy_Hills.png"
+      },
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "3ds",
+        "displayName": "Mario Circuit",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Mario_Circuit.png"
+      },
+      "WarioShip": {
+        "tourName": "WarioShip",
+        "tourPlatform": "3ds",
+        "displayName": "Wario Shipyard",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Wario_Shipyard.png"
+      },
+      "MakaWuhu": {
+        "tourName": "MakaWuhu",
+        "tourPlatform": "3ds",
+        "displayName": "Maka Wuhu",
+        "displayPlatform": "3DS",
+        "inTour": false,
+        "image": "/images/3DS/Maka_Wuhu.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "3ds",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/3DS/Rainbow_Road.png"
+      },
+      "NeoBowserCity": {
+        "tourName": "NeoBowserCity",
+        "tourPlatform": "3ds",
+        "displayName": "Neo Bowser City",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/3DS/Neo_Bowser_City.png"
+      },
+      "CheepCheepLagoon": {
+        "tourName": "CheepCheepLagoon",
+        "tourPlatform": "3ds",
+        "displayName": "Cheep Cheep Lagoon",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Cheep_Cheep_Lagoon.png"
+      },
+      "ShyGuyBazaar": {
+        "tourName": "ShyGuyBazaar",
+        "tourPlatform": "3ds",
+        "displayName": "Shy Guy Bazaar",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Shy_Guy_Bazaar.png"
+      },
+      "PackunSlider": {
+        "tourName": "PackunSlider",
+        "tourPlatform": "3ds",
+        "displayName": "Piranha Plant Slide",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/3DS/Piranha_Plant_Slide.png"
+      },
+      "DKJungle": {
+        "tourName": "DKJungle",
+        "tourPlatform": "3ds",
+        "displayName": "DK Jungle",
+        "displayPlatform": "3DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/3DS/DK_Jungle.png"
+      },
+      "ToadCircuit": {
+        "tourName": "ToadCircuit",
+        "tourPlatform": "3ds",
+        "displayName": "Toad Circuit",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/3DS/Toad_Circuit.png"
+      },
+      "RockRockMountain": {
+        "tourName": "RockRockMountain",
+        "tourPlatform": "3ds",
+        "displayName": "Rock Rock Mountain",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/3DS/Rock_Rock_Mountain.png"
+      },
+      "RosettaPlanet": {
+        "tourName": "RosettaPlanet",
+        "tourPlatform": "3ds",
+        "displayName": "Rosalina's Ice World",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Rosalinas_Ice_World.png"
+      },
+      "BowserCastle": {
+        "tourName": "BowserCastle",
+        "tourPlatform": "3ds",
+        "displayName": "Bowser's Castle",
+        "displayPlatform": "3DS",
+        "inTour": true,
+        "image": "/images/3DS/Bowsers_Castle.png"
+      },
+      "WuhuLoop": {
+        "tourName": "WuhuLoop",
+        "tourPlatform": "3ds",
+        "displayName": "Wuhu Loop",
+        "displayPlatform": "3DS",
+        "inTour": false,
+        "image": "/images/3DS/Wuhu_Loop.png"
+      },
+      "MusicPark": {
+        "tourName": "MusicPark",
+        "tourPlatform": "3ds",
+        "displayName": "Music Park",
+        "displayPlatform": "3DS",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/3DS/Music_Park.png"
+      }
+    }
+  },
+  "Wii U": {
+    "gameName": "Mario Kart 8",
+    "gameNumber": 8,
+    "tourPrefix": "u",
+    "displayPrefix": "Wii U",
+    "courses": {
+      "MarioKartStadium": {
+        "tourName": "MarioKartStadium",
+        "tourPlatform": "u",
+        "displayName": "Mario Kart Stadium",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Mario_Kart_Stadium.png"
+      },
+      "WaterPark": {
+        "tourName": "WaterPark",
+        "tourPlatform": "u",
+        "displayName": "Water Park",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Water_Park.png"
+      },
+      "MarioCircuit": {
+        "tourName": "MarioCircuit",
+        "tourPlatform": "u",
+        "displayName": "Mario Circuit",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Mario_Circuit.png"
+      },
+      "RainbowRoad": {
+        "tourName": "RainbowRoad",
+        "tourPlatform": "u",
+        "displayName": "Rainbow Road",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Rainbow_Road.png"
+      },
+      "IceIceOutpost": {
+        "tourName": "IceIceOutpost",
+        "tourPlatform": "u",
+        "displayName": "Ice Ice Outpost",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Ice_Ice_Outpost.png"
+      },
+      "ThwompRuins": {
+        "tourName": "ThwompRuins",
+        "tourPlatform": "u",
+        "displayName": "Thwomp Ruins",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Thwomp_Ruins.png"
+      },
+      "ShyGuyFalls": {
+        "tourName": "ShyGuyFalls",
+        "tourPlatform": "u",
+        "displayName": "Shy Guy Falls",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Shy_Guy_Falls.png"
+      },
+      "WildWoods": {
+        "tourName": "WildWoods",
+        "tourPlatform": "u",
+        "displayName": "Wild Woods",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Wild_Woods.png"
+      },
+      "BigBlue": {
+        "tourName": "BigBlue",
+        "tourPlatform": "u",
+        "displayName": "Big Blue",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Big_Blue.png"
+      },
+      "Electrodrome": {
+        "tourName": "Electrodrome",
+        "tourPlatform": "u",
+        "displayName": "Electrodrome",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Electrodrome.png"
+      },
+      "CloudtopCruise": {
+        "tourName": "CloudtopCruise",
+        "tourPlatform": "u",
+        "displayName": "Cloudtop Cruise",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Cloudtop_Cruise.png"
+      },
+      "AnimalCrossing": {
+        "tourName": "AnimalCrossing",
+        "tourPlatform": "u",
+        "displayName": "Animal Crossing",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Animal_Crossing.png"
+      },
+      "ToadHarbor": {
+        "tourName": "ToadHarbor",
+        "tourPlatform": "u",
+        "displayName": "Toad Harbor",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Toad_Harbor.png"
+      },
+      "DolphinShoals": {
+        "tourName": "DolphinShoals",
+        "tourPlatform": "u",
+        "displayName": "Dolphin Shoals",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Dolphin_Shoals.png"
+      },
+      "MountWario": {
+        "tourName": "MountWario",
+        "tourPlatform": "u",
+        "displayName": "Mount Wario",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Mount_Wario.png"
+      },
+      "BoneDryDunes": {
+        "tourName": "BoneDryDunes",
+        "tourPlatform": "u",
+        "displayName": "Bone Dry Dunes",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Bone_Dry_Dunes.png"
+      },
+      "BowserCastle": {
+        "tourName": "BowserCastle",
+        "tourPlatform": "u",
+        "displayName": "Bowser's Castle",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Bowsers_Castle.png"
+      },
+      "DragonDriftway": {
+        "tourName": "DragonDriftway",
+        "tourPlatform": "u",
+        "displayName": "Dragon Driftway",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Dragon_Driftway.png"
+      },
+      "SunshineAirport": {
+        "tourName": "SunshineAirport",
+        "tourPlatform": "u",
+        "displayName": "Sunshine Airport",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Sunshine_Airport.png"
+      },
+      "MuteCity": {
+        "tourName": "MuteCity",
+        "tourPlatform": "u",
+        "displayName": "Mute City",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Mute_City.png"
+      },
+      "SuperBellSubway": {
+        "tourName": "SuperBellSubway",
+        "tourPlatform": "u",
+        "displayName": "Super Bell Subway",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Super_Bell_Subway.png"
+      },
+      "SweetSweetCanyon": {
+        "tourName": "SweetSweetCanyon",
+        "tourPlatform": "u",
+        "displayName": "Sweet Sweet Canyon",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Sweet_Sweet_Canyon.png"
+      },
+      "TwistedMansion": {
+        "tourName": "TwistedMansion",
+        "tourPlatform": "u",
+        "displayName": "Twisted Mansion",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Twisted_Mansion.png"
+      },
+      "ExcitebikeArena": {
+        "tourName": "ExcitebikeArena",
+        "tourPlatform": "u",
+        "displayName": "Excitebike Arena",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Excitebike_Arena.png"
+      },
+      "HyruleCircuit": {
+        "tourName": "HyruleCircuit",
+        "tourPlatform": "u",
+        "displayName": "Hyrule Circuit",
+        "displayPlatform": "Wii U",
+        "inTour": false,
+        "in8DX": true,
+        "image": "/images/WiiU/Hyrule_Circuit.png"
+      }
+    }
+  },
+  "Tour": {
+    "gameName": "Mario Kart Tour",
+    "gameNumber": 9,
+    "tourPrefix": "mob",
+    "displayPrefix": "Tour",
+    "courses": {
+      "Paris1": {
+        "tourName": "Paris1",
+        "tourPlatform": "mob",
+        "displayName": "Paris Promenade",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Paris_Promenade.jpg"
+      },
+      "Paris2": {
+        "tourName": "Paris2",
+        "tourPlatform": "mob",
+        "displayName": "Paris Promenade 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Paris_Promenade.jpg"
+      },
+      "Paris3": {
+        "tourName": "Paris3",
+        "tourPlatform": "mob",
+        "displayName": "Paris Promenade 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Paris_Promenade.jpg"
+      },
+      "Vancouver1": {
+        "tourName": "Vancouver1",
+        "tourPlatform": "mob",
+        "displayName": "Vancouver Velocity",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Vancouver_Velocity.jpg"
+      },
+      "Vancouver2": {
+        "tourName": "Vancouver2",
+        "tourPlatform": "mob",
+        "displayName": "Vancouver Velocity 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Vancouver_Velocity.jpg"
+      },
+      "Vancouver3": {
+        "tourName": "Vancouver3",
+        "tourPlatform": "mob",
+        "displayName": "Vancouver Velocity 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Vancouver_Velocity.jpg"
+      },
+      "Bangkok1": {
+        "tourName": "Bangkok1",
+        "tourPlatform": "mob",
+        "displayName": "Bangkok Rush",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Bangkok_Rush.jpg"
+      },
+      "NewYork1": {
+        "tourName": "NewYork1",
+        "tourPlatform": "mob",
+        "displayName": "New York Minute",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/New_York_Minute.jpg"
+      },
+      "NewYork2": {
+        "tourName": "NewYork2",
+        "tourPlatform": "mob",
+        "displayName": "New York Minute 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/New_York_Minute.jpg"
+      },
+      "NewYork3": {
+        "tourName": "NewYork3",
+        "tourPlatform": "mob",
+        "displayName": "New York Minute 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/New_York_Minute.jpg"
+      },
+      "NewYork4": {
+        "tourName": "NewYork4",
+        "tourPlatform": "mob",
+        "displayName": "New York Minute 4",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/New_York_Minute.jpg"
+      },
+      "Berlin1": {
+        "tourName": "Berlin1",
+        "tourPlatform": "mob",
+        "displayName": "Berlin Byways",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Berlin_Byways.png"
+      },
+      "Berlin2": {
+        "tourName": "Berlin2",
+        "tourPlatform": "mob",
+        "displayName": "Berlin Byways 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Berlin_Byways.png"
+      },
+      "Berlin3": {
+        "tourName": "Berlin3",
+        "tourPlatform": "mob",
+        "displayName": "Berlin Byways 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Berlin_Byways.png"
+      },
+      "HillClimb": {
+        "tourName": "HillClimb",
+        "tourPlatform": "mob",
+        "displayName": "Merry Mountain",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Merry_Mountain.jpg"
+      },
+      "Singapore1": {
+        "tourName": "Singapore1",
+        "tourPlatform": "mob",
+        "displayName": "Singapore Speedway",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Singapore_Speedway.png"
+      },
+      "Singapore2": {
+        "tourName": "Singapore2",
+        "tourPlatform": "mob",
+        "displayName": "Singapore Speedway 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Singapore_Speedway.png"
+      },
+      "NinjaMansion": {
+        "tourName": "NinjaMansion",
+        "tourPlatform": "mob",
+        "displayName": "Ninja Hideaway",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Ninja_Hideaway.jpg"
+      },
+      "IceBuilding": {
+        "tourName": "IceBuilding",
+        "tourPlatform": "mob",
+        "displayName": "Sky-High Sundae",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Sky-High_Sundae.jpg"
+      },
+      "Amsterdam1": {
+        "tourName": "Amsterdam1",
+        "tourPlatform": "mob",
+        "displayName": "Amsterdam Drift",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Amsterdam_Drift.jpg"
+      },
+      "Amsterdam2": {
+        "tourName": "Amsterdam2",
+        "tourPlatform": "mob",
+        "displayName": "Amsterdam Drift 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Amsterdam_Drift.jpg"
+      },
+      "Tokyo1": {
+        "tourName": "Tokyo1",
+        "tourPlatform": "mob",
+        "displayName": "Tokyo Blur",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Tokyo_Blur.jpg"
+      },
+      "Tokyo2": {
+        "tourName": "Tokyo2",
+        "tourPlatform": "mob",
+        "displayName": "Tokyo Blur 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Tokyo_Blur.jpg"
+      },
+      "Tokyo3": {
+        "tourName": "Tokyo3",
+        "tourPlatform": "mob",
+        "displayName": "Tokyo Blur 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Tokyo_Blur.jpg"
+      },
+      "Tokyo4": {
+        "tourName": "Tokyo4",
+        "tourPlatform": "mob",
+        "displayName": "Tokyo Blur 4",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Tokyo_Blur.jpg"
+      },
+      "London1": {
+        "tourName": "London1",
+        "tourPlatform": "mob",
+        "displayName": "London Loop",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/London_Loop.jpg"
+      },
+      "London2": {
+        "tourName": "London2",
+        "tourPlatform": "mob",
+        "displayName": "London Loop 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/London_Loop.jpg"
+      },
+      "London3": {
+        "tourName": "London3",
+        "tourPlatform": "mob",
+        "displayName": "London Loop 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/London_Loop.jpg"
+      },
+      "LosAngeles1": {
+        "tourName": "LosAngeles1",
+        "tourPlatform": "mob",
+        "displayName": "Los Angeles Laps",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Los_Angeles_Laps.jpg"
+      },
+      "LosAngeles2": {
+        "tourName": "LosAngeles2",
+        "tourPlatform": "mob",
+        "displayName": "Los Angeles Laps 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Los_Angeles_Laps.jpg"
+      },
+      "LosAngeles3": {
+        "tourName": "LosAngeles3",
+        "tourPlatform": "mob",
+        "displayName": "Los Angeles Laps 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Los_Angeles_Laps.jpg"
+      },
+      "Sydney1": {
+        "tourName": "Sydney1",
+        "tourPlatform": "mob",
+        "displayName": "Sydney Sprint",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Sydney_Sprint.png"
+      },
+      "Sydney2": {
+        "tourName": "Sydney2",
+        "tourPlatform": "mob",
+        "displayName": "Sydney Sprint 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Sydney_Sprint.png"
+      },
+      "Sydney3": {
+        "tourName": "Sydney3",
+        "tourPlatform": "mob",
+        "displayName": "Sydney Sprint 3",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": true,
+        "image": "/images/Tour/Sydney_Sprint.png"
+      }
+    }
+  }
+}
