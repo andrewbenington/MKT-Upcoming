@@ -174,7 +174,7 @@
         "displayPlatform": "SNES",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/1/1a/SMK_Donut_Plains_3_Lower-Screen_Map.png",
-        "in8DX": false
+        "in8DX": true
       },
       "KoopaTroopaBeach2": {
         "tourName": "KoopaTroopaBeach2",

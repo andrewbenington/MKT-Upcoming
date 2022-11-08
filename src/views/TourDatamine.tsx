@@ -36,7 +36,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
         padding: 20,
         backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
         minHeight: "100vh",
-        width: "100%",
+        flex: 1,
       }}
     >
       {missingTracks.map((courseGap: MissingTrack) => {
@@ -159,7 +159,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
                 display: "flex",
                 alignItems: "flex-start",
                 flexDirection: isMobile ? "row" : "column",
-                padding: 15,
+                padding: isMobile ? "5px 15px 15px 15px" : 15,
               }}
             >
               {!isMobile && (
@@ -216,27 +216,36 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
                 />
               </div>
             </div>
-            <div
-              style={{
-                flexWrap: "wrap",
-                display: "flex",
-                flex: 1,
-                margin: 5,
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              {possibleCourses
-                .sort((a, b) => a.displayName.localeCompare(b.displayName))
-                .map((pCourse) => {
-                  return (
-                    <CourseIcon
-                      course={pCourse}
-                      height={104}
-                      key={`${afterCourse.tourName}-${pCourse.tourName}-${beforeCourse.tourName}`}
-                    />
-                  );
-                })}
+            <div style={{ flex: 1, height: "100%" }}>
+              <h3
+                style={{
+                  marginTop: 0,
+                  marginBottom: isMobile ? 15 : 5,
+                  marginLeft: 5,
+                  width: isMobile ? "auto" : "fit-content",
+                }}
+              >{`Possible Courses:`}</h3>
+              <div
+                style={{
+                  flexWrap: "wrap",
+                  display: "flex",
+                  flex: 1,
+                  margin: 5,
+                  justifyContent: isMobile ? "center" : "flex-start",
+                }}
+              >
+                {possibleCourses
+                  .sort((a, b) => a.displayName.localeCompare(b.displayName))
+                  .map((pCourse) => {
+                    return (
+                      <CourseIcon
+                        course={pCourse}
+                        height={104}
+                        key={`${afterCourse.tourName}-${pCourse.tourName}-${beforeCourse.tourName}`}
+                      />
+                    );
+                  })}
+              </div>
             </div>
           </Card>
         );
