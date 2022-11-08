@@ -1,12 +1,12 @@
 import { Card } from "@mui/material";
 import CourseIcon from "../components/CourseIcon";
-import course_data from "../data/course_data.json";
+import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 import { MissingTrack } from "../utils/fetchData";
 import { useState, useMemo, useEffect } from "react";
 import { formatPlatform } from "../utils/utils";
 import { Course, Game } from "../utils/types";
 
-const courseData = course_data as unknown as {
+const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
 };
 
