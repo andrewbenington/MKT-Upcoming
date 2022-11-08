@@ -1,7 +1,7 @@
 import { Card } from "@mui/material";
 import CourseIcon from "../components/CourseIcon";
 import course_data from "../data/course_data.json";
-import { fetchData, MissingTrack } from "../utils/fetchData";
+import { MissingTrack } from "../utils/fetchData";
 import { useState, useMemo, useEffect } from "react";
 import { formatPlatform } from "../utils/utils";
 import { Course, Game } from "../utils/types";
@@ -10,52 +10,19 @@ const courseData = course_data as unknown as {
   [platform: string]: Game;
 };
 
-const TourDatamine = () => {
-  const [missingTracks, setMissingTracks] = useState<MissingTrack[]>([]);
+const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
-
-  const cityNames: { [index: string]: string } = {
-    "New York": "Minute",
-    Paris: "Promenade",
-    Tokyo: "Blur",
-    Amsterdam: "Drift",
-    London: "Loop",
-    Singapore: "Speedway",
-    Bangkok: "Rush",
-    Vancouver: "Velocity",
-    "Los Angeles": "Laps",
-    Berlin: "Byways",
-    Sydney: "Sprint",
-  };
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
-
-  const getCourses = async () => {
-    let storedMissingTracks = localStorage.getItem("missing-tracks")
-    if (!storedMissingTracks) {
-      const courses = await fetchData();
-      if (courses) {
-        setMissingTracks(courses.missingTracks);
-        localStorage.setItem("missing-tracks", JSON.stringify(courses.missingTracks))
-      }
-    } else {
-      setMissingTracks(JSON.parse(storedMissingTracks))
-    }
-  };
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
-  }, []);
-
-  useEffect(() => {
-    console.log("getting courses")
-    getCourses();
   }, []);
 
   return (
@@ -173,8 +140,7 @@ const TourDatamine = () => {
               flexDirection: isMobile ? "column" : "row",
               justifyContent: "center",
               alignItems: "center",
-              backgroundImage:
-                "url(images/tires.jpg)",
+              backgroundImage: "url(images/tires.jpg)",
             }}
           >
             {isMobile && (
@@ -216,7 +182,11 @@ const TourDatamine = () => {
                 >
                   After:
                 </p>
-                <CourseIcon course={afterCourse} height={70} showIndicators={false} />
+                <CourseIcon
+                  course={afterCourse}
+                  height={70}
+                  showIndicators={false}
+                />
               </div>
               <div
                 style={{
@@ -236,7 +206,11 @@ const TourDatamine = () => {
                 >
                   Before:
                 </p>
-                <CourseIcon course={beforeCourse} height={70} showIndicators={false}/>
+                <CourseIcon
+                  course={beforeCourse}
+                  height={70}
+                  showIndicators={false}
+                />
               </div>
             </div>
             <div
@@ -252,7 +226,13 @@ const TourDatamine = () => {
               {possibleCourses
                 .sort((a, b) => a.displayName.localeCompare(b.displayName))
                 .map((pCourse) => {
-                  return <CourseIcon course={pCourse} height={104} key={`${afterCourse.tourName}-${pCourse.tourName}-${beforeCourse.tourName}`}/>;
+                  return (
+                    <CourseIcon
+                      course={pCourse}
+                      height={104}
+                      key={`${afterCourse.tourName}-${pCourse.tourName}-${beforeCourse.tourName}`}
+                    />
+                  );
                 })}
             </div>
           </Card>

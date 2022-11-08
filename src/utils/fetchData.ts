@@ -33,7 +33,6 @@ export const fetchData = async (): Promise<
           mIdList: { [index: string]: number };
           mKeyList: { [index: string]: string };
         }) => {
-          console.log(data)
           dataLists = data;
         }
       );
@@ -44,8 +43,6 @@ export const fetchData = async (): Promise<
       const pair: [number, string] = [dataLists.mIdList[key], dataLists.mKeyList[key]];
       return pair;
     });
-    console.log(keys)
-    console.log(pairs)
   let lastNum: number;
   let lastName: string;
   let lastPlatform: string;
@@ -58,7 +55,6 @@ export const fetchData = async (): Promise<
     const pair: [number, string] = [parseInt(splitLine[0]), splitLine[1]];
     return pair;
   });
-  console.log(pairs2)
   pairs.forEach((pair) => {
     const splitKey = pair[1].split(/_|R_sub|RX_sub|X_sub|_sub/);
     const platform = splitKey[1].substring(1);

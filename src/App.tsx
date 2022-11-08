@@ -10,13 +10,13 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
-  Typography
+  Typography,
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import AllCourses from "./views/AllCourses";
 import "./App.css";
 import EightDXIcon from "./components/EightDXIcon";
-import { fetchData } from "./utils/fetchData";
+import { fetchData, MissingTrack } from "./utils/fetchData";
 import TourDatamine from "./views/TourDatamine";
 import TourIcon from "./components/TourIcon";
 
@@ -26,15 +26,18 @@ function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
   const [page, setPage] = useState("Tour Datamine");
+  const [missingTracks, setMissingTracks] = useState<MissingTrack[]>([]);
   const isMobile = useMemo(() => width <= 768, [width]);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
 
-  const loadCourses = async () => {
+  const getCourses = async () => {
+    // let storedMissingTracks = localStorage.getItem("missing-tracks");
     const courses = await fetchData();
     if (courses) {
+      setMissingTracks(courses.missingTracks);
       localStorage.setItem(
         "missing-tracks",
         JSON.stringify(courses.missingTracks)
@@ -44,10 +47,12 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowSizeChange);
+    getCourses();
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
+
   return (
     <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
       {isMobile && (
@@ -68,7 +73,7 @@ function App() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1}} fontStyle={{fontFamily: '"Verdana", sans-serif', fontWeight: "bold" }}>
               {page}
             </Typography>
           </Toolbar>
@@ -111,7 +116,7 @@ function App() {
               </ListItemButton>
             </ListItem>
           ))}
-          <ListItem disablePadding>
+          {/* <ListItem disablePadding>
             <Button
               variant="contained"
               style={{
@@ -120,11 +125,11 @@ function App() {
                 margin: "auto",
                 marginTop: 10
               }}
-              onClick={() => loadCourses()}
+              onClick={getCourses}
             >
               Force Refresh
             </Button>
-          </ListItem>
+          </ListItem> */}
         </List>
         <div style={{ flex: 1 }}></div>
         <List>
@@ -174,7 +179,11 @@ function App() {
           )}
         </List>
       </Drawer>
-      {page === "Tour Datamine" ? <TourDatamine /> : <AllCourses />}
+      {page === "Tour Datamine" ? (
+        <TourDatamine missingTracks={missingTracks} />
+      ) : (
+        <AllCourses />
+      )}
     </Box>
   );
 }
