@@ -140,7 +140,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
               flexDirection: isMobile ? "column" : "row",
               justifyContent: "center",
               alignItems: "center",
-              backgroundImage: "url(images/tires.jpg)",
+              backgroundImage: "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
             }}
           >
             {isMobile && (

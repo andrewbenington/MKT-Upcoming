@@ -1,4 +1,4 @@
-import raw from "../data/course_list.txt";
+// import raw from "../data/course_list.txt";
 
 export interface Track {
   platform: string;
@@ -48,13 +48,13 @@ export const fetchData = async (): Promise<
   let lastPlatform: string;
   let tracks: Track[] = [];
   let missingTracks: MissingTrack[] = [];
-  let text = await fetch(raw).then((r) => r.text());
+  // let text = await fetch(raw).then((r) => r.text());
 
-  let pairs2 = text.split("\n").map((line) => {
-    const splitLine = line.split(" - ");
-    const pair: [number, string] = [parseInt(splitLine[0]), splitLine[1]];
-    return pair;
-  });
+  // let pairs2 = text.split("\n").map((line) => {
+  //   const splitLine = line.split(" - ");
+  //   const pair: [number, string] = [parseInt(splitLine[0]), splitLine[1]];
+  //   return pair;
+  // });
   pairs.forEach((pair) => {
     const splitKey = pair[1].split(/_|R_sub|RX_sub|X_sub|_sub/);
     const platform = splitKey[1].substring(1);

@@ -1,10 +1,10 @@
 import { Card } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import CourseIcon from "../components/CourseIcon";
-import course_data from "../data/course_data.json";
+import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 import { Game } from "../utils/types";
 
-const courseData = course_data as unknown as {
+const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
 };
 
@@ -35,52 +35,42 @@ const AllCourses = () => {
         backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
       }}
     >
-      {Object.entries(courseData).map(
-        ([platform, game]: [string, Game]) => {
-          return (
-            <Card
+      {Object.entries(courseData).map(([platform, game]: [string, Game]) => {
+        return (
+          <Card
+            style={{
+              margin: 20,
+              marginTop: 0,
+              padding: isMobile ? "5px 5px" : "10px 0px",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundImage: "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
+            }}
+          >
+            <h3 style={{ marginTop: 0, marginBottom: 5 }}>{game.gameName}</h3>
+
+            <div
               style={{
-                margin: 20,
-                marginTop: 0,
-                padding: isMobile ? "5px 5px" : "10px 0px",
-                width: "100%",
+                flexWrap: "wrap",
                 display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
+                flex: 1,
+                margin: 5,
                 alignItems: "center",
-                backgroundImage:
-                  "url(images/tires.jpg)",
+                justifyContent: "center",
               }}
             >
-              <h3 style={{ marginTop: 0, marginBottom: 5 }}>
-                {game.gameName}
-              </h3>
-
-              <div
-                style={{
-                  flexWrap: "wrap",
-                  display: "flex",
-                  flex: 1,
-                  margin: 5,
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {Object.values(game.courses)
-                  .sort((a, b) => a.displayName.localeCompare(b.displayName))
-                  .map((course) => {
-                    return (
-                      <CourseIcon
-                        course={course}
-                        height={104}
-                      />
-                    );
-                  })}
-              </div>
-            </Card>
-          );
-        }
-      )}
+              {Object.values(game.courses)
+                .sort((a, b) => a.displayName.localeCompare(b.displayName))
+                .map((course) => {
+                  return <CourseIcon course={course} height={104} />;
+                })}
+            </div>
+          </Card>
+        );
+      })}
     </div>
   );
 };

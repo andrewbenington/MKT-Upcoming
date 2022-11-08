@@ -2,7 +2,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
   Box,
-  Button,
   Drawer,
   IconButton,
   List,
@@ -13,12 +12,12 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
-import AllCourses from "./views/AllCourses";
 import "./App.css";
 import EightDXIcon from "./components/EightDXIcon";
-import { fetchData, MissingTrack } from "./utils/fetchData";
-import TourDatamine from "./views/TourDatamine";
 import TourIcon from "./components/TourIcon";
+import { fetchData, MissingTrack } from "./utils/fetchData";
+import AllCourses from "./views/AllCourses";
+import TourDatamine from "./views/TourDatamine";
 
 const drawerWidth = 240;
 
@@ -73,7 +72,15 @@ function App() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1}} fontStyle={{fontFamily: '"Verdana", sans-serif', fontWeight: "bold" }}>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1 }}
+              fontStyle={{
+                fontFamily: '"Verdana", sans-serif',
+                fontWeight: "bold",
+              }}
+            >
               {page}
             </Typography>
           </Toolbar>
