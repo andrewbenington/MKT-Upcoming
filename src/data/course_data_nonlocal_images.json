@@ -413,7 +413,7 @@
         "tourPlatform": "agb",
         "displayName": "Riverside Park",
         "displayPlatform": "GBA",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/9/94/Riverside_Park_MKSC_icon.png",
         "in8DX": false
       },
@@ -619,7 +619,7 @@
         "tourPlatform": "gc",
         "displayName": "DK Mountain",
         "displayPlatform": "GCN",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/e/e0/DKMountainIcon-MKDD.png/250px-DKMountainIcon-MKDD.png",
         "in8DX": false
       },
@@ -665,7 +665,7 @@
         "displayName": "Mushroom Bridge",
         "displayPlatform": "GCN",
         "inTour": false,
-        "in8DX": true,
+        "in8DX": false,
         "image": "https://mario.wiki.gallery/images/thumb/7/73/MushroomBridgeIcon-MKDD.png/250px-MushroomBridgeIcon-MKDD.png"
       },
       "MushroomCity": {
@@ -674,7 +674,7 @@
         "displayName": "Mushroom City",
         "displayPlatform": "GCN",
         "inTour": false,
-        "in8DX": true,
+        "in8DX": false,
         "image": "https://mario.wiki.gallery/images/thumb/c/cb/MushroomCityIcon-MKDD.png/250px-MushroomCityIcon-MKDD.png"
       }
     }
