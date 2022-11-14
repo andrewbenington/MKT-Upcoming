@@ -413,7 +413,7 @@
         "tourPlatform": "agb",
         "displayName": "Riverside Park",
         "displayPlatform": "GBA",
-        "inTour": true,
+        "inTour": false,
         "image": "https://mario.wiki.gallery/images/9/94/Riverside_Park_MKSC_icon.png",
         "in8DX": false
       },
@@ -619,7 +619,7 @@
         "tourPlatform": "gc",
         "displayName": "DK Mountain",
         "displayPlatform": "GCN",
-        "inTour": true,
+        "inTour": false,
         "image": "https://mario.wiki.gallery/images/thumb/e/e0/DKMountainIcon-MKDD.png/250px-DKMountainIcon-MKDD.png",
         "in8DX": false
       },
