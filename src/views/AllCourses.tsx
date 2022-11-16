@@ -8,7 +8,13 @@ const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
 };
 
-const AllCourses = () => {
+const AllCourses = ({
+  inTour,
+}: {
+  inTour: {
+    [platform: string]: string[];
+  };
+}) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
 
@@ -47,7 +53,8 @@ const AllCourses = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              backgroundImage: "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
+              backgroundImage:
+                "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
             }}
           >
             <h3 style={{ marginTop: 0, marginBottom: 5 }}>{game.gameName}</h3>
@@ -65,7 +72,17 @@ const AllCourses = () => {
               {Object.values(game.courses)
                 .sort((a, b) => a.displayName.localeCompare(b.displayName))
                 .map((course) => {
-                  return <CourseIcon course={course} height={104} />;
+                  return (
+                    <CourseIcon
+                      course={{
+                        ...course,
+                        inTour:
+                          course.inTour ||
+                          inTour[course.displayPlatform]?.includes(course.displayName),
+                      }}
+                      height={104}
+                    />
+                  );
                 })}
             </div>
           </Card>

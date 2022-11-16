@@ -23,7 +23,7 @@ const CourseIcon = ({
         position: "relative",
         margin: 5,
         borderRadius: (height / 104) * 8,
-        backgroundImage: `url(${course.image})`,
+        backgroundImage: `url(${course?.image})`,
         backgroundPosition: "bottom",
         backgroundSize: "cover",
         imageRendering: "crisp-edges",
@@ -77,7 +77,7 @@ const CourseIcon = ({
             textAlign: "center",
           }}
         >
-          {course.displayPlatform}
+          {course?.displayPlatform ?? "???"}
         </p>
       </div>
       <div
@@ -91,7 +91,7 @@ const CourseIcon = ({
             fontFamily: "'Verdana', sans-serif",
             fontSize: (height / 104) * 13,
             textShadow: ".5px .5px #3333",
-            fontWeight: existingAssets.includes(
+            fontWeight: course && existingAssets.includes(
               course.displayPlatform + course.tourName
             )
               ? "bold"
@@ -99,10 +99,10 @@ const CourseIcon = ({
             margin: 0,
           }}
         >
-          {course.displayName}
+          {course?.displayName ?? "???"}
         </p>
       </div>
-      {course.in8DX && showIndicators && (
+      {course?.in8DX && showIndicators && (
         <div
           style={{
             position: "absolute",
@@ -113,7 +113,7 @@ const CourseIcon = ({
           <EightDXIcon height={(height / 104) * 18} />
         </div>
       )}
-      {course.inTour && showIndicators && (
+      {course?.inTour && showIndicators && (
         <div
           style={{
             position: "absolute",

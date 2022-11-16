@@ -16,17 +16,38 @@ import "./App.css";
 import EightDXIcon from "./components/EightDXIcon";
 import TourIcon from "./components/TourIcon";
 import { fetchData, MissingTrack } from "./utils/fetchData";
+import { formatPlatform } from "./utils/utils";
 import AllCourses from "./views/AllCourses";
 import TourDatamine from "./views/TourDatamine";
+import course_data_nonlocal_images from "./data/course_data_nonlocal_images.json";
+import { Game } from "./utils/types";
 
+const courseData = course_data_nonlocal_images as unknown as {
+  [platform: string]: Game;
+};
 const drawerWidth = 240;
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
-  const [page, setPage] = useState(localStorage.getItem("stored-page") ?? "Tour Datamine");
+  const [page, setPage] = useState(
+    localStorage.getItem("stored-page") ?? "Tour Datamine"
+  );
   const [missingTracks, setMissingTracks] = useState<MissingTrack[]>([]);
   const isMobile = useMemo(() => width <= 768, [width]);
+  const [inTourMap, setInTourMap] = useState<{
+    [platform: string]: string[];
+  }>({
+    SNES: [],
+    N64: [],
+    GBA: [],
+    GCN: [],
+    DS: [],
+    Wii: [],
+    "3DS": [],
+    "Wii U": [],
+    Tour: [],
+  });
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -36,6 +57,29 @@ function App() {
     // let storedMissingTracks = localStorage.getItem("missing-tracks");
     const courses = await fetchData();
     if (courses) {
+      let coursesToAdd: {
+        [platform: string]: string[];
+      } = {
+        SNES: [],
+        N64: [],
+        GBA: [],
+        GCN: [],
+        DS: [],
+        Wii: [],
+        "3DS": [],
+        "Wii U": [],
+        Tour: [],
+      }
+      courses.tracks.forEach((track) => {
+        let platform = formatPlatform(track.platform);
+        if (platform in courseData) {
+          let fullCourse = courseData[platform].courses[track.name];
+          if (fullCourse) {
+            coursesToAdd[fullCourse.displayPlatform].push(fullCourse.displayName)
+          }
+        }
+      });
+      setInTourMap(coursesToAdd)
       setMissingTracks(courses.missingTracks);
       localStorage.setItem(
         "missing-tracks",
@@ -194,7 +238,7 @@ function App() {
       {page === "Tour Datamine" ? (
         <TourDatamine missingTracks={missingTracks} />
       ) : (
-        <AllCourses />
+        <AllCourses inTour={inTourMap} />
       )}
     </Box>
   );

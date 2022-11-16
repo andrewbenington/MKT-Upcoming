@@ -10,7 +10,7 @@ const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
 };
 
-const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
+const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
 
@@ -49,7 +49,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
             courseGap.after.name
           ];
         let possibleCourses: Course[] = [];
-        if (beforeCourse.tourPlatform !== "mob") {
+        if (beforeCourse && beforeCourse.tourPlatform !== "mob") {
           if (beforeCourse.tourPlatform === afterCourse.tourPlatform) {
             Object.values(
               courseData[beforeCourse.displayPlatform].courses
@@ -84,7 +84,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
               }
             });
           }
-        } else {
+        } else if (afterCourse) {
           if (afterCourse.tourName.endsWith("1")) {
             possibleCourses.push({
               tourPlatform: "mob",
@@ -186,7 +186,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
                   After:
                 </p>
                 <CourseIcon
-                  course={afterCourse}
+                  course={afterCourse ?? { name: courseGap.after }}
                   height={70}
                   showIndicators={false}
                 />
@@ -210,7 +210,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
                   Before:
                 </p>
                 <CourseIcon
-                  course={beforeCourse}
+                  course={beforeCourse ?? { displayName: courseGap.before.name,  }}
                   height={70}
                   showIndicators={false}
                 />
