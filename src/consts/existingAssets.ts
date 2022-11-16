@@ -8,5 +8,13 @@ const existingAssets = [
   "GCNMushroomBridge",
   "GCNMushroomCity",
   "GCNWaluigiStadium",
+  "TourAT",
+  "TourBR",
+  "TourDK",
+  "TourMA",
+  "TourMU",
+  "TourNU",
+  "TourOR",
+  "TourYI",
 ];
 export default existingAssets;

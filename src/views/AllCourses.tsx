@@ -71,6 +71,7 @@ const AllCourses = ({
             >
               {Object.values(game.courses)
                 .sort((a, b) => a.displayName.localeCompare(b.displayName))
+                .filter((course) => !course.hypothetical)
                 .map((course) => {
                   return (
                     <CourseIcon
@@ -78,7 +79,9 @@ const AllCourses = ({
                         ...course,
                         inTour:
                           course.inTour ||
-                          inTour[course.displayPlatform]?.includes(course.displayName),
+                          inTour[course.displayPlatform]?.includes(
+                            course.displayName
+                          ),
                       }}
                       height={104}
                     />

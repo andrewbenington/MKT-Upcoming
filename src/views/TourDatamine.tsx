@@ -49,7 +49,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
             courseGap.after.name
           ];
         let possibleCourses: Course[] = [];
-        if (beforeCourse && beforeCourse.tourPlatform !== "mob") {
+        if (beforeCourse) {
           if (beforeCourse.tourPlatform === afterCourse.tourPlatform) {
             Object.values(
               courseData[beforeCourse.displayPlatform].courses

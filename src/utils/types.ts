@@ -14,4 +14,5 @@ export interface Course {
   inTour: boolean;
   in8DX?: boolean;
   image: string;
+  hypothetical?: boolean;
 }

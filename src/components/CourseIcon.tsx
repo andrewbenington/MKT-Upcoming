@@ -17,6 +17,7 @@ const CourseIcon = ({
   showIndicators = true,
   showDataminedAssets = true,
 }: CourseIconProps) => {
+
   return (
     <Card
       style={{
