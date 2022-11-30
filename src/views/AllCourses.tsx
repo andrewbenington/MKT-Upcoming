@@ -17,7 +17,7 @@ const AllCourses = ({
 }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
-  const [modalCourse, setModalCourse] = useState<Course>();
+  // const [modalCourse, setModalCourse] = useState<Course>();
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
