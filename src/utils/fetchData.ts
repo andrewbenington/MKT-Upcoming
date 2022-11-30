@@ -14,7 +14,7 @@ export interface MissingTrack {
   battle: boolean;
 }
 
-const local = true
+const local = false
 
 export const fetchData = async (): Promise<
   { tracks: Track[]; missingTracks: MissingTrack[]; arenas: Track[] } | undefined
