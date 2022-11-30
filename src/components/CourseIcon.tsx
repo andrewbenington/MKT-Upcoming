@@ -1,10 +1,10 @@
-import { Box, Card, Modal, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { Box, Card, Modal } from "@mui/material";
+import { useState } from "react";
 import existingAssets from "../consts/existingAssets";
+import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 import { Course, Game } from "../utils/types";
 import EightDXIcon from "./EightDXIcon";
 import TourIcon from "./TourIcon";
-import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 
 interface CourseIconProps {
   course: Course;
@@ -21,8 +21,8 @@ const CourseIcon = ({
   course,
   height,
   showIndicators = true,
-  battle = false,
-}: CourseIconProps) => {
+}: // battle = false,
+CourseIconProps) => {
   let [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
@@ -155,9 +155,11 @@ const CourseIcon = ({
           }}
         >
           <h3>{course.displayName}</h3>
-          <img src={course?.image} />
+          <img src={course?.image} alt={course?.displayName}/>
           <h4>Original Game</h4>
-          <p>{`${courseData[course.displayPlatform].gameName} (${courseData[course.displayPlatform].year})`}</p>
+          <p>{`${courseData[course.displayPlatform].gameName} (${
+            courseData[course.displayPlatform].year
+          })`}</p>
         </Box>
       </Modal>
     </>
