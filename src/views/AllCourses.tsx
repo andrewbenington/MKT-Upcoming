@@ -42,22 +42,6 @@ const AllCourses = ({
         backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
       }}
     >
-      <Card
-        style={{
-          margin: 20,
-          marginTop: 0,
-          padding: isMobile ? "5px 5px" : "10px 0px",
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundImage:
-            "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
-        }}
-      >
-        <h2 style={{ marginTop: 0, marginBottom: 5 }}>Race Courses</h2>
-      </Card>
       {Object.entries(courseData).map(([platform, game]: [string, Game]) => {
         return (
           <Card
