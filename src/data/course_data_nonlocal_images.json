@@ -914,8 +914,8 @@
         "image": "https://mario.wiki.gallery/images/0/03/DelfinosquareDS.png",
         "in8DX": false
       },
-      "PeachGardens": {
-        "tourName": "PeachGardens",
+      "PeachGarden": {
+        "tourName": "PeachGarden",
         "tourPlatform": "ds",
         "displayName": "Peach Gardens",
         "displayPlatform": "DS",
