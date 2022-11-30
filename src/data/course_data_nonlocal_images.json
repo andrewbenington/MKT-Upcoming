@@ -4,6 +4,7 @@
     "gameNumber": 1,
     "tourPrefix": "sfc",
     "displayPrefix": "SNES",
+    "year": 1992,
     "courses": {
       "MarioCircuit1": {
         "tourName": "MarioCircuit1",
@@ -185,6 +186,44 @@
         "in8DX": false,
         "image": "https://mario.wiki.gallery/images/8/89/SMK_Koopa_Beach_2_Lower-Screen_Map.png"
       }
+    },
+    "battleCourses": {
+      "BattleCourse1": {
+        "displayName": "Battle Course 1",
+        "tourPlatform": "sfc",
+        "displayPlatform": "SNES",
+        "tourName": "BattleCourse1",
+        "image": "https://mario.wiki.gallery/images/9/9e/SMK_Battle_Course_1_Lower-Screen_Map.png",
+        "in8DX": true,
+        "inTour": false
+      },
+      "BattleCourse2": {
+        "displayName": "Battle Course 2",
+        "tourPlatform": "sfc",
+        "displayPlatform": "SNES",
+        "tourName": "BattleCourse2",
+        "image": "https://mario.wiki.gallery/images/e/e4/SMK_Battle_Course_2_Lower-Screen_Map.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "BattleCourse3": {
+        "displayName": "Battle Course 3",
+        "tourPlatform": "sfc",
+        "displayPlatform": "SNES",
+        "tourName": "BattleCourse3",
+        "image": "https://mario.wiki.gallery/images/f/f2/SMK_Battle_Course_3_Lower-Screen_Map.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "BattleCourse4": {
+        "displayName": "Battle Course 4",
+        "tourPlatform": "sfc",
+        "displayPlatform": "SNES",
+        "tourName": "BattleCourse4",
+        "image": "https://mario.wiki.gallery/images/8/87/SMK_Battle_Course_4_Lower-Screen_Map.png",
+        "in8DX": false,
+        "inTour": false
+      }
     }
   },
   "N64": {
@@ -192,6 +231,7 @@
     "gameNumber": 2,
     "tourPrefix": "n64",
     "displayPrefix": "N64",
+    "year": 1996,
     "courses": {
       "KalimariDesert": {
         "tourName": "KalimariDesert",
@@ -337,6 +377,44 @@
         "image": "https://mario.wiki.gallery/images/c/c9/MK64_Luigi_Raceway_Icon.png",
         "in8DX": false
       }
+    },
+    "battleCourses": {
+      "BigDonut": {
+        "displayName": "Big Donut",
+        "tourPlatform": "n64",
+        "displayPlatform": "N64",
+        "tourName": "BigDonut",
+        "image": "https://mario.wiki.gallery/images/e/e3/MK64_Big_Donut_Icon.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "DoubleDeck": {
+        "displayName": "Double Deck",
+        "tourPlatform": "n64",
+        "displayPlatform": "N64",
+        "tourName": "DoubleDeck",
+        "image": "https://mario.wiki.gallery/images/0/0e/MK64_Double_Deck_Icon.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "BlockFort": {
+        "displayName": "Block Fort",
+        "tourPlatform": "n64",
+        "displayPlatform": "N64",
+        "tourName": "BlockFort",
+        "image": "https://mario.wiki.gallery/images/0/00/MK64_Block_Fort_Icon.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "Skyscraper": {
+        "displayName": "Skyscraper",
+        "tourPlatform": "n64",
+        "displayPlatform": "N64",
+        "tourName": "Skyscraper",
+        "image": "https://mario.wiki.gallery/images/e/e9/MK64_Skyscraper_Icon.png",
+        "in8DX": false,
+        "inTour": false
+      }
     }
   },
   "GBA": {
@@ -344,6 +422,7 @@
     "gameNumber": 3,
     "tourPrefix": "agb",
     "displayPrefix": "GBA",
+    "year": 2001,
     "courses": {
       "MarioCircuit": {
         "tourName": "MarioCircuit",
@@ -525,6 +604,44 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/9/9a/Sunset_Wilds_MKSC_icon.png"
       }
+    },
+    "battleCourses": {
+      "BattleCourse1": {
+        "displayName": "Battle Course 1",
+        "tourPlatform": "agb",
+        "displayPlatform": "GBA",
+        "tourName": "BattleCourse1",
+        "image": "https://mario.wiki.gallery/images/e/e1/MKSC_Battle_Course_1_icon.png",
+        "in8DX": false,
+        "inTour": true
+      },
+      "BattleCourse2": {
+        "displayName": "Battle Course 2",
+        "tourPlatform": "agb",
+        "displayPlatform": "GBA",
+        "tourName": "BattleCourse2",
+        "image": "https://mario.wiki.gallery/images/1/11/MKSC_Battle_Course_2_icon.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "BattleCourse3": {
+        "displayName": "Battle Course 3",
+        "tourPlatform": "agb",
+        "displayPlatform": "GBA",
+        "tourName": "BattleCourse3",
+        "image": "https://mario.wiki.gallery/images/f/f1/MKSC_Battle_Course_3_icon.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "BattleCourse4": {
+        "displayName": "Battle Course 4",
+        "tourPlatform": "agb",
+        "displayPlatform": "GBA",
+        "tourName": "BattleCourse4",
+        "image": "https://mario.wiki.gallery/images/4/42/MKSC_Battle_Course_4_icon.png",
+        "in8DX": false,
+        "inTour": false
+      }
     }
   },
   "GCN": {
@@ -532,6 +649,7 @@
     "gameNumber": 4,
     "tourPrefix": "gc",
     "displayPrefix": "GCN",
+    "year": 2003,
     "courses": {
       "BabyPark": {
         "tourName": "BabyPark",
@@ -677,6 +795,62 @@
         "in8DX": false,
         "image": "https://mario.wiki.gallery/images/thumb/c/cb/MushroomCityIcon-MKDD.png/250px-MushroomCityIcon-MKDD.png"
       }
+    },
+    "battleCourses": {
+      "NintendoGameCube": {
+        "displayName": "Nintendo GameCube",
+        "tourPlatform": "gc",
+        "displayPlatform": "GCN",
+        "tourName": "NintendoGameCube",
+        "image": "https://mario.wiki.gallery/images/b/b6/NintendoGameCubeIcon-MKDD.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "BlockCity": {
+        "displayName": "Block City",
+        "tourPlatform": "gc",
+        "displayPlatform": "GCN",
+        "tourName": "BlockCity",
+        "image": "https://mario.wiki.gallery/images/thumb/1/11/MKDD_Block_City.png/240px-MKDD_Block_City.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "CookieLand": {
+        "displayName": "Cookie Land",
+        "tourPlatform": "gc",
+        "displayPlatform": "GCN",
+        "tourName": "CookieLand",
+        "image": "https://mario.wiki.gallery/images/f/f4/CookieLandIcon-MKDD.png",
+        "in8DX": false,
+        "inTour": true
+      },
+      "PipePlaza": {
+        "displayName": "Pipe Plaza",
+        "tourPlatform": "gc",
+        "displayPlatform": "GCN",
+        "tourName": "PipePlaza",
+        "image": "https://mario.wiki.gallery/images/6/68/PipePlazaIcon-MKDD.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "LuigiMansion": {
+        "displayName": "Luigi's Mansion",
+        "tourPlatform": "gc",
+        "displayPlatform": "GCN",
+        "tourName": "LuigiMansion",
+        "image": "https://mario.wiki.gallery/images/1/10/LuigiMansionIcon-MKDD.png",
+        "in8DX": true,
+        "inTour": false
+      },
+      "TiltaKart": {
+        "displayName": "Tilt-a-Kart",
+        "tourPlatform": "gc",
+        "displayPlatform": "GCN",
+        "tourName": "TiltaKart",
+        "image": "https://mario.wiki.gallery/images/thumb/e/e0/Tilt-a-KartIcon-MKDD.png/150px-Tilt-a-KartIcon-MKDD.png",
+        "in8DX": false,
+        "inTour": false
+      }
     }
   },
   "DS": {
@@ -684,6 +858,7 @@
     "gameNumber": 5,
     "tourPrefix": "ds",
     "displayPrefix": "DS",
+    "year": 2005,
     "courses": {
       "WaluigiPinball": {
         "tourName": "WaluigiPinball",
@@ -829,6 +1004,44 @@
         "image": "https://mario.wiki.gallery/images/6/67/MKDS_Luigi%27s_Mansion_Intro.png",
         "in8DX": false
       }
+    },
+    "battleCourses": {
+      "NintendoDS": {
+        "displayName": "Nintendo DS",
+        "tourPlatform": "ds",
+        "displayPlatform": "DS",
+        "tourName": "NintendoDS",
+        "image": "https://mario.wiki.gallery/images/6/62/Nintendo_DS_MKDS_battle_stage.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "TwilightHouse": {
+        "displayName": "Twilight House",
+        "tourPlatform": "ds",
+        "displayPlatform": "DS",
+        "tourName": "TwilightHouse",
+        "image": "https://mario.wiki.gallery/images/thumb/b/bf/Twilight_House_MKDS_preview.png/200px-Twilight_House_MKDS_preview.png",
+        "in8DX": false,
+        "inTour": true
+      },
+      "TartTop": {
+        "displayName": "Tart Top",
+        "tourPlatform": "ds",
+        "displayPlatform": "DS",
+        "tourName": "TartTop",
+        "image": "https://mario.wiki.gallery/images/d/d3/Tart_Top_MKDS_preview.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "PalmShore": {
+        "displayName": "Palm Shore",
+        "tourPlatform": "ds",
+        "displayPlatform": "DS",
+        "tourName": "PalmShore",
+        "image": "https://mario.wiki.gallery/images/2/27/MKDS_Palm_Shore.png",
+        "in8DX": false,
+        "inTour": false
+      }
     }
   },
   "Wii": {
@@ -836,6 +1049,7 @@
     "gameNumber": 6,
     "tourPrefix": "wii",
     "displayPrefix": "Wii",
+    "year": 2008,
     "courses": {
       "MarioCircuit": {
         "tourName": "MarioCircuit",
@@ -981,6 +1195,62 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/8/84/Mushroom_Gorge_MKWii.png/300px-Mushroom_Gorge_MKWii.png"
       }
+    },
+    "battleCourses": {
+      "BlockPlaza": {
+        "displayName": "Block Plaza",
+        "tourPlatform": "wii",
+        "displayPlatform": "Wii",
+        "tourName": "BlockPlaza",
+        "image": "https://mario.wiki.gallery/images/thumb/2/25/BlockPlaza-BalloonBattle-MKWii.png/200px-BlockPlaza-BalloonBattle-MKWii.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "DelfinoPier": {
+        "displayName": "Delfino Pier",
+        "tourPlatform": "wii",
+        "displayPlatform": "Wii",
+        "tourName": "DelfinoPier",
+        "image": "https://mario.wiki.gallery/images/thumb/4/41/DelfinoPier-CoinRunners-MKWii.png/200px-DelfinoPier-CoinRunners-MKWii.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "FunkyStadium": {
+        "displayName": "Funky Stadium",
+        "tourPlatform": "wii",
+        "displayPlatform": "Wii",
+        "tourName": "FunkyStadium",
+        "image": "https://mario.wiki.gallery/images/thumb/b/b9/MKW_Funky_Stadium_Overview.png/240px-MKW_Funky_Stadium_Overview.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "ChainChompRoulette": {
+        "displayName": "Chain Chomp Roulette",
+        "tourPlatform": "wii",
+        "displayPlatform": "Wii",
+        "tourName": "ChainChompRoulette",
+        "image": "https://mario.wiki.gallery/images/thumb/d/d3/Chain_Chomp_Roulette.png/240px-Chain_Chomp_Roulette.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "ThwompDesert": {
+        "displayName": "Thwomp Desert",
+        "tourPlatform": "wii",
+        "displayPlatform": "Wii",
+        "tourName": "ThwompDesert",
+        "image": "https://mario.wiki.gallery/images/thumb/9/9a/Thwomp_Desert.png/240px-Thwomp_Desert.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "GalaxyColosseum": {
+        "displayName": "Galaxy Colosseum",
+        "tourPlatform": "wii",
+        "displayPlatform": "Wii",
+        "tourName": "GalaxyColosseum",
+        "image": "https://mario.wiki.gallery/images/thumb/b/bd/Topman_MKWii.jpg/250px-Topman_MKWii.jpg",
+        "in8DX": false,
+        "inTour": false
+      }
     }
   },
   "3DS": {
@@ -988,6 +1258,7 @@
     "gameNumber": 7,
     "tourPrefix": "3ds",
     "displayPrefix": "3DS",
+    "year": 2011,
     "courses": {
       "DaisyHills": {
         "tourName": "DaisyHills",
@@ -1133,6 +1404,35 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/2/23/MusicPark.png/300px-MusicPark.png"
       }
+    },
+    "battleCourses": {
+      "HoneybeeHouse": {
+        "displayName": "Honeybee House",
+        "tourPlatform": "3ds",
+        "displayPlatform": "3DS",
+        "tourName": "HoneybeeHouse",
+        "image": "https://mario.wiki.gallery/images/thumb/4/4a/Honey_Bee_House.png/240px-Honey_Bee_House.png",
+        "in8DX": false,
+        "inTour": false
+      },
+      "SherbetRink": {
+        "displayName": "Sherbet Rink",
+        "tourPlatform": "3ds",
+        "displayPlatform": "3DS",
+        "tourName": "SherbetRink",
+        "image": "https://mario.wiki.gallery/images/thumb/f/f5/SherbetRink1.jpg/240px-SherbetRink1.jpg",
+        "in8DX": false,
+        "inTour": false
+      },
+      "WuhuTown": {
+        "displayName": "Wuhu Town",
+        "tourPlatform": "3ds",
+        "displayPlatform": "3DS",
+        "tourName": "WuhuTown",
+        "image": "https://mario.wiki.gallery/images/8/84/WuhuTownOverview.jpg",
+        "in8DX": true,
+        "inTour": false
+      }
     }
   },
   "Wii U": {
@@ -1140,6 +1440,7 @@
     "gameNumber": 8,
     "tourPrefix": "u",
     "displayPrefix": "Wii U",
+    "year": 2014,
     "courses": {
       "MarioKartStadium": {
         "tourName": "MarioKartStadium",
@@ -1368,11 +1669,66 @@
       }
     }
   },
+  "NSW": {
+    "gameName": "Mario Kart 8 Deluxe",
+    "gameNumber": 8,
+    "tourPrefix": "nsw",
+    "displayPrefix": "Switch",
+    "year": 2017,
+    "battleCourses": {
+      "BattleStadium": {
+        "displayName": "Battle Stadium",
+        "tourPlatform": "nsw",
+        "displayPlatform": "NSW",
+        "tourName": "BattleStadium",
+        "image": "https://mario.wiki.gallery/images/thumb/9/9c/MK8D-BattleStadium.jpg/270px-MK8D-BattleStadium.jpg",
+        "in8DX": true,
+        "inTour": false
+      },
+      "SweetSweetKingdom": {
+        "displayName": "Sweet Sweet Kingdom",
+        "tourPlatform": "nsw",
+        "displayPlatform": "NSW",
+        "tourName": "SweetSweetKingdom",
+        "image": "https://mario.wiki.gallery/images/thumb/e/e1/MK8D-SweetSweetKingdom.jpg/270px-MK8D-SweetSweetKingdom.jpg",
+        "in8DX": true,
+        "inTour": false
+      },
+      "DragonPalace": {
+        "displayName": "Dragon Palace",
+        "tourPlatform": "nsw",
+        "displayPlatform": "NSW",
+        "tourName": "DragonPalace",
+        "image": "https://mario.wiki.gallery/images/thumb/f/fa/MK8D-DragonPalace.jpg/270px-MK8D-DragonPalace.jpg",
+        "in8DX": true,
+        "inTour": false
+      },
+      "LunarColony": {
+        "displayName": "Lunar Colony",
+        "tourPlatform": "nsw",
+        "displayPlatform": "NSW",
+        "tourName": "LunarColony",
+        "image": "https://mario.wiki.gallery/images/thumb/b/b4/MK8D-LunarColony.jpg/270px-MK8D-LunarColony.jpg",
+        "in8DX": true,
+        "inTour": false
+      },
+      "UrchinUnderpass": {
+        "displayName": "Urchin Underpass",
+        "tourPlatform": "nsw",
+        "displayPlatform": "NSW",
+        "tourName": "UrchinUnderpass",
+        "image": "https://mario.wiki.gallery/images/thumb/8/82/MK8D-UrchinUnderpass.jpg/270px-MK8D-UrchinUnderpass.jpg",
+        "in8DX": true,
+        "inTour": false
+      }
+    }
+  },
   "Tour": {
     "gameName": "Mario Kart Tour",
     "gameNumber": 9,
     "tourPrefix": "mob",
     "displayPrefix": "Tour",
+    "year": 2019,
     "courses": {
       "Paris1": {
         "tourName": "Paris1",
@@ -1468,7 +1824,7 @@
         "image": "https://mario.wiki.gallery/images/thumb/6/68/MKT_Bangkok_Rush_Scene.jpg/300px-MKT_Bangkok_Rush_Scene.jpg"
       },
       "Bangkok3": {
-        "tourName": "Bangkok2",
+        "tourName": "Bangkok3",
         "tourPlatform": "mob",
         "displayName": "Bangkok Rush 3",
         "displayPlatform": "Tour",
@@ -1860,7 +2216,6 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-
       "AT": {
         "tourName": "AT",
         "tourPlatform": "mob",
@@ -1890,6 +2245,17 @@
         "in8DX": false,
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+      }
+    },
+    "battleCourses": {
+      "NewYork1": {
+        "displayName": "New York Minute B",
+        "tourPlatform": "mob",
+        "displayPlatform": "Tour",
+        "tourName": "NewYork1",
+        "image": "https://mario.wiki.gallery/images/thumb/3/3a/MKT_New_York_Minute_Scene_1.jpg/540px-MKT_New_York_Minute_Scene_1.jpg",
+        "in8DX": false,
+        "inTour": true
       }
     }
   }

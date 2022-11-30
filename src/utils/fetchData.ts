@@ -4,18 +4,20 @@ export interface Track {
   platform: string;
   name: string;
   breadth: number;
+  battle: boolean;
 }
 
 export interface MissingTrack {
   gap: number;
   after: Track;
   before: Track;
+  battle: boolean;
 }
 
-const local = false
+const local = true
 
 export const fetchData = async (): Promise<
-  { tracks: Track[]; missingTracks: MissingTrack[] } | undefined
+  { tracks: Track[]; missingTracks: MissingTrack[]; arenas: Track[] } | undefined
 > => {
   let pairs: [number, string][] = []
   if (!local) {
@@ -65,6 +67,7 @@ export const fetchData = async (): Promise<
   let lastNum: number;
   let lastName: string;
   let lastPlatform: string;
+  let lastIsBattle: boolean;
   let tracks: Track[] = [];
   let missingTracks: MissingTrack[] = [];
   pairs.forEach((pair) => {
@@ -83,29 +86,36 @@ export const fetchData = async (): Promise<
           breadth: pair[0] - lastNum,
           platform,
           name: splitKey[2],
+          battle: splitKey[0] === "Battle"
         });
+        lastIsBattle = splitKey[0] === "Battle"
         lastNum = pair[0];
       } else if (!pair[1].includes(lastName)) {
-        if (pair[0] - lastNum > 1) {
+        if (pair[0] - lastNum > 1 && (splitKey[0] === "Battle") === lastIsBattle) {
           missingTracks.push({
             before: {
               name: splitKey[2],
               platform,
               breadth: -1,
+              battle: splitKey[0] === "Battle",
             },
             after: {
               name: lastName,
               platform: lastPlatform,
               breadth: -1,
+              battle: lastIsBattle,
             },
             gap: pair[0] - lastNum - 1,
+            battle: lastIsBattle
           });
         }
         lastNum = pair[0];
         lastName = splitKey[2];
         lastPlatform = platform;
+        lastIsBattle = splitKey[0] === "Battle"
+
       }
     }
   });
-  return { tracks, missingTracks };
+  return { tracks, missingTracks, arenas: [] };
 };

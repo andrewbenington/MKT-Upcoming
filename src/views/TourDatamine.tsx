@@ -10,7 +10,7 @@ const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
 };
 
-const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
+const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
 
@@ -40,99 +40,63 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
       }}
     >
       {missingTracks.map((courseGap: MissingTrack) => {
-        let beforeCourse =
-          courseData[formatPlatform(courseGap.before.platform)].courses[
-            courseGap.before.name
-          ];
-        let afterCourse =
-          courseData[formatPlatform(courseGap.after.platform)].courses[
-            courseGap.after.name
-          ];
         let possibleCourses: Course[] = [];
-        if (beforeCourse) {
-          if (beforeCourse.tourPlatform === afterCourse.tourPlatform) {
-            Object.values(
-              courseData[beforeCourse.displayPlatform].courses
-            ).forEach((course) => {
-              if (
-                course.tourName.localeCompare(beforeCourse.tourName) < 0 &&
-                course.tourName.localeCompare(afterCourse.tourName) > 0 &&
-                !course.inTour
-              ) {
-                possibleCourses.push(course);
-              }
-            });
-          } else {
-            Object.values(
-              courseData[beforeCourse.displayPlatform].courses
-            ).forEach((course) => {
-              if (
-                course.tourName.localeCompare(beforeCourse.tourName) < 0 &&
-                !course.inTour
-              ) {
-                possibleCourses.push(course);
-              }
-            });
-            Object.values(
-              courseData[afterCourse.displayPlatform].courses
-            ).forEach((course) => {
-              if (
-                course.tourName.localeCompare(afterCourse.tourName) > 0 &&
-                !course.inTour
-              ) {
-                possibleCourses.push(course);
-              }
-            });
-          }
-        } else if (afterCourse) {
-          if (afterCourse.tourName.endsWith("1")) {
-            possibleCourses.push({
-              tourPlatform: "mob",
-              tourName:
-                afterCourse.tourName.substring(
-                  0,
-                  afterCourse.tourName.length - 1
-                ) + "2",
-              displayPlatform: "Tour",
-              displayName: afterCourse.displayName + " 2",
-              inTour: false,
-              image: afterCourse.image,
-            });
-            possibleCourses.push({
-              tourPlatform: "mob",
-              tourName:
-                afterCourse.tourName.substring(
-                  0,
-                  afterCourse.tourName.length - 1
-                ) + "3",
-              displayPlatform: "Tour",
-              displayName: afterCourse.displayName + " 3",
-              inTour: false,
-              image: afterCourse.image,
-            });
-          }
-          if (afterCourse.tourName.endsWith("2")) {
-            possibleCourses.push({
-              tourPlatform: "mob",
-              tourName:
-                afterCourse.tourName.substring(
-                  0,
-                  afterCourse.tourName.length - 1
-                ) + "3",
-              displayPlatform: "Tour",
-              displayName:
-                afterCourse.displayName.substring(
-                  0,
-                  afterCourse.displayName.length - 1
-                ) + "3",
-              inTour: false,
-              image: afterCourse.image,
-            });
+        let beforeCourse: any;
+        if (courseGap.battle) {
+          beforeCourse = (courseData[formatPlatform(courseGap.before.platform)]
+            .battleCourses ?? {})[courseGap.before.name];
+        } else {
+          let courses =
+            courseData[formatPlatform(courseGap.before.platform)].courses;
+          if (courses) {
+            beforeCourse = courses[courseGap.before.name];
           }
         }
-
+        let afterCourse: any;
+        if (courseGap.battle) {
+          afterCourse = (courseData[formatPlatform(courseGap.before.platform)]
+            .battleCourses ?? {})[courseGap.after.name];
+        } else {
+          let courses =
+            courseData[formatPlatform(courseGap.after.platform)].courses;
+          if (courses) {
+            afterCourse = courses[courseGap.after.name];
+          }
+        }
+        if (beforeCourse) {
+          Object.values(courseData)
+            .map((game) => game.tourPrefix)
+            .filter(
+              (game) =>
+                game.localeCompare(beforeCourse.tourPlatform) <= 0 &&
+                game.localeCompare(afterCourse.tourPlatform) >= 0
+            )
+            .sort((a, b) => a.localeCompare(b))
+            .forEach((game) => {
+              let potentialCourses =
+                (courseGap.battle
+                  ? courseData[formatPlatform(game)].battleCourses
+                  : courseData[formatPlatform(game)].courses) ?? {};
+              Object.values(potentialCourses)
+                .sort((a, b) => a.tourName.localeCompare(b.tourName))
+                .forEach((course) => {
+                  if (
+                    (game !== beforeCourse.tourPlatform ||
+                      course.tourName.localeCompare(beforeCourse.tourName) <
+                        0) &&
+                    (game !== afterCourse.tourPlatform ||
+                      course.tourName.localeCompare(afterCourse.tourName) >
+                        0) &&
+                    !course.inTour
+                  ) {
+                    possibleCourses.push(course);
+                  }
+                });
+            });
+        }
         return (
           <Card
+            key={courseGap.after.name + "-" + courseGap.before.name}
             style={{
               margin: 20,
               marginTop: 0,
@@ -186,7 +150,7 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
                   After:
                 </p>
                 <CourseIcon
-                  course={afterCourse ?? { name: courseGap.after }}
+                  course={afterCourse}
                   height={70}
                   showIndicators={false}
                 />
@@ -210,9 +174,17 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
                   Before:
                 </p>
                 <CourseIcon
-                  course={beforeCourse ?? { displayName: courseGap.before.name,  }}
+                  course={
+                    beforeCourse ?? {
+                      displayName: courseGap.before.name,
+                      displayPlatform: formatPlatform(
+                        courseGap.before.platform
+                      ),
+                    }
+                  }
                   height={70}
                   showIndicators={false}
+                  battle={courseGap.battle}
                 />
               </div>
             </div>
@@ -234,17 +206,16 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[]}) => {
                   justifyContent: isMobile ? "center" : "flex-start",
                 }}
               >
-                {possibleCourses
-                  .sort((a, b) => a.displayName.localeCompare(b.displayName))
-                  .map((pCourse) => {
-                    return (
-                      <CourseIcon
-                        course={pCourse}
-                        height={104}
-                        key={`${afterCourse.tourName}-${pCourse.tourName}-${beforeCourse.tourName}`}
-                      />
-                    );
-                  })}
+                {possibleCourses.map((pCourse) => {
+                  return (
+                    <CourseIcon
+                      course={pCourse}
+                      height={104}
+                      key={`${afterCourse.tourName}-${pCourse.tourName}-${beforeCourse.tourName}`}
+                      battle={courseGap.battle}
+                    />
+                  );
+                })}
               </div>
             </div>
           </Card>

@@ -2,7 +2,7 @@ import { Card } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import CourseIcon from "../components/CourseIcon";
 import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
-import { Game } from "../utils/types";
+import { Course, Game } from "../utils/types";
 
 const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
@@ -17,6 +17,7 @@ const AllCourses = ({
 }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
+  const [modalCourse, setModalCourse] = useState<Course>();
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -41,9 +42,26 @@ const AllCourses = ({
         backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
       }}
     >
+      <Card
+        style={{
+          margin: 20,
+          marginTop: 0,
+          padding: isMobile ? "5px 5px" : "10px 0px",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundImage:
+            "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
+        }}
+      >
+        <h2 style={{ marginTop: 0, marginBottom: 5 }}>Race Courses</h2>
+      </Card>
       {Object.entries(courseData).map(([platform, game]: [string, Game]) => {
         return (
           <Card
+            key={game.gameName}
             style={{
               margin: 20,
               marginTop: 0,
@@ -57,37 +75,79 @@ const AllCourses = ({
                 "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
             }}
           >
-            <h3 style={{ marginTop: 0, marginBottom: 5 }}>{game.gameName}</h3>
-
-            <div
-              style={{
-                flexWrap: "wrap",
-                display: "flex",
-                flex: 1,
-                margin: 5,
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              {Object.values(game.courses)
-                .sort((a, b) => a.displayName.localeCompare(b.displayName))
-                .filter((course) => !course.hypothetical)
-                .map((course) => {
-                  return (
-                    <CourseIcon
-                      course={{
-                        ...course,
-                        inTour:
-                          course.inTour ||
-                          inTour[course.displayPlatform]?.includes(
-                            course.displayName
-                          ),
-                      }}
-                      height={104}
-                    />
-                  );
-                })}
-            </div>
+            <h2 style={{ marginTop: 0, marginBottom: 10 }}>{game.gameName}</h2>
+            {game.courses && (
+              <>
+                <h3 style={{ marginTop: 0, marginBottom: 5 }}>Race Courses</h3>
+                <div
+                  style={{
+                    flexWrap: "wrap",
+                    display: "flex",
+                    flex: 1,
+                    margin: 5,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {Object.values(game.courses)
+                    .sort((a, b) => a.displayName.localeCompare(b.displayName))
+                    .filter((course) => !course.hypothetical)
+                    .map((course) => {
+                      return (
+                        <CourseIcon
+                          course={{
+                            ...course,
+                            inTour:
+                              course.inTour ||
+                              inTour[course.displayPlatform]?.includes(
+                                course.displayName
+                              ),
+                          }}
+                          height={104}
+                          battle
+                        />
+                      );
+                    })}
+                </div>
+              </>
+            )}
+            {game.battleCourses && (
+              <>
+                <h3 style={{ marginTop: 10, marginBottom: 5 }}>
+                  Battle Courses
+                </h3>
+                <div
+                  style={{
+                    flexWrap: "wrap",
+                    display: "flex",
+                    flex: 1,
+                    margin: 5,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {Object.values(game.battleCourses)
+                    .sort((a, b) => a.displayName.localeCompare(b.displayName))
+                    .filter((course) => !course.hypothetical)
+                    .map((course) => {
+                      return (
+                        <CourseIcon
+                          course={{
+                            ...course,
+                            inTour:
+                              course.inTour ||
+                              inTour[course.displayPlatform]?.includes(
+                                course.displayName
+                              ),
+                          }}
+                          height={104}
+                          battle
+                        />
+                      );
+                    })}
+                </div>
+              </>
+            )}
           </Card>
         );
       })}

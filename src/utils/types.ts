@@ -3,7 +3,9 @@ export interface Game {
   gameNumber: number;
   tourPrefix: string;
   displayPrefix: string;
-  courses: { [index: string]: Course };
+  courses?: { [index: string]: Course };
+  battleCourses?: { [index: string]: Course };
+  year: number
 }
 
 export interface Course {

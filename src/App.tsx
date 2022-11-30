@@ -47,6 +47,7 @@ function App() {
     "3DS": [],
     "Wii U": [],
     Tour: [],
+    NSW: [],
   });
 
   function handleWindowSizeChange() {
@@ -69,17 +70,24 @@ function App() {
         "3DS": [],
         "Wii U": [],
         Tour: [],
-      }
+      };
       courses.tracks.forEach((track) => {
         let platform = formatPlatform(track.platform);
         if (platform in courseData) {
-          let fullCourse = courseData[platform].courses[track.name];
-          if (fullCourse) {
-            coursesToAdd[fullCourse.displayPlatform].push(fullCourse.displayName)
+          let courses = track.battle
+            ? courseData[platform].battleCourses
+            : courseData[platform].courses;
+          if (courses) {
+            let fullCourse = courses[track.name];
+            if (fullCourse) {
+              coursesToAdd[fullCourse.displayPlatform].push(
+                fullCourse.displayName
+              );
+            }
           }
         }
       });
-      setInTourMap(coursesToAdd)
+      setInTourMap(coursesToAdd);
       setMissingTracks(courses.missingTracks);
       localStorage.setItem(
         "missing-tracks",
