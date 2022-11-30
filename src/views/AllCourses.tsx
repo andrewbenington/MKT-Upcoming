@@ -2,7 +2,7 @@ import { Card } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import CourseIcon from "../components/CourseIcon";
 import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
-import { Course, Game } from "../utils/types";
+import { Game } from "../utils/types";
 
 const courseData = course_data_nonlocal_images as unknown as {
   [platform: string]: Game;
