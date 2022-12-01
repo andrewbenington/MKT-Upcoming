@@ -946,7 +946,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/7/7a/Shroom_Ridge.png",
-        "otherNames": ["MushroomRidgeway", "KinokoRidgeway"]
+        "otherNames": ["KinokoRidgeway"]
       },
       "Figure8Circuit": {
         "tourName": "Figure-8Circuit",
@@ -983,8 +983,7 @@
         "displayPlatform": "DS",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/b/b7/DK_Pass.png",
-        "in8DX": false,
-        "otherNames": ["DKSnowMountain"]
+        "in8DX": false
       },
       "YoshiFalls": {
         "tourName": "YoshiFalls",
@@ -1113,8 +1112,7 @@
         "displayPlatform": "Wii",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/8/89/DK_Summit_MKWii.png/300px-DK_Summit_MKWii.png",
-        "in8DX": false,
-        "otherNames": ["DKSnowboardCross"]
+        "in8DX": false
       },
       "MooMooMeadows": {
         "tourName": "MooMooMeadows",
