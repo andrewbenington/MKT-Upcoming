@@ -333,7 +333,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/9/99/MK64_Toad%27s_Turnpike_Icon.png",
-        "otherNames": ["ToadHighway", "ToadTurnpike"]
+        "otherNames": ["ToadTurnpike", "KinopioHighway"]
       },
       "PeachCircuit": {
         "tourName": "PeachCircuit",
@@ -908,7 +908,7 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/a/a4/DesertHillds.png",
         "in8DX": false,
-        "otherNames": ["SunSunDesert"]
+        "otherNames": ["SansanSabaku"]
       },
       "DelfinoSquare": {
         "tourName": "DelfinoSquare",
@@ -918,7 +918,7 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/0/03/DelfinosquareDS.png",
         "in8DX": false,
-        "otherNames": ["MonteTown", "PiantaTown"]
+        "otherNames": ["MonteTown"]
       },
       "PeachGarden": {
         "tourName": "PeachGarden",
@@ -1076,7 +1076,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/2/21/MKW_Wario%27s_Gold_Mine_Course_Overview.png/300px-MKW_Wario%27s_Gold_Mine_Course_Overview.png",
-        "otherNames": ["WarioMine"]
+        "otherNames": ["WarioKozan"]
       },
       "DaisyCircuit": {
         "tourName": "DaisyCircuit",
@@ -1160,7 +1160,7 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/thumb/d/db/Moonviewhighway.png/300px-Moonviewhighway.png",
         "in8DX": false,
-        "otherNames": ["MoonRidge", "MoonHighway", "MoonRidgeHighway"]
+        "otherNames": ["MoonRidge", "MoonHighway", "MoonRidgeHighway", "MoonRidgeAndHighway"]
       },
       "BowserCastle": {
         "tourName": "BowserCastle",
@@ -1179,7 +1179,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/5/55/Grumble_Volcano.png/300px-Grumble_Volcano.png",
-        "otherNames": ["GuraguraVolcano"]
+        "otherNames": ["GuraguraKazan"]
       },
       "DryDryRuins": {
         "tourName": "DryDryRuins",
@@ -1226,7 +1226,8 @@
         "tourName": "DelfinoPier",
         "image": "https://mario.wiki.gallery/images/thumb/4/41/DelfinoPier-CoinRunners-MKWii.png/200px-DelfinoPier-CoinRunners-MKWii.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["AquaResort"]
       },
       "FunkyStadium": {
         "displayName": "Funky Stadium",
