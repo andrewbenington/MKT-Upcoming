@@ -588,7 +588,7 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/e/e8/Broken_Pier_MKSC_icon.png",
         "in8DX": false,
-        "otherNames": ["WornOutPier"]
+        "otherNames": ["OnboroSanbashi"]
       },
       "LuigiCircuit": {
         "tourName": "LuigiCircuit",
@@ -918,7 +918,7 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/0/03/DelfinosquareDS.png",
         "in8DX": false,
-        "otherNames": ["PiantaTown"]
+        "otherNames": ["MonteTown", "PiantaTown"]
       },
       "PeachGarden": {
         "tourName": "PeachGarden",
@@ -946,7 +946,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/7/7a/Shroom_Ridge.png",
-        "otherNames": ["MushroomRidgeway"]
+        "otherNames": ["MushroomRidgeway", "KinokoRidgeway"]
       },
       "Figure8Circuit": {
         "tourName": "Figure-8Circuit",
