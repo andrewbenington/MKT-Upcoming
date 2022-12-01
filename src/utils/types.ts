@@ -17,4 +17,6 @@ export interface Course {
   in8DX?: boolean;
   image: string;
   hypothetical?: boolean;
+  otherNames?: string[]
+  altName?: string
 }

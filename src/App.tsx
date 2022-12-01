@@ -74,9 +74,10 @@ function App() {
       courses.tracks.forEach((track) => {
         let platform = formatPlatform(track.platform);
         if (platform in courseData) {
-          let courses = track.battle
-            ? courseData[platform].battleCourses
-            : courseData[platform].courses;
+          let courses =
+            track.class === "Battle"
+              ? courseData[platform].battleCourses
+              : courseData[platform].courses;
           if (courses) {
             let fullCourse = courses[track.name];
             if (fullCourse) {
@@ -225,7 +226,7 @@ function App() {
               In Mario Kart 8 DX (Or Datamined)
             </p>
           </ListItem>
-          {page === "All Courses" && (
+          {page === "All Courses" ? (
             <ListItem disablePadding>
               <div
                 style={{
@@ -238,6 +239,22 @@ function App() {
               </div>
               <p style={{ marginRight: 10, flex: "1 1 70%" }}>
                 In Mario Kart Tour
+              </p>
+            </ListItem>
+          ) : (
+            <ListItem disablePadding>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontStyle: "italic",
+                  flex: "1 1 30%",
+                  fontSize: 10
+                }}
+              >
+                (Italics)
+              </p>
+              <p style={{ marginRight: 5, flex: "1 1 70%" }}>
+                Japanese name
               </p>
             </ListItem>
           )}

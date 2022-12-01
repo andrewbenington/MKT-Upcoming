@@ -116,6 +116,17 @@ CourseIconProps) => {
           >
             {course?.displayName ?? "???"}
           </p>
+          {course?.altName && <p
+            style={{
+              fontFamily: "'Verdana', sans-serif",
+              fontSize: (height / 104) * 9,
+              textShadow: ".5px .5px #3333",
+              fontStyle: "italic",
+              margin: 0,
+            }}
+          >
+            {`(${course.altName})`}
+          </p>}
         </div>
         {course?.in8DX && showIndicators && (
           <div

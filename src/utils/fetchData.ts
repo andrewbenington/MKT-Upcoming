@@ -4,22 +4,23 @@ export interface Track {
   platform: string;
   name: string;
   breadth: number;
-  battle: boolean;
+  class: string;
 }
 
 export interface MissingTrack {
-  gap: number;
-  after: Track;
-  before: Track;
+  gap?: number;
+  after?: Track;
+  before?: Track;
   battle: boolean;
 }
 
-const local = false
+const local = false;
 
 export const fetchData = async (): Promise<
-  { tracks: Track[]; missingTracks: MissingTrack[]; arenas: Track[] } | undefined
+  | { tracks: Track[]; missingTracks: MissingTrack[]; arenas: Track[] }
+  | undefined
 > => {
-  let pairs: [number, string][] = []
+  let pairs: [number, string][] = [];
   if (!local) {
     let url: string | undefined;
     const data = await (
@@ -55,67 +56,105 @@ export const fetchData = async (): Promise<
     });
   } else {
     let text = await fetch(raw).then((r) => r.text());
-  
+
     pairs = text.split("\n").map((line) => {
       const splitLine = line.split(" - ");
       const pair: [number, string] = [parseInt(splitLine[0]), splitLine[1]];
       return pair;
     });
-
   }
-  
+
   let lastNum: number;
   let lastName: string;
   let lastPlatform: string;
-  let lastIsBattle: boolean;
+  let lastClass: string;
   let tracks: Track[] = [];
   let missingTracks: MissingTrack[] = [];
-  pairs.forEach((pair) => {
+  pairs.forEach((pair, i) => {
+    console.log(i === pairs.length - 1);
     const splitKey = pair[1].split(/_|R_sub|RX_sub|X_sub|_sub/);
+    const courseClass = splitKey[0];
     const platform = splitKey[1].substring(1);
     if (!lastNum || !lastName) {
       lastNum = pair[0];
       lastName = splitKey[2];
       lastPlatform = platform;
+      lastClass = courseClass;
     } else if (lastNum && lastName) {
       if (
         (pair[1].endsWith("X_sub") && !pair[1].endsWith("RX_sub")) ||
-        (pair[1].endsWith("_sub") && splitKey[0] === "Battle")
+        (pair[1].endsWith("_sub") && courseClass === "Battle")
       ) {
         tracks.push({
           breadth: pair[0] - lastNum,
           platform,
           name: splitKey[2],
-          battle: splitKey[0] === "Battle"
+          class: courseClass,
         });
-        lastIsBattle = splitKey[0] === "Battle"
+
+        lastClass = splitKey[0];
         lastNum = pair[0];
+
+        if (i === pairs.length - 1) {
+          missingTracks.push({
+            before: undefined,
+            after: {
+              name: lastName,
+              platform: lastPlatform,
+              breadth: -1,
+              class: lastClass,
+            },
+            battle: lastClass === "Battle",
+          });
+        }
       } else if (!pair[1].includes(lastName)) {
-        if (pair[0] - lastNum > 1 && (splitKey[0] === "Battle") === lastIsBattle) {
+        if (courseClass !== lastClass) {
+          missingTracks.push({
+            before:
+              courseClass !== "Remix"
+                ? {
+                    name: splitKey[2],
+                    platform,
+                    breadth: -1,
+                    class: courseClass,
+                  }
+                : undefined,
+            after:
+              lastClass !== "Remix"
+                ? {
+                    name: lastName,
+                    platform: lastPlatform,
+                    breadth: -1,
+                    class: lastClass,
+                  }
+                : undefined,
+            battle: courseClass === "Battle" || lastClass === "Battle",
+          });
+        } else if (pair[0] - lastNum > 1 && courseClass === lastClass) {
           missingTracks.push({
             before: {
               name: splitKey[2],
               platform,
               breadth: -1,
-              battle: splitKey[0] === "Battle",
+              class: courseClass,
             },
             after: {
               name: lastName,
               platform: lastPlatform,
               breadth: -1,
-              battle: lastIsBattle,
+              class: lastClass,
             },
             gap: pair[0] - lastNum - 1,
-            battle: lastIsBattle
+            battle: lastClass === "Battle",
           });
         }
         lastNum = pair[0];
         lastName = splitKey[2];
         lastPlatform = platform;
-        lastIsBattle = splitKey[0] === "Battle"
-
+        lastClass = splitKey[0];
       }
     }
   });
+
   return { tracks, missingTracks, arenas: [] };
 };
