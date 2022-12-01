@@ -108,26 +108,15 @@ export const fetchData = async (): Promise<
           });
         }
       } else if (!pair[1].includes(lastName)) {
-        if (courseClass !== lastClass) {
+        if (courseClass !== lastClass && lastClass !== "Remix") {
           missingTracks.push({
-            before:
-              courseClass !== "Remix"
-                ? {
-                    name: splitKey[2],
-                    platform,
-                    breadth: -1,
-                    class: courseClass,
-                  }
-                : undefined,
-            after:
-              lastClass !== "Remix"
-                ? {
-                    name: lastName,
-                    platform: lastPlatform,
-                    breadth: -1,
-                    class: lastClass,
-                  }
-                : undefined,
+            before: undefined,
+            after: {
+              name: lastName,
+              platform: lastPlatform,
+              breadth: -1,
+              class: lastClass,
+            },
             battle: courseClass === "Battle" || lastClass === "Battle",
           });
         } else if (pair[0] - lastNum > 1 && courseClass === lastClass) {
