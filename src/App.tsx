@@ -15,16 +15,12 @@ import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import EightDXIcon from "./components/EightDXIcon";
 import TourIcon from "./components/TourIcon";
+import course_data_nonlocal_images from "./data/course_data_nonlocal_images.json";
 import { fetchData, MissingTrack } from "./utils/fetchData";
+import { Game } from "./utils/types";
 import { formatPlatform } from "./utils/utils";
 import AllCourses from "./views/AllCourses";
 import TourDatamine from "./views/TourDatamine";
-import course_data_nonlocal_images from "./data/course_data_nonlocal_images.json";
-import { Game } from "./utils/types";
-
-const courseData = course_data_nonlocal_images as unknown as {
-  [platform: string]: Game;
-};
 const drawerWidth = 240;
 
 function App() {
@@ -33,22 +29,13 @@ function App() {
   const [page, setPage] = useState(
     localStorage.getItem("stored-page") ?? "Tour Datamine"
   );
+  const [courseData, setCourseData] = useState(
+    course_data_nonlocal_images as unknown as {
+      [platform: string]: Game;
+    }
+  );
   const [missingTracks, setMissingTracks] = useState<MissingTrack[]>([]);
   const isMobile = useMemo(() => width <= 768, [width]);
-  const [inTourMap, setInTourMap] = useState<{
-    [platform: string]: string[];
-  }>({
-    SNES: [],
-    N64: [],
-    GBA: [],
-    GCN: [],
-    DS: [],
-    Wii: [],
-    "3DS": [],
-    "Wii U": [],
-    Tour: [],
-    NSW: [],
-  });
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -56,43 +43,63 @@ function App() {
 
   const getCourses = async () => {
     // let storedMissingTracks = localStorage.getItem("missing-tracks");
-    const courses = await fetchData();
-    if (courses) {
-      let coursesToAdd: {
-        [platform: string]: string[];
-      } = {
-        SNES: [],
-        N64: [],
-        GBA: [],
-        GCN: [],
-        DS: [],
-        Wii: [],
-        "3DS": [],
-        "Wii U": [],
-        Tour: [],
-      };
-      courses.tracks.forEach((track) => {
-        let platform = formatPlatform(track.platform);
-        if (platform in courseData) {
-          let courses =
-            track.class === "Battle"
-              ? courseData[platform].battleCourses
-              : courseData[platform].courses;
-          if (courses) {
-            let fullCourse = courses[track.name];
-            if (fullCourse) {
-              coursesToAdd[fullCourse.displayPlatform].push(
-                fullCourse.displayName
-              );
+    const tourCourses = await fetchData();
+    if (tourCourses) {
+      tourCourses.tracks.forEach((track) => {
+        if (track.class !== "Remix") {
+          let courses;
+          let foundCourse;
+          if (track.class === "Battle") {
+            courses = courseData[formatPlatform(track.platform)].battleCourses;
+            if (courses) {
+              foundCourse = courses[track.name];
+              if (!(track.name in courses)) {
+                foundCourse = Object.values(courses).find((course) =>
+                  course.otherNames?.includes(track.name ?? "")
+                );
+                if (foundCourse) {
+                  if (foundCourse.tourName in courses) {
+                    delete courses[foundCourse.tourName];
+                    courses[track.name] = {
+                      ...foundCourse,
+                      tourName: track.name,
+                      inTour: true,
+                    };
+                  }
+                  courseData[formatPlatform(track.platform)].battleCourses =
+                    courses;
+                  setCourseData(courseData);
+                }
+              }
+            }
+          } else {
+            courses = courseData[formatPlatform(track.platform)].courses;
+            if (courses) {
+              foundCourse = courses[track.name];
+              if (track.name! in courses) {
+                foundCourse = Object.values(courses).find((course) =>
+                  course.otherNames?.includes(track.name ?? "")
+                );
+                if (foundCourse) {
+                  if (foundCourse.tourName in courses) {
+                    delete courses[foundCourse.tourName];
+                    courses[track.name] = {
+                      ...foundCourse,
+                      tourName: track.name,
+                    };
+                  }
+                  courseData[formatPlatform(track.platform)].courses = courses;
+                  setCourseData(courseData);
+                }
+              }
             }
           }
         }
       });
-      setInTourMap(coursesToAdd);
-      setMissingTracks(courses.missingTracks);
+      setMissingTracks(tourCourses.missingTracks);
       localStorage.setItem(
         "missing-tracks",
-        JSON.stringify(courses.missingTracks)
+        JSON.stringify(tourCourses.missingTracks)
       );
     }
   };
@@ -103,7 +110,12 @@ function App() {
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
+    // eslint-disable-next-line
   }, []);
+
+  useEffect(() => {
+    console.log(courseData["GCN"]);
+  }, [courseData]);
 
   return (
     <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
@@ -248,22 +260,20 @@ function App() {
                   textAlign: "center",
                   fontStyle: "italic",
                   flex: "1 1 30%",
-                  fontSize: 10
+                  fontSize: 10,
                 }}
               >
                 (Italics)
               </p>
-              <p style={{ marginRight: 5, flex: "1 1 70%" }}>
-                Japanese name
-              </p>
+              <p style={{ marginRight: 5, flex: "1 1 70%" }}>Japanese name</p>
             </ListItem>
           )}
         </List>
       </Drawer>
       {page === "Tour Datamine" ? (
-        <TourDatamine missingTracks={missingTracks} />
+        <TourDatamine missingTracks={missingTracks} courseData={courseData} />
       ) : (
-        <AllCourses inTour={inTourMap} />
+        <AllCourses courseData={courseData} />
       )}
     </Box>
   );

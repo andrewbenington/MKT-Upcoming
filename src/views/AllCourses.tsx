@@ -1,18 +1,13 @@
 import { Card } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import CourseIcon from "../components/CourseIcon";
-import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 import { Game } from "../utils/types";
 
-const courseData = course_data_nonlocal_images as unknown as {
-  [platform: string]: Game;
-};
-
 const AllCourses = ({
-  inTour,
+  courseData,
 }: {
-  inTour: {
-    [platform: string]: string[];
+  courseData: {
+    [platform: string]: Game;
   };
 }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
@@ -81,11 +76,7 @@ const AllCourses = ({
                         <CourseIcon
                           course={{
                             ...course,
-                            inTour:
-                              course.inTour ||
-                              inTour[course.displayPlatform]?.includes(
-                                course.displayName
-                              ),
+                            inTour: course.inTour,
                           }}
                           height={104}
                           battle
@@ -118,11 +109,7 @@ const AllCourses = ({
                         <CourseIcon
                           course={{
                             ...course,
-                            inTour:
-                              course.inTour ||
-                              inTour[course.displayPlatform]?.includes(
-                                course.displayName
-                              ),
+                            inTour: course.inTour,
                           }}
                           height={104}
                           battle

@@ -116,17 +116,19 @@ CourseIconProps) => {
           >
             {course?.displayName ?? "???"}
           </p>
-          {course?.altName && <p
-            style={{
-              fontFamily: "'Verdana', sans-serif",
-              fontSize: (height / 104) * 9,
-              textShadow: ".5px .5px #3333",
-              fontStyle: "italic",
-              margin: 0,
-            }}
-          >
-            {`(${course.altName})`}
-          </p>}
+          {course?.altName && (
+            <p
+              style={{
+                fontFamily: "'Verdana', sans-serif",
+                fontSize: (height / 104) * 9,
+                textShadow: ".5px .5px #3333",
+                fontStyle: "italic",
+                margin: 0,
+              }}
+            >
+              {`(${course.altName})`}
+            </p>
+          )}
         </div>
         {course?.in8DX && showIndicators && (
           <div
@@ -165,12 +167,14 @@ CourseIconProps) => {
               "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
           }}
         >
-          <h3>{course.displayName}</h3>
-          <img src={course?.image} alt={course?.displayName}/>
+          <h3>{course?.displayName}</h3>
+          <img src={course?.image} alt={course?.displayName} />
           <h4>Original Game</h4>
-          <p>{`${courseData[course.displayPlatform].gameName} (${
-            courseData[course.displayPlatform].year
-          })`}</p>
+          {course?.displayPlatform && (
+            <p>{`${courseData[course.displayPlatform].gameName} (${
+              courseData[course.displayPlatform].year
+            })`}</p>
+          )}
         </Box>
       </Modal>
     </>

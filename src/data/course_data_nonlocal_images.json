@@ -808,7 +808,8 @@
         "tourName": "NintendoGameCube",
         "image": "https://mario.wiki.gallery/images/b/b6/NintendoGameCubeIcon-MKDD.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["GameCube"]
       },
       "BlockCity": {
         "displayName": "Block City",
@@ -846,14 +847,15 @@
         "in8DX": true,
         "inTour": false
       },
-      "TiltaKart": {
+      "TiltAKart": {
         "displayName": "Tilt-a-Kart",
         "tourPlatform": "gc",
         "displayPlatform": "GCN",
-        "tourName": "TiltaKart",
+        "tourName": "TiltAKart",
         "image": "https://mario.wiki.gallery/images/thumb/e/e0/Tilt-a-KartIcon-MKDD.png/150px-Tilt-a-KartIcon-MKDD.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["GuraGuraMario"]
       }
     }
   },
@@ -1039,7 +1041,8 @@
         "tourName": "TartTop",
         "image": "https://mario.wiki.gallery/images/d/d3/Tart_Top_MKDS_preview.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["SweetTart"]
       },
       "PalmShore": {
         "displayName": "Palm Shore",
@@ -1048,7 +1051,8 @@
         "tourName": "PalmShore",
         "image": "https://mario.wiki.gallery/images/2/27/MKDS_Palm_Shore.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["SouthernReef"]
       }
     }
   },
@@ -1179,7 +1183,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/5/55/Grumble_Volcano.png/300px-Grumble_Volcano.png",
-        "otherNames": ["GuraguraKazan"]
+        "otherNames": ["GuraGuraKazan", "GuraguraKazan"]
       },
       "DryDryRuins": {
         "tourName": "DryDryRuins",
@@ -1238,14 +1242,15 @@
         "in8DX": false,
         "inTour": false
       },
-      "ChainChompRoulette": {
-        "displayName": "Chain Chomp Roulette",
+      "ChainChompWheel": {
+        "displayName": "Chain Chomp Wheel",
         "tourPlatform": "wii",
         "displayPlatform": "Wii",
-        "tourName": "ChainChompRoulette",
+        "tourName": "ChainChompWheel",
         "image": "https://mario.wiki.gallery/images/thumb/d/d3/Chain_Chomp_Roulette.png/240px-Chain_Chomp_Roulette.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["WanwanRoulette", "ChainChompRoulette"]
       },
       "ThwompDesert": {
         "displayName": "Thwomp Desert",
@@ -1254,7 +1259,8 @@
         "tourName": "ThwompDesert",
         "image": "https://mario.wiki.gallery/images/thumb/9/9a/Thwomp_Desert.png/240px-Thwomp_Desert.png",
         "in8DX": false,
-        "inTour": false
+        "inTour": false,
+        "otherNames": ["DossunDesert", "DosunDesert"]
       },
       "GalaxyColosseum": {
         "displayName": "Galaxy Colosseum",

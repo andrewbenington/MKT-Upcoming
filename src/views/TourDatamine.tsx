@@ -1,16 +1,19 @@
 import { Card } from "@mui/material";
+import { useEffect, useMemo, useState } from "react";
 import CourseIcon from "../components/CourseIcon";
-import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 import { MissingTrack } from "../utils/fetchData";
-import { useState, useMemo, useEffect } from "react";
-import { formatPlatform } from "../utils/utils";
 import { Course, Game } from "../utils/types";
+import { courseFromCodeName, formatPlatform } from "../utils/utils";
 
-const courseData = course_data_nonlocal_images as unknown as {
-  [platform: string]: Game;
-};
-
-const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
+const TourDatamine = ({
+  missingTracks,
+  courseData,
+}: {
+  missingTracks: MissingTrack[];
+  courseData: {
+    [platform: string]: Game;
+  };
+}) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = useMemo(() => width <= 768, [width]);
 
@@ -40,54 +43,24 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
       }}
     >
       {missingTracks.map((courseGap: MissingTrack) => {
-        console.log(courseGap);
         let possibleCourses: Course[] = [];
         let beforeCourse: any;
         if (courseGap.before) {
-          if (courseGap.battle) {
-            beforeCourse = (courseData[
-              formatPlatform(courseGap.before.platform)
-            ].battleCourses ?? {})[courseGap.before.name];
-          } else {
-            let courses =
-              courseData[formatPlatform(courseGap.before.platform)].courses;
-            if (courses) {
-              beforeCourse = courses[courseGap.before.name];
-              if (!beforeCourse) {
-                beforeCourse = Object.values(
-                  courseData[formatPlatform(courseGap.before.platform)]
-                    .courses ?? {}
-                )?.find((course) =>
-                  course.otherNames?.includes(courseGap.before?.name ?? "")
-                );
-                beforeCourse.altName = courseGap.before.name;
-              }
-            }
-          }
+          beforeCourse = courseFromCodeName(
+            courseGap.before.name,
+            courseGap.before.platform,
+            courseGap.before.class === "Battle"
+          );
         }
         let afterCourse: any;
         if (courseGap.after) {
-          if (courseGap.after.class === "Battle") {
-            afterCourse = (courseData[formatPlatform(courseGap.after.platform)]
-              .battleCourses ?? {})[courseGap.after.name];
-          } else {
-            let courses =
-              courseData[formatPlatform(courseGap.after.platform)].courses;
-            if (courses) {
-              afterCourse = courses[courseGap.after.name];
-              if (!afterCourse) {
-                afterCourse = Object.values(
-                  courseData[formatPlatform(courseGap.after.platform)]
-                    .courses ?? {}
-                )?.find((course) =>
-                  course.otherNames?.includes(courseGap.after?.name ?? "")
-                );
-                afterCourse.altName = courseGap.after.name;
-              }
-            }
-          }
+          afterCourse = courseFromCodeName(
+            courseGap.after.name,
+            courseGap.after.platform,
+            courseGap.after.class === "Battle"
+          );
         }
-
+        console.log(courseGap);
         let games = [];
         if (courseGap.after?.class === courseGap.before?.class) {
           games = Object.values(courseData)
@@ -140,9 +113,6 @@ const TourDatamine = ({ missingTracks }: { missingTracks: MissingTrack[] }) => {
             (courseGap.battle
               ? courseData[formatPlatform(game)].battleCourses
               : courseData[formatPlatform(game)].courses) ?? {};
-          if (courseGap.battle) {
-            console.log(courseGap);
-          }
           let coursesToAdd = Object.values(potentialCourses)
             .sort((a, b) => a.tourName.localeCompare(b.tourName))
             .map((course) => {
