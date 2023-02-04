@@ -102,7 +102,8 @@ CourseIconProps) => {
           <p
             style={{
               fontFamily: "'Verdana', sans-serif",
-              fontSize: (height / 104) * 13,
+              fontSize:
+                (height / 104) * getFontSize(course?.displayName),
               textShadow: ".5px .5px #3333",
               fontWeight:
                 course &&
@@ -179,6 +180,16 @@ CourseIconProps) => {
       </Modal>
     </>
   );
+};
+
+const getFontSize = (text?: string) => {
+  if (text && text.length > 18) {
+    return 10;
+  } else if (text && text.length > 16) {
+    return 11;
+  } else {
+    return 13;
+  }
 };
 
 export default CourseIcon;

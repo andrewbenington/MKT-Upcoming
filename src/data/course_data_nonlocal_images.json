@@ -1854,9 +1854,9 @@
         "tourPlatform": "mob",
         "displayName": "Bangkok Rush 2",
         "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
+        "inTour": true,
+        "in8DX": true,
+        "hypothetical": false,
         "image": "https://mario.wiki.gallery/images/thumb/6/68/MKT_Bangkok_Rush_Scene.jpg/300px-MKT_Bangkok_Rush_Scene.jpg"
       },
       "Bangkok3": {
@@ -1864,9 +1864,9 @@
         "tourPlatform": "mob",
         "displayName": "Bangkok Rush 3",
         "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
+        "inTour": true,
+        "in8DX": true,
+        "hypothetical": false,
         "image": "https://mario.wiki.gallery/images/thumb/6/68/MKT_Bangkok_Rush_Scene.jpg/300px-MKT_Bangkok_Rush_Scene.jpg"
       },
       "Bangkok4": {
@@ -1984,9 +1984,9 @@
         "tourPlatform": "mob",
         "displayName": "Singapore Speedway 3",
         "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
+        "inTour": true,
+        "in8DX": true,
+        "hypothetical": false,
         "image": "https://mario.wiki.gallery/images/thumb/3/34/MKT_Singapore_Speedway_Scene.png/600px-MKT_Singapore_Speedway_Scene.png"
       },
       "Singapore4": {
@@ -2221,20 +2221,20 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "OR": {
-        "tourName": "OR",
+      "OceanRuins": {
+        "tourName": "OceanRuins",
         "tourPlatform": "mob",
-        "displayName": "OR City (Orlando?)",
+        "displayName": "Piranha Plant Cove",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "hypothetical": false,
+        "image": "https://mario.wiki.gallery/images/0/08/MKT_Piranha_Plant_Cove_Scene.jpg"
       },
       "NU": {
         "tourName": "NU",
         "tourPlatform": "mob",
-        "displayName": "NU Underwater Course",
+        "displayName": "MobNU (\"Not Used\"?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
@@ -2254,7 +2254,7 @@
       "AT": {
         "tourName": "AT",
         "tourPlatform": "mob",
-        "displayName": "'Mobat' (Athens?)",
+        "displayName": "'MobAT' (Athens?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
