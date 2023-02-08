@@ -60,15 +60,18 @@ const TourDatamine = ({
             courseGap.after.class === "Battle"
           );
         }
-        // if (!afterCourse) {
-        //   console.log(courseGap.after, "not found");
-        // }
-        // if (!beforeCourse) {
-        //   console.log(courseGap.before, "not found");
-        // }
+        if (!afterCourse) {
+          console.log(courseGap.after, "not found");
+        }
+        if (!beforeCourse) {
+          console.log(courseGap.before, "not found");
+        }
         let games = [];
         // if both are new, classic, etc
-        if (courseGap.after?.class === courseGap.before?.class) {
+        if (
+          courseGap.before?.class !== "New" &&
+          courseGap.after?.class === courseGap.before?.class
+        ) {
           games = Object.values(courseData)
             .map((game) => game.tourPrefix)
             .filter(
@@ -109,10 +112,14 @@ const TourDatamine = ({
                 )
                 .sort((a, b) => a.localeCompare(b))
             );
-          } else if (courseGap.before?.class === "New") {
+          } else if (
+            courseGap.before?.class === "New" &&
+            courseGap.after?.class !== "New"
+          ) {
             games.push("mob");
           }
         }
+        console.log(games);
         games.forEach((game) => {
           let potentialCourses =
             (courseGap.battle
@@ -127,17 +134,39 @@ const TourDatamine = ({
                   ...(course.otherNames ? course.otherNames : []),
                 ].find(
                   (courseName) =>
-                    (!beforeCourse ||
-                      game !== beforeCourse.tourPlatform ||
-                      courseName
-                        .toUpperCase()
-                        .localeCompare(beforeCourse.tourName.toUpperCase()) <
-                        0) &&
-                    (!afterCourse ||
-                      game !== afterCourse.tourPlatform ||
-                      courseName
-                        .toUpperCase()
-                        .localeCompare(afterCourse.tourName.toUpperCase()) > 0)
+                    // no course before
+                    (!courseGap.before ||
+                      // course before, but no match for codename (use codename for alphabetizing)
+                      (!beforeCourse &&
+                        courseName
+                          .toUpperCase()
+                          .localeCompare(courseGap.before.name.toUpperCase()) <
+                          0) ||
+                      (beforeCourse &&
+                        // different game for before course
+                        (game !== beforeCourse.tourPlatform ||
+                          // course comes before beforeCourse name
+                          courseName
+                            .toUpperCase()
+                            .localeCompare(
+                              beforeCourse.tourName.toUpperCase()
+                            ) < 0))) &&
+                    // no course after
+                    (!courseGap.after ||
+                      // course after, but no match for codename (use codename for alphabetizing)
+                      (!afterCourse &&
+                        courseName
+                          .toUpperCase()
+                          .localeCompare(courseGap.after.name.toUpperCase()) >
+                          0) ||
+                      (afterCourse &&
+                        // different game for after course
+                        (game !== afterCourse.tourPlatform ||
+                          // course comes after afterCourse name
+                          courseName
+                            .toUpperCase()
+                            .localeCompare(afterCourse.tourName.toUpperCase()) >
+                            0)))
                 );
                 if (fittingName) {
                   return {
@@ -155,6 +184,7 @@ const TourDatamine = ({
           definedCoursesToAdd.sort((a, b) =>
             (a.altName ?? a.tourName).localeCompare(b.altName ?? b.tourName)
           );
+          console.log(possibleCourses, definedCoursesToAdd);
           possibleCourses.push(...definedCoursesToAdd);
         });
 
@@ -215,7 +245,14 @@ const TourDatamine = ({
                     After:
                   </p>
                   <CourseIcon
-                    course={afterCourse}
+                    course={
+                      afterCourse ?? {
+                        displayName: courseGap.after.name,
+                        displayPlatform: formatPlatform(
+                          courseGap.after.platform
+                        ),
+                      }
+                    }
                     height={70}
                     showIndicators={false}
                   />
