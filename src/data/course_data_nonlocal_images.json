@@ -2291,15 +2291,15 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "YI": {
-        "tourName": "YI",
+      "YoshiIsland": {
+        "tourName": "YoshiIsland",
         "tourPlatform": "mob",
-        "displayName": "Yoshi's Island Course",
+        "displayName": "Yoshi's Island",
         "displayPlatform": "Tour",
         "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "in8DX": true,
+        "hypothetical": false,
+        "image": "images/Yoshis_Island.jpeg"
       }
     },
     "battleCourses": {
