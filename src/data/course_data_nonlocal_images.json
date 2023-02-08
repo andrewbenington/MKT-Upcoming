@@ -522,7 +522,7 @@
         "tourPlatform": "agb",
         "displayName": "Snow Land",
         "displayPlatform": "GBA",
-        "inTour": false,
+        "inTour": true,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/6/6f/Snow_Land_MKSC_icon.png"
       },
@@ -2226,9 +2226,29 @@
         "tourPlatform": "mob",
         "displayName": "Piranha Plant Cove",
         "displayPlatform": "Tour",
-        "inTour": false,
+        "inTour": true,
         "in8DX": false,
         "hypothetical": false,
+        "image": "https://mario.wiki.gallery/images/0/08/MKT_Piranha_Plant_Cove_Scene.jpg"
+      },
+      "OceanRuins2": {
+        "tourName": "OceanRuin2",
+        "tourPlatform": "mob",
+        "displayName": "Piranha Plant Cove 2",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": false,
+        "hypothetical": false,
+        "image": "https://mario.wiki.gallery/images/0/08/MKT_Piranha_Plant_Cove_Scene.jpg"
+      },
+      "OceanRuins3": {
+        "tourName": "OceanRuins3",
+        "tourPlatform": "mob",
+        "displayName": "Piranha Plant Cove 3",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/0/08/MKT_Piranha_Plant_Cove_Scene.jpg"
       },
       "NU": {

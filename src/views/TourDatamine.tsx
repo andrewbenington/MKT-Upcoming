@@ -60,6 +60,12 @@ const TourDatamine = ({
             courseGap.after.class === "Battle"
           );
         }
+        if (!afterCourse) {
+          console.log(courseGap.after, "not found");
+        }
+        if (!beforeCourse) {
+          console.log(courseGap.before, "not found");
+        }
         let games = [];
         // if both are new, classic, etc
         if (courseGap.after?.class === courseGap.before?.class) {
