@@ -948,7 +948,7 @@
         "inTour": false,
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/7/7a/Shroom_Ridge.png",
-        "otherNames": ["KinokoRidgeway"]
+        "otherNames": ["KinokoRidgeway", "MushrooomRidgeway"]
       },
       "Figure8Circuit": {
         "tourName": "Figure-8Circuit",
