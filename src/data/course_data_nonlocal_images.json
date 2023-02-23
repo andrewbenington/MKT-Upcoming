@@ -940,18 +940,17 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/1/1f/MKDS_Cheep_Cheep_Beach_Intro.png"
       },
-      "ShroomRidge": {
-        "tourName": "ShroomRidge",
+      "MushroomRidgeway": {
+        "tourName": "MushroomRidgeway",
         "tourPlatform": "ds",
         "displayName": "Shroom Ridge",
         "displayPlatform": "DS",
-        "inTour": false,
+        "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/7/7a/Shroom_Ridge.png",
-        "otherNames": ["KinokoRidgeway", "MushrooomRidgeway"]
+        "image": "https://mario.wiki.gallery/images/7/7a/Shroom_Ridge.png"
       },
       "Figure8Circuit": {
-        "tourName": "Figure-8Circuit",
+        "tourName": "Figure8Circuit",
         "tourPlatform": "ds",
         "displayName": "Figure-8 Circuit",
         "displayPlatform": "DS",
