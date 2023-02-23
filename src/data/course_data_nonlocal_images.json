@@ -2210,10 +2210,10 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "DK": {
-        "tourName": "DK",
+      "DarkKingdom": {
+        "tourName": "DarkKingdom",
         "tourPlatform": "mob",
-        "displayName": "DK Course",
+        "displayName": "DK (Dark Kingdom?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,

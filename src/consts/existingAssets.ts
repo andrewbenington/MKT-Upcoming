@@ -10,7 +10,7 @@ const existingAssets = [
   "GCNWaluigiStadium",
   "TourAT",
   "TourBR",
-  "TourDK",
+  "TourDarkKingdom",
   "TourMA",
   "TourMU",
   "TourNU",
