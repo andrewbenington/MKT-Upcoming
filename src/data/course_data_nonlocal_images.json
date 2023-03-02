@@ -495,9 +495,9 @@
         "tourPlatform": "agb",
         "displayName": "Riverside Park",
         "displayPlatform": "GBA",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/9/94/Riverside_Park_MKSC_icon.png",
-        "in8DX": false
+        "in8DX": true
       },
       "RibbonRoad": {
         "tourName": "RibbonRoad",
@@ -882,7 +882,7 @@
         "displayPlatform": "DS",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/thumb/f/f7/MKDS_Mario_Circuit_DS_Intro.png/160px-MKDS_Mario_Circuit_DS_Intro.png",
-        "in8DX": false
+        "in8DX": true
       },
       "WarioStadium": {
         "tourName": "WarioStadium",
@@ -1115,7 +1115,7 @@
         "displayPlatform": "Wii",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/8/89/DK_Summit_MKWii.png/300px-DK_Summit_MKWii.png",
-        "in8DX": false
+        "in8DX": true
       },
       "MooMooMeadows": {
         "tourName": "MooMooMeadows",
