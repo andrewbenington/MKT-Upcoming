@@ -2200,8 +2200,8 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/7/7e/MKT_Sydney_Sprint_Scene2.png/600px-MKT_Sydney_Sprint_Scene2.png"
       },
-      "BR": {
-        "tourName": "BR",
+      "Bathroom": {
+        "tourName": "Bathroom",
         "tourPlatform": "mob",
         "displayName": "Bathroom Course",
         "displayPlatform": "Tour",
@@ -2280,10 +2280,50 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
+      "RioDeJaneiro": {
+        "tourName": "RioDeJaneiro",
+        "tourPlatform": "mob",
+        "displayName": "Rio (hypothetical)",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": true,
+        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+      },
+      "Seoul": {
+        "tourName": "Seoul",
+        "tourPlatform": "mob",
+        "displayName": "Seoul (hypothetical)",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": true,
+        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+      },
+      "Shanghai": {
+        "tourName": "Shanghai",
+        "tourPlatform": "mob",
+        "displayName": "Shanghai (hypothetical)",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": true,
+        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+      },
+      "Rome": {
+        "tourName": "Rome",
+        "tourPlatform": "mob",
+        "displayName": "Rome (hypothetical)",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": true,
+        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+      },
       "MU": {
         "tourName": "MU",
         "tourPlatform": "mob",
-        "displayName": "'Mobmu' (Mumbai?)",
+        "displayName": "'Mobmu' (unused?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
