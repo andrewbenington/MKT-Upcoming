@@ -76,9 +76,9 @@ const TourDatamine = ({
             .map((game) => game.tourPrefix)
             .filter(
               (game) =>
-                (!beforeCourse ||
+                (beforeCourse &&
                   game.localeCompare(beforeCourse.tourPlatform) <= 0) &&
-                (!afterCourse ||
+                (afterCourse &&
                   game.localeCompare(afterCourse.tourPlatform) >= 0)
             )
             .sort((a, b) => a.localeCompare(b));

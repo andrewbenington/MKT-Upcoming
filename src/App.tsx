@@ -18,7 +18,7 @@ import TourIcon from "./components/TourIcon";
 import course_data_nonlocal_images from "./data/course_data_nonlocal_images.json";
 import { fetchData, MissingTrack } from "./utils/fetchData";
 import { Game } from "./utils/types";
-import { formatPlatform } from "./utils/utils";
+import { courseFromCodeName, formatPlatform } from "./utils/utils";
 import AllCourses from "./views/AllCourses";
 import TourDatamine from "./views/TourDatamine";
 const drawerWidth = 240;
@@ -45,57 +45,33 @@ function App() {
     // let storedMissingTracks = localStorage.getItem("missing-tracks");
     const tourCourses = await fetchData();
     if (tourCourses) {
-      tourCourses.tracks.forEach((track) => {
-        if (track.class !== "Remix") {
-          let courses;
-          let foundCourse;
-          if (track.class === "Battle") {
-            courses = courseData[formatPlatform(track.platform)].battleCourses;
-            if (courses) {
-              foundCourse = courses[track.name];
-              if (!(track.name in courses)) {
-                foundCourse = Object.values(courses).find((course) =>
-                  course.otherNames?.includes(track.name ?? "")
-                );
-                if (foundCourse) {
-                  if (foundCourse.tourName in courses) {
-                    delete courses[foundCourse.tourName];
-                    courses[track.name] = {
-                      ...foundCourse,
-                      tourName: track.name,
-                      inTour: true,
-                    };
-                  }
-                  courseData[formatPlatform(track.platform)].battleCourses =
-                    courses;
-                  setCourseData(courseData);
-                }
-              }
+      tourCourses.tracks
+        .filter((track) => track && track.class !== "Remix")
+        .forEach((track) => {
+          const foundCourse = courseFromCodeName(
+            track.name,
+            track.platform,
+            track.class === "Battle"
+          );
+          const game = courseData[formatPlatform(track.platform)];
+          const courses =
+            track.class === "Battle" ? game.battleCourses : game.courses;
+          if (foundCourse && courses) {
+            delete courses[foundCourse.tourName];
+            courses[track.name] = {
+              ...foundCourse,
+              tourName: track.name,
+              inTour: true,
+            };
+            if (track.class === "Battle") {
+              courseData[formatPlatform(track.platform)].battleCourses = courses;
+            } else {
+              courseData[formatPlatform(track.platform)].courses = courses;
             }
-          } else {
-            courses = courseData[formatPlatform(track.platform)].courses;
-            if (courses) {
-              foundCourse = courses[track.name];
-              if (track.name! in courses) {
-                foundCourse = Object.values(courses).find((course) =>
-                  course.otherNames?.includes(track.name ?? "")
-                );
-                if (foundCourse) {
-                  if (foundCourse.tourName in courses) {
-                    delete courses[foundCourse.tourName];
-                    courses[track.name] = {
-                      ...foundCourse,
-                      tourName: track.name,
-                    };
-                  }
-                  courseData[formatPlatform(track.platform)].courses = courses;
-                  setCourseData(courseData);
-                }
-              }
-            }
+            setCourseData(courseData);
           }
-        }
-      });
+        });
+
       setMissingTracks(tourCourses.missingTracks);
       localStorage.setItem(
         "missing-tracks",
@@ -265,7 +241,7 @@ function App() {
               >
                 (Italics)
               </p>
-              <p style={{ marginRight: 5, flex: "1 1 70%" }}>Japanese name</p>
+              <p style={{ marginRight: 5, flex: "1 1 70%" }}>Internal name</p>
             </ListItem>
           )}
         </List>

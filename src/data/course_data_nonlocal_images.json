@@ -880,7 +880,7 @@
         "tourPlatform": "ds",
         "displayName": "Mario Circuit",
         "displayPlatform": "DS",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/f/f7/MKDS_Mario_Circuit_DS_Intro.png/160px-MKDS_Mario_Circuit_DS_Intro.png",
         "in8DX": true
       },
@@ -1163,7 +1163,12 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/thumb/d/db/Moonviewhighway.png/300px-Moonviewhighway.png",
         "in8DX": false,
-        "otherNames": ["MoonRidge", "MoonHighway", "MoonRidgeHighway", "MoonRidgeAndHighway"]
+        "otherNames": [
+          "MoonRidge",
+          "MoonHighway",
+          "MoonRidgeHighway",
+          "MoonRidgeAndHighway"
+        ]
       },
       "BowserCastle": {
         "tourName": "BowserCastle",
@@ -1191,7 +1196,8 @@
         "displayPlatform": "Wii",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/d/d9/Dry_Dry_Ruins.png",
-        "in8DX": false
+        "in8DX": false,
+        "otherNames": ["KaraKaraRuins", "KaraKaraIseki"]
       },
       "LuigiCircuit": {
         "tourName": "LuigiCircuit",
@@ -2338,7 +2344,8 @@
         "inTour": false,
         "in8DX": true,
         "hypothetical": false,
-        "image": "images/Yoshis_Island.jpeg"
+        "image": "images/Yoshis_Island.jpeg",
+        "otherNames": ["YoshisIsland"]
       }
     },
     "battleCourses": {

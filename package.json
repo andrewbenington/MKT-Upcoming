@@ -15,6 +15,7 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "eslint": "^8.26.0",
+    "levenshtein-edit-distance": "^3.0.1",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

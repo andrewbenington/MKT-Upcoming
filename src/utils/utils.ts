@@ -1,3 +1,4 @@
+import { levenshteinEditDistance } from "levenshtein-edit-distance";
 import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
 import { Game } from "./types";
 
@@ -38,18 +39,16 @@ export const courseFromCodeName = (
   platform: string,
   isBattle: boolean
 ) => {
-  let courses;
-  if (isBattle) {
-    courses = courseData[formatPlatform(platform)].battleCourses;
-  } else {
-    courses = courseData[formatPlatform(platform)].courses;
-  }
+  const game = courseData[formatPlatform(platform)];
+  const courses = isBattle ? game.battleCourses : game.courses;
   let foundCourse;
   if (courses) {
-    foundCourse = courses[codeName];
+    foundCourse = courses[codeName] ?? courses[`${codeName}s`];
     if (!foundCourse) {
       foundCourse = Object.values(courses).find((course) =>
-        course.otherNames?.includes(codeName ?? "")
+        [...(course.otherNames ?? []), course.tourName]?.some(
+          (name) => levenshteinEditDistance(name, codeName) < 5
+        )
       );
       if (foundCourse) {
         foundCourse.altName = codeName;

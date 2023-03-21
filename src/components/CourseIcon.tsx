@@ -35,7 +35,10 @@ CourseIconProps) => {
           position: "relative",
           margin: 5,
           borderRadius: (height / 104) * 8,
-          backgroundImage: `url(${course?.image})`,
+          backgroundImage: `url(${
+            course?.image ??
+            "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+          })`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           imageRendering: "crisp-edges",
@@ -102,8 +105,7 @@ CourseIconProps) => {
           <p
             style={{
               fontFamily: "'Verdana', sans-serif",
-              fontSize:
-                (height / 104) * getFontSize(course?.displayName),
+              fontSize: (height / 104) * getFontSize(course?.displayName),
               textShadow: ".5px .5px #3333",
               fontWeight:
                 course &&
