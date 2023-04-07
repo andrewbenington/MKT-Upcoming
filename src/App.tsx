@@ -21,6 +21,7 @@ import { Game } from "./utils/types";
 import { courseFromCodeName, formatPlatform } from "./utils/utils";
 import AllCourses from "./views/AllCourses";
 import TourDatamine from "./views/TourDatamine";
+import Credits from "./views/Credits";
 const drawerWidth = 240;
 
 function App() {
@@ -64,7 +65,8 @@ function App() {
               inTour: true,
             };
             if (track.class === "Battle") {
-              courseData[formatPlatform(track.platform)].battleCourses = courses;
+              courseData[formatPlatform(track.platform)].battleCourses =
+                courses;
             } else {
               courseData[formatPlatform(track.platform)].courses = courses;
             }
@@ -142,7 +144,7 @@ function App() {
         }}
       >
         <List>
-          {["Tour Datamine", "All Courses"].map((text, index) => (
+          {["Tour Datamine", "All Courses", "Credits"].map((text, index) => (
             <ListItem
               key={text}
               disablePadding
@@ -169,37 +171,27 @@ function App() {
               </ListItemButton>
             </ListItem>
           ))}
-          {/* <ListItem disablePadding>
-            <Button
-              variant="contained"
-              style={{
-                backgroundColor: "#ca0000",
-                fontFamily: "'Verdana', sans-serif",
-                margin: "auto",
-                marginTop: 10
-              }}
-              onClick={getCourses}
-            >
-              Force Refresh
-            </Button>
-          </ListItem> */}
         </List>
         <div style={{ flex: 1 }}></div>
         <List>
-          <ListItem disablePadding>
-            <p
-              style={{
-                textAlign: "center",
-                fontWeight: "bold",
-                flex: "1 1 30%",
-              }}
-            >
-              Bold
-            </p>
-            <p style={{ marginRight: 5, flex: "1 1 70%" }}>
-              Assets Datamined for Tour
-            </p>
-          </ListItem>
+          {page !== "Credits" ? (
+            <ListItem disablePadding>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  flex: "1 1 30%",
+                }}
+              >
+                Bold
+              </p>
+              <p style={{ marginRight: 5, flex: "1 1 70%" }}>
+                Assets Datamined for Tour
+              </p>
+            </ListItem>
+          ) : (
+            <div />
+          )}
           <ListItem disablePadding>
             <div
               style={{
@@ -229,7 +221,7 @@ function App() {
                 In Mario Kart Tour
               </p>
             </ListItem>
-          ) : (
+          ) : page === "Tour Datamine" ? (
             <ListItem disablePadding>
               <p
                 style={{
@@ -243,13 +235,17 @@ function App() {
               </p>
               <p style={{ marginRight: 5, flex: "1 1 70%" }}>Internal name</p>
             </ListItem>
+          ) : (
+            <div />
           )}
         </List>
       </Drawer>
       {page === "Tour Datamine" ? (
         <TourDatamine missingTracks={missingTracks} courseData={courseData} />
-      ) : (
+      ) : page === "All Courses" ? (
         <AllCourses courseData={courseData} />
+      ) : (
+        <Credits />
       )}
     </Box>
   );

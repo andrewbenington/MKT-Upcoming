@@ -1,9 +1,10 @@
-import { Card } from "@mui/material";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
+import CardContainer from "../components/CardContainer";
 import CourseIcon from "../components/CourseIcon";
 import { MissingTrack } from "../utils/fetchData";
 import { Course, Game } from "../utils/types";
 import { courseFromCodeName, formatPlatform } from "../utils/utils";
+import { viewContainerStyle } from "./styles";
 
 const TourDatamine = ({
   missingTracks,
@@ -14,11 +15,10 @@ const TourDatamine = ({
     [platform: string]: Game;
   };
 }) => {
-  const [width, setWidth] = useState<number>(window.innerWidth);
-  const isMobile = useMemo(() => width <= 768, [width]);
+  const [isMobile, setIsMobile] = useState(false);
 
   function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
+    setIsMobile(window.innerWidth <= 768);
   }
 
   useEffect(() => {
@@ -29,19 +29,7 @@ const TourDatamine = ({
   }, []);
 
   return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 20,
-        backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
-        minHeight: "100vh",
-        flex: 1,
-      }}
-    >
+    <div className="App" style={viewContainerStyle}>
       {missingTracks.map((courseGap: MissingTrack) => {
         let possibleCourses: Course[] = [];
         let beforeCourse: any;
@@ -76,10 +64,10 @@ const TourDatamine = ({
             .map((game) => game.tourPrefix)
             .filter(
               (game) =>
-                (beforeCourse &&
-                  game.localeCompare(beforeCourse.tourPlatform) <= 0) &&
-                (afterCourse &&
-                  game.localeCompare(afterCourse.tourPlatform) >= 0)
+                beforeCourse &&
+                game.localeCompare(beforeCourse.tourPlatform) <= 0 &&
+                afterCourse &&
+                game.localeCompare(afterCourse.tourPlatform) >= 0
             )
             .sort((a, b) => a.localeCompare(b));
         } else {
@@ -189,20 +177,10 @@ const TourDatamine = ({
         });
 
         return (
-          <Card
+          <CardContainer
+            isMobile={isMobile}
+            style={{flexDirection: isMobile ? "column" : "row"}}
             key={courseGap.after?.name + "-" + courseGap.before?.name}
-            style={{
-              margin: 20,
-              marginTop: 0,
-              padding: isMobile ? "5px 5px" : "10px 0px",
-              width: "100%",
-              display: "flex",
-              flexDirection: isMobile ? "column" : "row",
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundImage:
-                "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
-            }}
           >
             {isMobile && (
               <h3 style={{ marginTop: 10, marginBottom: 0 }}>{`Gap Size: ${
@@ -323,7 +301,7 @@ const TourDatamine = ({
                 })}
               </div>
             </div>
-          </Card>
+          </CardContainer>
         );
       })}
     </div>

@@ -1,7 +1,8 @@
-import { Card } from "@mui/material";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
+import CardContainer from "../components/CardContainer";
 import CourseIcon from "../components/CourseIcon";
 import { Game } from "../utils/types";
+import { viewContainerStyle } from "./styles";
 
 const AllCourses = ({
   courseData,
@@ -10,12 +11,10 @@ const AllCourses = ({
     [platform: string]: Game;
   };
 }) => {
-  const [width, setWidth] = useState<number>(window.innerWidth);
-  const isMobile = useMemo(() => width <= 768, [width]);
-  // const [modalCourse, setModalCourse] = useState<Course>();
+  const [isMobile, setIsMobile] = useState(false);
 
   function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
+    setIsMobile(window.innerWidth <= 768);
   }
 
   useEffect(() => {
@@ -26,33 +25,13 @@ const AllCourses = ({
   }, []);
 
   return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 20,
-        backgroundImage: "linear-gradient(180deg,#e60012 0,#ca0000 100%)",
-      }}
-    >
+    <div className="App" style={viewContainerStyle}>
       {Object.entries(courseData).map(([platform, game]: [string, Game]) => {
         return (
-          <Card
+          <CardContainer
             key={game.gameName}
-            style={{
-              margin: 20,
-              marginTop: 0,
-              padding: isMobile ? "5px 5px" : "10px 0px",
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundImage:
-                "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
-            }}
+            isMobile={isMobile}
+            style={{ flexDirection: "column" }}
           >
             <h2 style={{ marginTop: 0, marginBottom: 10 }}>{game.gameName}</h2>
             {game.courses && (
@@ -119,7 +98,7 @@ const AllCourses = ({
                 </div>
               </>
             )}
-          </Card>
+          </CardContainer>
         );
       })}
     </div>
