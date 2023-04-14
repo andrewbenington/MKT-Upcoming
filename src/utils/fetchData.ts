@@ -71,7 +71,6 @@ export const fetchData = async (): Promise<
   let tracks: Track[] = [];
   let missingTracks: MissingTrack[] = [];
   pairs.forEach((pair, i) => {
-    console.log(i === pairs.length - 1);
     const splitKey = pair[1].split(/_|R_sub|RX_sub|X_sub|_sub/);
     const courseClass = splitKey[0];
     const platform = splitKey[1].substring(1);

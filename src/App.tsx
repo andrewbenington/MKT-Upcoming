@@ -12,24 +12,31 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
+import ReactGA from "react-ga4";
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import "./App.css";
 import EightDXIcon from "./components/EightDXIcon";
 import TourIcon from "./components/TourIcon";
 import course_data_nonlocal_images from "./data/course_data_nonlocal_images.json";
-import { fetchData, MissingTrack } from "./utils/fetchData";
+import { MissingTrack, fetchData } from "./utils/fetchData";
 import { Game } from "./utils/types";
 import { courseFromCodeName, formatPlatform } from "./utils/utils";
 import AllCourses from "./views/AllCourses";
-import TourDatamine from "./views/TourDatamine";
 import Credits from "./views/Credits";
+import TourDatamine from "./views/TourDatamine";
 const drawerWidth = 240;
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
-  const [page, setPage] = useState(
-    localStorage.getItem("stored-page") ?? "Tour Datamine"
-  );
+  const page = useLocation();
+  const navigate = useNavigate();
   const [courseData, setCourseData] = useState(
     course_data_nonlocal_images as unknown as {
       [platform: string]: Game;
@@ -37,6 +44,11 @@ function App() {
   );
   const [missingTracks, setMissingTracks] = useState<MissingTrack[]>([]);
   const isMobile = useMemo(() => width <= 768, [width]);
+  const pageTitles: { [key: string]: string } = {
+    "/tour-datamine": "Tour Datamine",
+    "/all-courses": "All Courses",
+    "/credits": "Credits",
+  };
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -91,10 +103,6 @@ function App() {
     // eslint-disable-next-line
   }, []);
 
-  useEffect(() => {
-    console.log(courseData["GCN"]);
-  }, [courseData]);
-
   return (
     <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
       {isMobile && (
@@ -102,7 +110,7 @@ function App() {
           position="static"
           style={{ backgroundColor: "white", color: "#ca0000" }}
         >
-          <Toolbar>
+          <Toolbar style={{minHeight: undefined}}>
             <IconButton
               size="large"
               edge="start"
@@ -124,7 +132,7 @@ function App() {
                 fontWeight: "bold",
               }}
             >
-              {page}
+              {pageTitles[page.pathname]}
             </Typography>
           </Toolbar>
         </AppBar>
@@ -144,16 +152,22 @@ function App() {
         }}
       >
         <List>
-          {["Tour Datamine", "All Courses", "Credits"].map((text, index) => (
+          {["/tour-datamine", "/all-courses", "/credits"].map((path) => (
             <ListItem
-              key={text}
+              key={path}
               disablePadding
-              style={{ backgroundColor: page === text ? "#ccc" : "#fff" }}
+              style={{
+                backgroundColor: page.pathname === path ? "#ccc" : "#fff",
+              }}
             >
               <ListItemButton
                 onClick={() => {
-                  setPage(text);
-                  localStorage.setItem("stored-page", text);
+                  navigate(path);
+                  ReactGA.send({
+                    hitType: "pageview",
+                    page: page.pathname,
+                    title: pageTitles[path],
+                  });
                 }}
               >
                 <ListItemText
@@ -164,7 +178,7 @@ function App() {
                         margin: 0,
                       }}
                     >
-                      {text}
+                      {pageTitles[path]}
                     </p>
                   }
                 />
@@ -174,7 +188,7 @@ function App() {
         </List>
         <div style={{ flex: 1 }}></div>
         <List>
-          {page !== "Credits" ? (
+          {page.pathname !== "/credits" ? (
             <ListItem disablePadding>
               <p
                 style={{
@@ -206,7 +220,7 @@ function App() {
               In Mario Kart 8 DX (Or Datamined)
             </p>
           </ListItem>
-          {page === "All Courses" ? (
+          {page.pathname === "/all-courses" ? (
             <ListItem disablePadding>
               <div
                 style={{
@@ -221,7 +235,7 @@ function App() {
                 In Mario Kart Tour
               </p>
             </ListItem>
-          ) : page === "Tour Datamine" ? (
+          ) : page.pathname === "/tour-datamine" ? (
             <ListItem disablePadding>
               <p
                 style={{
@@ -240,13 +254,23 @@ function App() {
           )}
         </List>
       </Drawer>
-      {page === "Tour Datamine" ? (
-        <TourDatamine missingTracks={missingTracks} courseData={courseData} />
-      ) : page === "All Courses" ? (
-        <AllCourses courseData={courseData} />
-      ) : (
-        <Credits />
-      )}
+      <Routes>
+        <Route path="/" element={<Navigate to="/tour-datamine" />} />
+        <Route
+          path="/tour-datamine"
+          element={
+            <TourDatamine
+              missingTracks={missingTracks}
+              courseData={courseData}
+            />
+          }
+        />
+        <Route
+          path="/all-courses"
+          element={<AllCourses courseData={courseData} />}
+        />
+        <Route path="/credits" element={<Credits />} />
+      </Routes>
     </Box>
   );
 }

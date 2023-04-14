@@ -15,7 +15,7 @@ const TourDatamine = ({
     [platform: string]: Game;
   };
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   function handleWindowSizeChange() {
     setIsMobile(window.innerWidth <= 768);
@@ -47,12 +47,6 @@ const TourDatamine = ({
             courseGap.after.platform,
             courseGap.after.class === "Battle"
           );
-        }
-        if (!afterCourse) {
-          console.log(courseGap.after, "not found");
-        }
-        if (!beforeCourse) {
-          console.log(courseGap.before, "not found");
         }
         let games = [];
         // if both are new, classic, etc
@@ -107,7 +101,6 @@ const TourDatamine = ({
             games.push("mob");
           }
         }
-        console.log(games);
         games.forEach((game) => {
           let potentialCourses =
             (courseGap.battle
@@ -172,14 +165,13 @@ const TourDatamine = ({
           definedCoursesToAdd.sort((a, b) =>
             (a.altName ?? a.tourName).localeCompare(b.altName ?? b.tourName)
           );
-          console.log(possibleCourses, definedCoursesToAdd);
           possibleCourses.push(...definedCoursesToAdd);
         });
 
         return (
           <CardContainer
             isMobile={isMobile}
-            style={{flexDirection: isMobile ? "column" : "row"}}
+            style={{ flexDirection: isMobile ? "column" : "row" }}
             key={courseGap.after?.name + "-" + courseGap.before?.name}
           >
             {isMobile && (

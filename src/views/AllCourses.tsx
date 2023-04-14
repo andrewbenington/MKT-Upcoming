@@ -11,7 +11,7 @@ const AllCourses = ({
     [platform: string]: Game;
   };
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   function handleWindowSizeChange() {
     setIsMobile(window.innerWidth <= 768);

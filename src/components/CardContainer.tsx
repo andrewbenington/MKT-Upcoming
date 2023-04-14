@@ -13,10 +13,9 @@ const CardContainer = (props: CardContainerProps) => {
     <Card
       key={key}
       style={{
-        margin: 20,
-        marginTop: 0,
-        padding: isMobile ? "5px 5px" : "10px 0px",
-        width: "100%",
+        marginBottom: 10,
+        padding: isMobile ? "5px 5px" : "10px 10px",
+        width: isMobile ? "calc(100% - 10px)" : "calc(100% - 20px)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
