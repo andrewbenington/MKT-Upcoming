@@ -2276,15 +2276,35 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "AT": {
-        "tourName": "AT",
+      "Athens1": {
+        "tourName": "Athens1",
         "tourPlatform": "mob",
-        "displayName": "'MobAT' (Athens?)",
+        "displayName": "Athens Dash",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": false,
+        "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
+      },
+      "Athens2": {
+        "tourName": "Athens2",
+        "tourPlatform": "mob",
+        "displayName": "Athens Dash 2",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
         "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
+      },
+      "Athens3": {
+        "tourName": "Athens3",
+        "tourPlatform": "mob",
+        "displayName": "Athens Dash 3",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "hypothetical": true,
+        "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
       },
       "RioDeJaneiro": {
         "tourName": "RioDeJaneiro",
