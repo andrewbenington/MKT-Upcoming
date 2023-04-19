@@ -2291,9 +2291,9 @@
         "tourPlatform": "mob",
         "displayName": "Athens Dash 2",
         "displayPlatform": "Tour",
-        "inTour": false,
+        "inTour": true,
         "in8DX": false,
-        "hypothetical": true,
+        "hypothetical": false,
         "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
       },
       "Athens3": {
@@ -2375,6 +2375,15 @@
         "displayPlatform": "Tour",
         "tourName": "NewYork1",
         "image": "https://mario.wiki.gallery/images/thumb/3/3a/MKT_New_York_Minute_Scene_1.jpg/540px-MKT_New_York_Minute_Scene_1.jpg",
+        "in8DX": false,
+        "inTour": true
+      },
+      "Paris1": {
+        "displayName": "Paris Promenade B",
+        "tourPlatform": "mob",
+        "displayPlatform": "Tour",
+        "tourName": "NewYork1",
+        "image": "https://mario.wiki.gallery/images/thumb/d/d1/MKT_Paris_Promenade_Scene.jpg/600px-MKT_Paris_Promenade_Scene.jpg",
         "in8DX": false,
         "inTour": true
       }
