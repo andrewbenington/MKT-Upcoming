@@ -110,7 +110,7 @@ function App() {
           position="static"
           style={{ backgroundColor: "white", color: "#ca0000" }}
         >
-          <Toolbar style={{minHeight: undefined}}>
+          <Toolbar style={{ minHeight: undefined }}>
             <IconButton
               size="large"
               edge="start"
@@ -189,7 +189,7 @@ function App() {
         <div style={{ flex: 1 }}></div>
         <List>
           {page.pathname !== "/credits" ? (
-            <ListItem disablePadding>
+            <ListItem disablePadding style={{ paddingBottom: 15 }}>
               <p
                 style={{
                   textAlign: "center",
@@ -206,22 +206,26 @@ function App() {
           ) : (
             <div />
           )}
-          <ListItem disablePadding>
-            <div
-              style={{
-                flex: "1 1 30%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <EightDXIcon height={18} />
-            </div>
-            <p style={{ marginRight: 10, flex: "1 1 70%" }}>
-              In Mario Kart 8 DX (Or Datamined)
-            </p>
-          </ListItem>
+          {page.pathname !== "/credits" ? (
+            <ListItem disablePadding style={{ paddingBottom: 15 }}>
+              <div
+                style={{
+                  flex: "1 1 30%",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <EightDXIcon height={18} />
+              </div>
+              <p style={{ marginRight: 10, flex: "1 1 70%" }}>
+                In Mario Kart 8 DX (Or Datamined)
+              </p>
+            </ListItem>
+          ) : (
+            <div />
+          )}
           {page.pathname === "/all-courses" ? (
-            <ListItem disablePadding>
+            <ListItem disablePadding style={{ paddingBottom: 15 }}>
               <div
                 style={{
                   flex: "1 1 30%",
@@ -236,7 +240,7 @@ function App() {
               </p>
             </ListItem>
           ) : page.pathname === "/tour-datamine" ? (
-            <ListItem disablePadding>
+            <ListItem disablePadding style={{ paddingBottom: 15 }}>
               <p
                 style={{
                   textAlign: "center",
@@ -253,6 +257,13 @@ function App() {
             <div />
           )}
         </List>
+        <p style={{ padding: "0px 10px", fontSize: 10, margin: 0 }}>
+          Site maintained by{" "}
+          <a href="https://www.reddit.com/user/SpoonLord57">u/SpoonLord57</a>.
+        </p>
+        <p style={{ padding: "0px 10px 5px 10px", fontSize: 10, margin: 0 }}>
+          Feel free to reach out.
+        </p>
       </Drawer>
       <Routes>
         <Route path="/" element={<Navigate to="/tour-datamine" />} />

@@ -45,6 +45,12 @@ const Credits = () => {
           Images are from{" "}
           <a href="https://www.mariowiki.com">the Super Mario wiki</a>
         </p>
+        <p style={{ marginTop: 20 }}>
+          This site is maintained by Reddit user{" "}
+          <a href="https://www.reddit.com/user/SpoonLord57">u/SpoonLord57</a>.
+          Reach out if you like the site, or if something is wrong and I should
+          be yelled at.
+        </p>
       </CardContainer>
     </div>
   );

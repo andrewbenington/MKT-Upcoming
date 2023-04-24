@@ -55,3 +55,7 @@ h2 {
 body > #root > div {
   min-height: 100vh;
 }
+
+p {
+  margin: 0;
+}
