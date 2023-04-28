@@ -529,7 +529,7 @@
       "BowserCastle1": {
         "tourName": "BowserCastle1",
         "tourPlatform": "agb",
-        "displayName": "Bowser Castle 1",
+        "displayName": "Bowser's Castle 1",
         "displayPlatform": "GBA",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/9/91/Bowser%27s_Castle_1_MKSC_icon.png",
@@ -547,7 +547,7 @@
       "BowserCastle2": {
         "tourName": "BowserCastle2",
         "tourPlatform": "agb",
-        "displayName": "Bowser Castle 2",
+        "displayName": "Bowser's Castle 2",
         "displayPlatform": "GBA",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/f/f3/Bowser%27s_Castle_2_MKSC_icon.png",
@@ -565,7 +565,7 @@
       "BowserCastle3": {
         "tourName": "BowserCastle3",
         "tourPlatform": "agb",
-        "displayName": "Bowser Castle 3",
+        "displayName": "Bowser's Castle 3",
         "displayPlatform": "GBA",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/e/e7/Bowser%27s_Castle_3_MKSC_icon.png",
@@ -574,7 +574,7 @@
       "BowserCastle4": {
         "tourName": "BowserCastle4",
         "tourPlatform": "agb",
-        "displayName": "Bowser Castle 4",
+        "displayName": "Bowser's Castle 4",
         "displayPlatform": "GBA",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/7/7d/Bowser%27s_Castle_4_MKSC_icon.png",
@@ -1798,16 +1798,6 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/d/d1/MKT_Paris_Promenade_Scene.jpg/600px-MKT_Paris_Promenade_Scene.jpg"
       },
-      "Paris4": {
-        "tourName": "Paris4",
-        "tourPlatform": "mob",
-        "displayName": "Paris Promenade 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/thumb/d/d1/MKT_Paris_Promenade_Scene.jpg/600px-MKT_Paris_Promenade_Scene.jpg"
-      },
       "Vancouver1": {
         "tourName": "Vancouver1",
         "tourPlatform": "mob",
@@ -1833,16 +1823,6 @@
         "displayPlatform": "Tour",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/5/5a/MKT_Vancouver_Velocity_Scene.jpg/300px-MKT_Vancouver_Velocity_Scene.jpg"
-      },
-      "Vancouver4": {
-        "tourName": "Vancouver3",
-        "tourPlatform": "mob",
-        "displayName": "Vancouver Velocity 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/5/5a/MKT_Vancouver_Velocity_Scene.jpg/300px-MKT_Vancouver_Velocity_Scene.jpg"
       },
       "Bangkok1": {
@@ -1872,16 +1852,6 @@
         "inTour": true,
         "in8DX": true,
         "hypothetical": false,
-        "image": "https://mario.wiki.gallery/images/thumb/6/68/MKT_Bangkok_Rush_Scene.jpg/300px-MKT_Bangkok_Rush_Scene.jpg"
-      },
-      "Bangkok4": {
-        "tourName": "Bangkok4",
-        "tourPlatform": "mob",
-        "displayName": "Bangkok Rush 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/6/68/MKT_Bangkok_Rush_Scene.jpg/300px-MKT_Bangkok_Rush_Scene.jpg"
       },
       "NewYork1": {
@@ -1947,16 +1917,6 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/4/4f/MKT_Berlin_Byways_View.png"
       },
-      "Berlin4": {
-        "tourName": "Berlin4",
-        "tourPlatform": "mob",
-        "displayName": "Berlin Byways 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/4/4f/MKT_Berlin_Byways_View.png"
-      },
       "HillClimb": {
         "tourName": "HillClimb",
         "tourPlatform": "mob",
@@ -1992,16 +1952,6 @@
         "inTour": true,
         "in8DX": true,
         "hypothetical": false,
-        "image": "https://mario.wiki.gallery/images/thumb/3/34/MKT_Singapore_Speedway_Scene.png/600px-MKT_Singapore_Speedway_Scene.png"
-      },
-      "Singapore4": {
-        "tourName": "Singapore4",
-        "tourPlatform": "mob",
-        "displayName": "Singapore Speedway 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/3/34/MKT_Singapore_Speedway_Scene.png/600px-MKT_Singapore_Speedway_Scene.png"
       },
       "NinjaMansion": {
@@ -2047,16 +1997,6 @@
         "displayPlatform": "Tour",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/3/31/MKT_Amsterdam_Drift_Scene.jpg/600px-MKT_Amsterdam_Drift_Scene.jpg"
-      },
-      "Amsterdam4": {
-        "tourName": "Amsterdam4",
-        "tourPlatform": "mob",
-        "displayName": "Amsterdam Drift 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/3/31/MKT_Amsterdam_Drift_Scene.jpg/600px-MKT_Amsterdam_Drift_Scene.jpg"
       },
       "Tokyo1": {
@@ -2122,16 +2062,6 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/9/91/MKT_London_View.jpg/600px-MKT_London_View.jpg"
       },
-      "London4": {
-        "tourName": "London4",
-        "tourPlatform": "mob",
-        "displayName": "London Loop 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/thumb/9/91/MKT_London_View.jpg/600px-MKT_London_View.jpg"
-      },
       "LosAngeles1": {
         "tourName": "LosAngeles1",
         "tourPlatform": "mob",
@@ -2157,16 +2087,6 @@
         "displayPlatform": "Tour",
         "inTour": true,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/8/8e/LosAngelesLapsscreenshot.jpg/600px-LosAngelesLapsscreenshot.jpg"
-      },
-      "LosAngeles4": {
-        "tourName": "LosAngeles4",
-        "tourPlatform": "mob",
-        "displayName": "Los Angeles Laps 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/8/8e/LosAngelesLapsscreenshot.jpg/600px-LosAngelesLapsscreenshot.jpg"
       },
       "Sydney1": {
@@ -2196,16 +2116,6 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/7/7e/MKT_Sydney_Sprint_Scene2.png/600px-MKT_Sydney_Sprint_Scene2.png"
       },
-      "Sydney4": {
-        "tourName": "Sydney4",
-        "tourPlatform": "mob",
-        "displayName": "Sydney Sprint 4",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/thumb/7/7e/MKT_Sydney_Sprint_Scene2.png/600px-MKT_Sydney_Sprint_Scene2.png"
-      },
       "Bathroom": {
         "tourName": "Bathroom",
         "tourPlatform": "mob",
@@ -2219,7 +2129,7 @@
       "DarkKingdom": {
         "tourName": "DarkKingdom",
         "tourPlatform": "mob",
-        "displayName": "DK (Dark Kingdom?)",
+        "displayName": "MobDK (Dark Kingdom?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
@@ -2269,7 +2179,7 @@
       "MA": {
         "tourName": "MA",
         "tourPlatform": "mob",
-        "displayName": "MA City (Madrid?)",
+        "displayName": "MobMA (Madrid?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
@@ -2349,7 +2259,7 @@
       "MU": {
         "tourName": "MU",
         "tourPlatform": "mob",
-        "displayName": "'Mobmu' (unused?)",
+        "displayName": "'MobMU' (unused?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
