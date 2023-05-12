@@ -21,7 +21,12 @@ const Credits = () => {
       style={{
         ...viewContainerStyle,
         ...(isMobile
-          ? { position: "fixed", top: 48, bottom: 0, minHeight: undefined }
+          ? {
+              position: "fixed",
+              top: 48,
+              bottom: 0,
+              minHeight: undefined,
+            }
           : {}),
       }}
     >

@@ -4,7 +4,7 @@ interface CardContainerProps {
   key: string;
   children: any;
   isMobile: boolean;
-  style?: any 
+  style?: any;
 }
 
 const CardContainer = (props: CardContainerProps) => {
@@ -21,7 +21,7 @@ const CardContainer = (props: CardContainerProps) => {
         alignItems: "center",
         backgroundImage:
           "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
-          ...style
+        ...style,
       }}
     >
       {children}

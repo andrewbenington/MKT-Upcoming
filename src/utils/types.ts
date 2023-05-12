@@ -5,7 +5,7 @@ export interface Game {
   displayPrefix: string;
   courses?: { [index: string]: Course };
   battleCourses?: { [index: string]: Course };
-  year: number
+  year: number;
 }
 
 export interface Course {
@@ -17,6 +17,6 @@ export interface Course {
   in8DX?: boolean;
   image: string;
   hypothetical?: boolean;
-  otherNames?: string[]
-  altName?: string
+  otherNames?: string[];
+  altName?: string;
 }
