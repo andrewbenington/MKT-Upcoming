@@ -587,7 +587,8 @@
         "displayPlatform": "GBA",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/7/7d/Bowser%27s_Castle_4_MKSC_icon.png",
-        "in8DX": false
+        "in8DX": false,
+        "hypothetical": true
       },
       "BowserCastle4RT": {
         "tourName": "BowserCastle4RT",
@@ -596,7 +597,8 @@
         "displayPlatform": "GBA",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/7/7d/Bowser%27s_Castle_4_MKSC_icon.png",
-        "in8DX": false
+        "in8DX": false,
+        "hypothetical": true
       },
       "BrokenPier": {
         "tourName": "BrokenPier",

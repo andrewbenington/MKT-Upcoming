@@ -1,6 +1,5 @@
 const existingAssets = [
   'GBALuigiCircuit',
-  'GCNMushroomBridge',
   'GCNWaluigiStadium',
   'TourBathroom',
   'TourDK',
