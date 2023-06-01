@@ -164,7 +164,7 @@
         "tourPlatform": "sfc",
         "displayName": "Bowser Castle 3",
         "displayPlatform": "SNES",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/b/b7/SMK_Bowser_Castle_3_Lower-Screen_Map.png",
         "in8DX": false
       },
@@ -459,7 +459,7 @@
         "tourPlatform": "agb",
         "displayName": "Peach Circuit",
         "displayPlatform": "GBA",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/c/cd/Peach_Circuit_MKSC_icon.png",
         "in8DX": false
       },
@@ -576,7 +576,7 @@
         "tourPlatform": "agb",
         "displayName": "Bowser's Castle 4",
         "displayPlatform": "GBA",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/7/7d/Bowser%27s_Castle_4_MKSC_icon.png",
         "in8DX": false
       },
@@ -806,10 +806,9 @@
         "tourPlatform": "gc",
         "displayName": "Mushroom Bridge",
         "displayPlatform": "GCN",
-        "inTour": false,
+        "inTour": true,
         "in8DX": false,
-        "image": "https://mario.wiki.gallery/images/thumb/7/73/MushroomBridgeIcon-MKDD.png/250px-MushroomBridgeIcon-MKDD.png",
-        "otherNames": ["KinokoBridge"]
+        "image": "https://mario.wiki.gallery/images/thumb/7/73/MushroomBridgeIcon-MKDD.png/250px-MushroomBridgeIcon-MKDD.png"
       },
       "MushroomCity": {
         "tourName": "MushroomCity",
@@ -1107,7 +1106,7 @@
         "tourPlatform": "wii",
         "displayName": "Daisy Circuit",
         "displayPlatform": "Wii",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/8/87/Daisy_circuit1.png/300px-Daisy_circuit1.png",
         "in8DX": false
       },
@@ -1215,10 +1214,9 @@
         "tourPlatform": "wii",
         "displayName": "Dry Dry Ruins",
         "displayPlatform": "Wii",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/d/d9/Dry_Dry_Ruins.png",
-        "in8DX": false,
-        "otherNames": ["KaraKaraRuins", "KaraKaraIseki"]
+        "in8DX": false
       },
       "LuigiCircuit": {
         "tourName": "LuigiCircuit",
@@ -2292,11 +2290,10 @@
         "tourPlatform": "mob",
         "displayName": "Yoshi's Island",
         "displayPlatform": "Tour",
-        "inTour": false,
+        "inTour": true,
         "in8DX": true,
         "hypothetical": false,
-        "image": "images/Yoshis_Island.jpeg",
-        "otherNames": ["YoshisIsland"]
+        "image": "images/Yoshis_Island.jpeg"
       }
     },
     "battleCourses": {
