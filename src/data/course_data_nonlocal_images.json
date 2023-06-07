@@ -607,8 +607,7 @@
         "displayPlatform": "GBA",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/e/e8/Broken_Pier_MKSC_icon.png",
-        "in8DX": false,
-        "otherNames": ["OnboroSanbashi"]
+        "in8DX": false
       },
       "LuigiCircuit": {
         "tourName": "LuigiCircuit",
@@ -2195,10 +2194,10 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "MA": {
-        "tourName": "MA",
+      "MD": {
+        "tourName": "MD",
         "tourPlatform": "mob",
-        "displayName": "MobMA (Madrid?)",
+        "displayName": "MobMD (Madrid?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
