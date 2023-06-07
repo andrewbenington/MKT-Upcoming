@@ -268,7 +268,7 @@
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/2/24/MK64_Banshee_Boardwalk_Icon.png",
         "in8DX": false,
-        "otherNames": ["HyudoroPond"]
+        "otherNames": ["BansheePond"]
       },
       "RainbowRoad": {
         "tourName": "RainbowRoad",
@@ -873,8 +873,7 @@
         "tourName": "TiltAKart",
         "image": "https://mario.wiki.gallery/images/thumb/e/e0/Tilt-a-KartIcon-MKDD.png/150px-Tilt-a-KartIcon-MKDD.png",
         "in8DX": false,
-        "inTour": false,
-        "otherNames": ["GuraGuraMario"]
+        "inTour": false
       }
     }
   },
@@ -928,8 +927,7 @@
         "displayPlatform": "DS",
         "inTour": false,
         "image": "https://mario.wiki.gallery/images/a/a4/DesertHillds.png",
-        "in8DX": false,
-        "otherNames": ["SansanSabaku"]
+        "in8DX": false
       },
       "DelfinoSquare": {
         "tourName": "DelfinoSquare",
@@ -1097,8 +1095,7 @@
         "displayPlatform": "Wii",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/2/21/MKW_Wario%27s_Gold_Mine_Course_Overview.png/300px-MKW_Wario%27s_Gold_Mine_Course_Overview.png",
-        "otherNames": ["WarioKozan"]
+        "image": "https://mario.wiki.gallery/images/thumb/2/21/MKW_Wario%27s_Gold_Mine_Course_Overview.png/300px-MKW_Wario%27s_Gold_Mine_Course_Overview.png"
       },
       "DaisyCircuit": {
         "tourName": "DaisyCircuit",
@@ -1205,8 +1202,7 @@
         "displayPlatform": "Wii",
         "inTour": false,
         "in8DX": true,
-        "image": "https://mario.wiki.gallery/images/thumb/5/55/Grumble_Volcano.png/300px-Grumble_Volcano.png",
-        "otherNames": ["GuraGuraKazan", "GuraguraKazan"]
+        "image": "https://mario.wiki.gallery/images/thumb/5/55/Grumble_Volcano.png/300px-Grumble_Volcano.png"
       },
       "DryDryRuins": {
         "tourName": "DryDryRuins",
