@@ -2133,12 +2133,11 @@
       "Bathroom": {
         "tourName": "Bathroom",
         "tourPlatform": "mob",
-        "displayName": "Bathroom Course",
+        "displayName": "Squeaky Clean Sprint",
         "displayPlatform": "Tour",
         "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "in8DX": true,
+        "image": "images/Squeaky_Clean_Sprint.jpeg"
       },
       "DaisyKingdom": {
         "tourName": "DaisyKingdom",
