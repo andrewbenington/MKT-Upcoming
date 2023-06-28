@@ -1176,15 +1176,9 @@
         "tourPlatform": "wii",
         "displayName": "Moonview Highway",
         "displayPlatform": "Wii",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/d/db/Moonviewhighway.png/300px-Moonviewhighway.png",
-        "in8DX": false,
-        "otherNames": [
-          "MoonRidge",
-          "MoonHighway",
-          "MoonRidgeHighway",
-          "MoonRidgeAndHighway"
-        ]
+        "in8DX": false
       },
       "BowserCastle": {
         "tourName": "BowserCastle",
@@ -2259,15 +2253,33 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "Rome": {
-        "tourName": "Rome",
+      "Rome1": {
+        "tourName": "Rome1",
         "tourPlatform": "mob",
-        "displayName": "Rome (hypothetical)",
+        "displayName": "Rome Avanti",
+        "displayPlatform": "Tour",
+        "inTour": true,
+        "in8DX": false,
+        "image": "https://mario.wiki.gallery/images/thumb/2/27/MKT_Rome_Avanti_Image.jpg/600px-MKT_Rome_Avanti_Image.jpg"
+      },
+      "Rome2": {
+        "tourName": "Rome2",
+        "tourPlatform": "mob",
+        "displayName": "Rome Avanti 2",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "image": "https://mario.wiki.gallery/images/thumb/2/27/MKT_Rome_Avanti_Image.jpg/600px-MKT_Rome_Avanti_Image.jpg"
+      },
+      "Rome3": {
+        "tourName": "Rome3",
+        "tourPlatform": "mob",
+        "displayName": "Rome Avanti 3",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
         "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/2/27/MKT_Rome_Avanti_Image.jpg/600px-MKT_Rome_Avanti_Image.jpg"
       },
       "MU": {
         "tourName": "MU",

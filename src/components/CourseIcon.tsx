@@ -1,10 +1,10 @@
-import { Box, Card, Modal } from "@mui/material";
-import { useState } from "react";
-import existingAssets from "../consts/existingAssets";
-import course_data_nonlocal_images from "../data/course_data_nonlocal_images.json";
-import { Course, Game } from "../utils/types";
-import EightDXIcon from "./EightDXIcon";
-import TourIcon from "./TourIcon";
+import { Box, Card, Modal } from '@mui/material';
+import { useState } from 'react';
+import existingAssets from '../consts/existingAssets';
+import course_data_nonlocal_images from '../data/course_data_nonlocal_images.json';
+import { Course, Game } from '../utils/types';
+import EightDXIcon from './EightDXIcon';
+import TourIcon from './TourIcon';
 
 interface CourseIconProps {
   course: Course;
@@ -32,35 +32,35 @@ CourseIconProps) => {
         //   console.log("card click");
         // }}
         style={{
-          position: "relative",
+          position: 'relative',
           margin: 5,
           borderRadius: (height / 104) * 8,
           backgroundImage: `url(${
             course?.image ??
-            "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+            'https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png'
           })`,
-          backgroundPosition: "bottom",
-          backgroundSize: "cover",
-          imageRendering: "crisp-edges",
+          backgroundPosition: 'bottom',
+          backgroundSize: 'cover',
+          imageRendering: 'crisp-edges',
           height,
           width: (height / 104) * 151,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-end",
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
           // cursor: "pointer",
         }}
       >
         <div
           style={{
             height: (height / 104) * 14,
-            position: "relative",
-            width: "fit-content",
+            position: 'relative',
+            width: 'fit-content',
           }}
         >
           <div
             style={{
               height: (height / 104) * 14,
-              position: "absolute",
+              position: 'absolute',
               top: 0,
               left: -1,
             }}
@@ -85,47 +85,47 @@ CourseIconProps) => {
             style={{
               fontFamily: "'Verdana', sans-serif",
               fontSize: (height / 104) * 10,
-              textShadow: ".5px .5px #3333",
+              textShadow: '.5px .5px #3333',
               margin: 0,
-              position: "absolute",
+              position: 'absolute',
               top: (height / 104) * 2,
               width: (height / 104) * 35,
-              textAlign: "center",
+              textAlign: 'center',
             }}
           >
-            {course?.displayPlatform ?? "???"}
+            {course?.displayPlatform ?? '???'}
           </p>
         </div>
         <div
           style={{
-            backgroundColor: "#f3f3f3",
-            padding: "3px 5px",
+            backgroundColor: '#f3f3f3',
+            padding: '3px 5px',
           }}
         >
           <p
             style={{
               fontFamily: "'Verdana', sans-serif",
               fontSize: (height / 104) * getFontSize(course?.displayName),
-              textShadow: ".5px .5px #3333",
+              textShadow: '.5px .5px #3333',
               fontWeight:
                 course &&
                 existingAssets.includes(
                   course.displayPlatform + course.tourName
                 )
-                  ? "bold"
-                  : "normal",
+                  ? 'bold'
+                  : 'normal',
               margin: 0,
             }}
           >
-            {course?.displayName ?? "???"}
+            {course?.displayName ?? '???'}
           </p>
           {course?.altName && (
             <p
               style={{
                 fontFamily: "'Verdana', sans-serif",
                 fontSize: (height / 104) * 9,
-                textShadow: ".5px .5px #3333",
-                fontStyle: "italic",
+                textShadow: '.5px .5px #3333',
+                fontStyle: 'italic',
                 margin: 0,
               }}
             >
@@ -136,7 +136,7 @@ CourseIconProps) => {
         {course?.in8DX && showIndicators && (
           <div
             style={{
-              position: "absolute",
+              position: 'absolute',
               left: (height / 104) * 6,
               top: (height / 104) * 6,
             }}
@@ -147,7 +147,7 @@ CourseIconProps) => {
         {course?.inTour && showIndicators && (
           <div
             style={{
-              position: "absolute",
+              position: 'absolute',
               right: (height / 104) * 6,
               top: (height / 104) * 6,
             }}
@@ -159,15 +159,15 @@ CourseIconProps) => {
       <Modal
         open={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        sx={{ height: "fit-content", width: "fit-content", margin: "auto" }}
+        sx={{ height: 'fit-content', width: 'fit-content', margin: 'auto' }}
       >
         <Box
           sx={{
             width: 400,
-            padding: "20px",
-            borderRadius: "8px",
+            padding: '20px',
+            borderRadius: '8px',
             backgroundImage:
-              "url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)",
+              'url(https://mariokart8.nintendo.com/assets/img/bgs/tires.jpg)',
           }}
         >
           <h3>{course?.displayName}</h3>
@@ -185,10 +185,12 @@ CourseIconProps) => {
 };
 
 const getFontSize = (text?: string) => {
-  if (text && text.length > 18) {
+  if (text && text.length > 17) {
     return 10;
-  } else if (text && text.length > 16) {
+  } else if (text && text.length > 15) {
     return 11;
+  } else if (text && text.length > 13) {
+    return 12;
   } else {
     return 13;
   }
