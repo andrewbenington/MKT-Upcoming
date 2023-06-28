@@ -1,5 +1,4 @@
 const existingAssets = [
-  'WiiMoonviewHighway',
   'TourBathroom',
   'TourDK',
   'TourMD',

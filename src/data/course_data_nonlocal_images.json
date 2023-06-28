@@ -2133,7 +2133,7 @@
         "in8DX": true,
         "image": "images/Squeaky_Clean_Sprint.jpeg"
       },
-      "DaisyKingdom": {
+      "DK": {
         "tourName": "DaisyKingdom",
         "tourPlatform": "mob",
         "displayName": "MobDK (Daisy/Desert Kingdom?)",
@@ -2233,26 +2233,6 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "Seoul": {
-        "tourName": "Seoul",
-        "tourPlatform": "mob",
-        "displayName": "Seoul (hypothetical)",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
-      },
-      "Shanghai": {
-        "tourName": "Shanghai",
-        "tourPlatform": "mob",
-        "displayName": "Shanghai (hypothetical)",
-        "displayPlatform": "Tour",
-        "inTour": false,
-        "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
-      },
       "Rome1": {
         "tourName": "Rome1",
         "tourPlatform": "mob",
@@ -2284,7 +2264,7 @@
       "MU": {
         "tourName": "MU",
         "tourPlatform": "mob",
-        "displayName": "'MobMU' (unused?)",
+        "displayName": "MobMU (unused?)",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
