@@ -699,7 +699,7 @@
         "displayPlatform": "GCN",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/7/75/DaisyCruiserIcon-MKDD.png/250px-DaisyCruiserIcon-MKDD.png",
-        "in8DX": false
+        "in8DX": true
       },
       "WaluigiStadium": {
         "tourName": "WaluigiStadium",
@@ -1168,7 +1168,7 @@
         "displayPlatform": "Wii",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/3/37/MKW_Koopa_Cape.png/300px-MKW_Koopa_Cape.png",
-        "in8DX": false,
+        "in8DX": true,
         "otherNames": ["KoopaTroopaCape"]
       },
       "MoonviewHighway": {
@@ -1178,7 +1178,7 @@
         "displayPlatform": "Wii",
         "inTour": true,
         "image": "https://mario.wiki.gallery/images/thumb/d/db/Moonviewhighway.png/300px-Moonviewhighway.png",
-        "in8DX": false
+        "in8DX": true
       },
       "BowserCastle": {
         "tourName": "BowserCastle",
@@ -2199,7 +2199,7 @@
         "displayName": "Athens Dash",
         "displayPlatform": "Tour",
         "inTour": false,
-        "in8DX": false,
+        "in8DX": true,
         "hypothetical": false,
         "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
       },
@@ -2209,7 +2209,7 @@
         "displayName": "Athens Dash 2",
         "displayPlatform": "Tour",
         "inTour": true,
-        "in8DX": false,
+        "in8DX": true,
         "hypothetical": false,
         "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
       },
@@ -2219,7 +2219,7 @@
         "displayName": "Athens Dash 3",
         "displayPlatform": "Tour",
         "inTour": false,
-        "in8DX": false,
+        "in8DX": true,
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/thumb/3/3e/Athens_Starting_Line.png/800px-Athens_Starting_Line.png"
       },
@@ -2247,7 +2247,7 @@
         "tourPlatform": "mob",
         "displayName": "Rome Avanti 2",
         "displayPlatform": "Tour",
-        "inTour": false,
+        "inTour": true,
         "in8DX": false,
         "image": "https://mario.wiki.gallery/images/thumb/2/27/MKT_Rome_Avanti_Image.jpg/600px-MKT_Rome_Avanti_Image.jpg"
       },
