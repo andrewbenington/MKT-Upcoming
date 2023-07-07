@@ -2169,9 +2169,8 @@
         "tourPlatform": "mob",
         "displayName": "Piranha Plant Cove 3",
         "displayPlatform": "Tour",
-        "inTour": false,
+        "inTour": true,
         "in8DX": false,
-        "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/0/08/MKT_Piranha_Plant_Cove_Scene.jpg"
       },
       "NU": {
