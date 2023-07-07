@@ -2124,24 +2124,25 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/7/7e/MKT_Sydney_Sprint_Scene2.png/600px-MKT_Sydney_Sprint_Scene2.png"
       },
-      "Bathroom": {
-        "tourName": "Bathroom",
+      "BathRoad": {
+        "tourName": "BathRoad",
         "tourPlatform": "mob",
         "displayName": "Squeaky Clean Sprint",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": true,
-        "image": "images/Squeaky_Clean_Sprint.jpeg"
+        "image": "images/Squeaky_Clean_Sprint.jpeg",
+        "otherNames": ["BathRoad", "BatheRoad", "BathroomRoad"]
       },
-      "DK": {
-        "tourName": "DaisyKingdom",
+      "PipeCanyon": {
+        "tourName": "PipeCanyon",
         "tourPlatform": "mob",
-        "displayName": "MobDK (Daisy/Desert Kingdom?)",
+        "displayName": "Piranha Plant Pipeline",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
-        "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/6/62/MKT_PiranhaPlantPipeline_View_1.jpg/600px-MKT_PiranhaPlantPipeline_View_1.jpg",
+        "otherNames": ["DokanKyanion"]
       },
       "OceanRuins1": {
         "tourName": "OceanRuins1",
