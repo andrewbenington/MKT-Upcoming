@@ -436,12 +436,12 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/9/9b/Mario_Circuit_MKSC_icon.png"
       },
-      "LakesidePark": {
-        "tourName": "LakesidePark",
+      "LakeSidePark": {
+        "tourName": "LakeSidePark",
         "tourPlatform": "agb",
         "displayName": "Lakeside Park",
         "displayPlatform": "GBA",
-        "inTour": false,
+        "inTour": true,
         "image": "https://mario.wiki.gallery/images/6/67/Lakeside_Park_MKSC_icon.png",
         "in8DX": false
       },
@@ -1806,6 +1806,14 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/d/d1/MKT_Paris_Promenade_Scene.jpg/600px-MKT_Paris_Promenade_Scene.jpg"
       },
+      "Paris4": {
+        "tourName": "Paris4",
+        "tourPlatform": "mob",
+        "displayName": "Paris Promenade 4",
+        "displayPlatform": "Tour",
+        "hypothetical": true,
+        "image": "https://mario.wiki.gallery/images/thumb/d/d1/MKT_Paris_Promenade_Scene.jpg/600px-MKT_Paris_Promenade_Scene.jpg"
+      },
       "Vancouver1": {
         "tourName": "Vancouver1",
         "tourPlatform": "mob",
@@ -2124,18 +2132,17 @@
         "in8DX": true,
         "image": "https://mario.wiki.gallery/images/thumb/7/7e/MKT_Sydney_Sprint_Scene2.png/600px-MKT_Sydney_Sprint_Scene2.png"
       },
-      "BathRoad": {
-        "tourName": "BathRoad",
+      "Bathroom": {
+        "tourName": "Bathroom",
         "tourPlatform": "mob",
         "displayName": "Squeaky Clean Sprint",
         "displayPlatform": "Tour",
-        "inTour": false,
+        "inTour": true,
         "in8DX": true,
-        "image": "images/Squeaky_Clean_Sprint.jpeg",
-        "otherNames": ["BathRoad", "BatheRoad", "BathroomRoad"]
+        "image": "https://mario.wiki.gallery/images/thumb/4/4c/MKT_SqueakyCleanSprint_View_2.jpg/500px-MKT_SqueakyCleanSprint_View_2.jpg"
       },
-      "PipeCanyon": {
-        "tourName": "PipeCanyon",
+      "Dokan": {
+        "tourName": "Dokan",
         "tourPlatform": "mob",
         "displayName": "Piranha Plant Pipeline",
         "displayPlatform": "Tour",
@@ -2183,15 +2190,33 @@
         "hypothetical": true,
         "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
       },
-      "MD": {
-        "tourName": "MD",
+      "Madrid1": {
+        "tourName": "Madrid1",
         "tourPlatform": "mob",
-        "displayName": "MobMD (Madrid?)",
+        "displayName": "Madrid Drive",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "image": "https://mario.wiki.gallery/images/thumb/2/2c/MKT_MadridDrive_Scene1.jpg/800px-MKT_MadridDrive_Scene1.jpg"
+      },
+      "Madrid2": {
+        "tourName": "Madrid2",
+        "tourPlatform": "mob",
+        "displayName": "Madrid Drive 2",
+        "displayPlatform": "Tour",
+        "inTour": false,
+        "in8DX": false,
+        "image": "https://mario.wiki.gallery/images/thumb/2/2c/MKT_MadridDrive_Scene1.jpg/800px-MKT_MadridDrive_Scene1.jpg"
+      },
+      "Madrid3": {
+        "tourName": "Madrid3",
+        "tourPlatform": "mob",
+        "displayName": "Madrid Drive 3",
         "displayPlatform": "Tour",
         "inTour": false,
         "in8DX": false,
         "hypothetical": true,
-        "image": "https://mario.wiki.gallery/images/e/e1/MK8D_Generic_Course_Icon.png"
+        "image": "https://mario.wiki.gallery/images/thumb/2/2c/MKT_MadridDrive_Scene1.jpg/800px-MKT_MadridDrive_Scene1.jpg"
       },
       "Athens1": {
         "tourName": "Athens1",
